@@ -6,9 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "debug": "node --inspect index.js",
-    "start_node": "node index.js",
-    "build": "next build",
-    "start:prod": "next start_node"
+    "start": "node index.js",
+    "build": "npm install"
   },
   "author": "",
   "license": "ISC",

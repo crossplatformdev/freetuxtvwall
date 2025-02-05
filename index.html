@@ -236,7 +236,7 @@ app.get('/style.css', (req, res) => {
 });
 
 
-app.get('/index.html', (req, res) => {
+app.get('/|/index.html', (req, res) => {
     
     if(req.query.language) {
         languageIndex = languages.indexOf(req.query.language);

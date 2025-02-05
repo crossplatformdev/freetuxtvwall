@@ -203,7 +203,7 @@ function new_render(){
     channels.forEach((channel) => {
         if(search != '' && channel.name.toLowerCase().includes(search.toLowerCase())) {
             html += '<tr>';
-            html += '<td>' + channel.name + '</td>';
+            html += '<td>' + channel.name.toUpperCase() + '</td>';
             html += '<td>';
             html += '<video id="my-video" class="video-js" controls preload="auto" width="640" height="264" data-setup="{}">';
             html += '<source src="' + channel.uri + '" type="application/x-mpegURL" />';
@@ -214,7 +214,7 @@ function new_render(){
         } else {
             if(channel.language == languages[languageIndex] && channel.category == categories[categoryIndex]){
                 html += '<tr>';
-                html += '<td>' + channel.name + '</td>';
+                html += '<td>' + channel.name.toUpperCase() + '</td>';
                 html += '<td>';
                 html += '<video id="my-video" class="video-js" controls preload="auto" width="640" height="264" data-setup="{}">';
                 html += '<source src="' + channel.uri + '" type="application/x-mpegURL" />';

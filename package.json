@@ -1,0 +1,23 @@
+{
+  "name": "freetuxtv-wall",
+  "version": "1.0.0",
+  "description": "freetuxtv wall",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "node --inspect index.js",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "countryjs": "^1.8.0",
+    "express": "^4.21.2",
+    "freetuxtv-wall": "file:",
+    "i18n-iso-countries": "^7.13.0",
+    "twilio": "^5.4.3",
+    "xhr": "^2.6.0",
+    "xml2js": "^0.6.2",
+    "xmlhttprequest": "^1.8.0"
+  }
+}

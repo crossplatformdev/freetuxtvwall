@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "debug": "node --inspect index.js",
-    "start": "node index.html",
+    "start": "node index.js",
     "build": "npm install",
     "deploy": "npm run build && npm run start index.js --name freetuxtv-wall"
   },

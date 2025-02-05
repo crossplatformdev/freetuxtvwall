@@ -27,7 +27,7 @@
 # here but we recommend using the Netlify UI for sensitive
 # values to keep them out of your source repository.
 [context.production]
-  publish = "output/"
+  publish = "/"
   command = "npm run build"
   environment = { NODE_VERSION = "22.8.0" }
 

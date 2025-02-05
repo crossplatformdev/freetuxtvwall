@@ -230,7 +230,13 @@ function new_render(){
     return html;
 }
 
-app.get('/', (req, res) => {
+
+app.get('/style.css', (req, res) => {
+    res.sendFile(__dirname + '/style.css');    
+});
+
+
+app.get('/*', (req, res) => {
     
     if(req.query.language) {
         languageIndex = languages.indexOf(req.query.language);
@@ -311,10 +317,6 @@ app.get('/', (req, res) => {
         });    
     }
     res.send(html);
-});
-
-app.get('/style.css', (req, res) => {
-    res.sendFile(__dirname + '/style.css');    
 });
 
 app.listen(port, () => {

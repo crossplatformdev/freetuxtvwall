@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@discoveryjs/json-ext": "^0.6.3",
     "@vue/compiler-sfc": "^3.5.13",
     "express": "4.21.2",
     "freetuxtv-wall": "file:",

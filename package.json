@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "debug": "node --inspect index.js",
-    "start": "node index.js",
+    "start": "node index.js index.html",
     "build": "npm install",
-    "deploy": "npm run build && npm run start index.js --name index.html"
+    "deploy": "npm run build && npm run start"
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +16,11 @@
     "express": "4.21.2",
     "freetuxtv-wall": "file:",
     "i18n-iso-countries": "7.13.0",
+    "webpack": "^5.97.1",
     "xml2js": "0.6.2",
     "xmlhttprequest": "1.8.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^6.0.1"
   }
 }

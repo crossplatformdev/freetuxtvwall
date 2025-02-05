@@ -5,7 +5,7 @@ const countryjs = require('i18n-iso-countries');
 const xml2js = require('xml2js');
 const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest
 const app = express();
-const port = 80;
+const port = 3000;
 
 
 let languageIndex = 0;

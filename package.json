@@ -8,7 +8,7 @@
     "debug": "node --inspect index.js",
     "start": "node index.js index.html",
     "build": "npm install",
-    "deploy": "npm run build && npm run start"
+    "deploy": "npm install && npm run start"
   },
   "author": "",
   "license": "ISC",

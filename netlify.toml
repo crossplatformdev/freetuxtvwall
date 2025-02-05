@@ -76,11 +76,6 @@
 # For context-specific rules, use _headers or _redirects files,
 # which are PER-DEPLOY.
 
-# A basic redirect rule
-[[redirects]]
-  from = "/*"
-  to = "/blog/:splat"
-
 # A redirect rule with many of the supported properties
 [[redirects]]
   from = "/old-path"

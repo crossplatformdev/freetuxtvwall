@@ -5,4 +5,21 @@
   functions = "functions"
   command = "npm run build"
 
+# Production context: all deploys from the Production branch
+# set in your site’s Branches settings in the UI will inherit
+# these settings. You can define environment variables
+# here but we recommend using the Netlify UI for sensitive
+# values to keep them out of your source repository.
+[context.production]
+  publish = "/"
+  command = "npm run build"
+  environment = { NODE_VERSION = "22.8.0" }
+
+# Redirects for role-based access control don’t use the 'to' property.
+# The following redirect is intended for use with most SPAs
+# that handle routing internally.
+[[redirects]]
+  from = "/"
+  to = "dist/index.html"
+  status = 301
 

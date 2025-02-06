@@ -1,10 +1,12 @@
 
 const express = require('express');
+const serverless = require('serverless-http');
 const fs = require('fs');
 const countryjs = require('i18n-iso-countries');
 const xml2js = require('xml2js');
 const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest
 const app = express();
+const router = express.Router();
 const port = 3000;
 
 
@@ -322,3 +324,6 @@ app.get('/|/index.html', (req, res) => {
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
 });
+
+app.use('/.netlify/functions/index', router);  // path must route to lambda
+module.exports.handler = serverless(app);

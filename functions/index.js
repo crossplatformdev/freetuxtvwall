@@ -234,11 +234,26 @@ function new_render(){
 
 
 app.get('/style.css', (req, res) => {
+    //__dirname = path to the directory that the executing script resides in, functions/index.js
     res.sendFile(__dirname + '/style.css');    
 });
 
 
-app.get('/|/index.html', (req, res) => {
+app.get('/dist/style.css', (req, res) => {
+    //__dirname = path to the directory that the executing script resides in, functions/index.js
+    res.sendFile(__dirname + '/style.css');    
+});
+
+app.get('/dist/index.html', (req, res) => {
+    // redirect to root
+    res.redirect('/');
+});
+
+app.get('/index.html', (req, res) => {
+    res.redirect('/');
+});
+
+app.get('/', (req, res) => {
     
     if(req.query.language) {
         languageIndex = languages.indexOf(req.query.language);

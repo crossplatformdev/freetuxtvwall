@@ -4,7 +4,10 @@
   "description": "freetuxtv wall",
   "main": "index.js",
   "scripts": {
-    "start": "node functions/index.js",
+    "copy_lin": "./copy_lin.sh",
+    "copy_win": ".\\copy_win.bat",
+    "start": "npm run copy_lin && node functions/index.js",
+    "start_win": "npm run copy_win && node functions/index.js",
     "build": "netlify deploy --prod"
   },
   "author": "",

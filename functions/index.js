@@ -5,6 +5,7 @@ const fs = require('fs');
 const countryjs = require('i18n-iso-countries');
 const xml2js = require('xml2js');
 const { dirname } = require('path');
+const { dir } = require('console');
 const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest
 const app = express();
 const router = express.Router();
@@ -30,8 +31,8 @@ let links = [
 '<link href="/style.css" rel="stylesheet">'
 ];
 
-const channels_csv = __dirname + '/assets/channels.csv';    
-const channels_xml = __dirname + '/assets/channels.xml';
+const channels_csv = './assets/channels.csv';    
+const channels_xml = './assets/channels.xml';
 
 let languages = [
     'none', 'sq', 'ar', 'az', 'bn', 'bg',
@@ -330,13 +331,13 @@ function main(req, res){
 
 app.get('/style.css', (req, res) => {
     //__dirname = path to the directory that the executing script resides in, functions/index.js
-    res.sendFile(__dirname + '/styles/style.css');    
+    res.sendFile('styles/style.css', { root: '.' });
 });
 
 
 app.get('/dist/style.css', (req, res) => {
     //__dirname = path to the directory that the executing script resides in, functions/index.js
-    res.sendFile(__dirname + '/styles/style.css');    
+    res.sendFile('styles/style.css', { root: '.' });    
 });
 
 app.get('/dist/index.html', (req, res) => {

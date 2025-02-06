@@ -12,6 +12,6 @@
 # that handle routing internally.
 [[redirects]]
   from = "/"
-  to = "dist/index.html"
+  to = "/index.html"
   status = 301
 

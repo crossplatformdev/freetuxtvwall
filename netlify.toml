@@ -3,7 +3,7 @@
 [build]
   # Default build command.
   functions = "dist"
-  publish = "public"
+  publish = "dist"
   command = "npm run build"
   environment = { NODE_VERSION = "22.8.0" }
 

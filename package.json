@@ -6,7 +6,7 @@
   "scripts": {
     "copy_lin": "./copy_lin.sh",
     "copy_win": ".\\copy_win.bat",
-    "start": "node dist/index.js",    ,
+    "start": "node dist/index.js",
     "build": "npm install netlify-cli --save-dev",
     "deploy": "netlify deploy --prod"
   },
@@ -16,7 +16,6 @@
     "express": "^4.21.2",
     "freetuxtv-wall": "file:",
     "i18n-iso-countries": "^7.13.0",
-    "netlify-cli": "^18.0.3",
     "netlify-lambda": "^2.0.16",
     "serverless": "^4.6.1",
     "serverless-http": "^3.2.0",
@@ -24,6 +23,7 @@
     "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
+    "netlify-cli": "^18.0.3",
     "webpack-cli": "^6.0.1"
   }
 }

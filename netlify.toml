@@ -2,16 +2,8 @@
 # all deploy contexts unless overridden by a context-specific setting.
 [build]
   # Default build command.
-  functions = "functions"
-  command = "npm run build"
-
-# Production context: all deploys from the Production branch
-# set in your site’s Branches settings in the UI will inherit
-# these settings. You can define environment variables
-# here but we recommend using the Netlify UI for sensitive
-# values to keep them out of your source repository.
-[context.production]
-  publish = "/"
+  functions = "dist"
+  publish = "public"
   command = "npm run build"
   environment = { NODE_VERSION = "22.8.0" }
 

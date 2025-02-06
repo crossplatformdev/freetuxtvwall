@@ -27,8 +27,11 @@ let links = [
 '<!-- Sea -->',
 '<link href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css" rel="stylesheet">',
 '<!-- Style.css -->',
-'<link href="style.css" rel="stylesheet">'
+'<link href="/style.css" rel="stylesheet">'
 ];
+
+const channels_csv = __dirname + '/assets/channels.csv';    
+const channels_xml = __dirname + '/assets/channels.xml';
 
 let languages = [
     'none', 'sq', 'ar', 'az', 'bn', 'bg',
@@ -50,7 +53,7 @@ let countryNames = [];
 let hasLoaded = false;
 
 function readChannels(){
-    fs.readFile(__dirname + '/channels.xml', 'utf-8', (err, data) => {
+    fs.readFile(channels_xml, 'utf-8', (err, data) => {
         if(err) {
             console.log(err);
         } else {
@@ -104,11 +107,11 @@ function readChannels(){
 
 function stickyHeader(){
         //Deserialize channels.csv to channels array
-    fs.open(__dirname + '/channels.csv', 'r', (err, fd) => {
+    fs.open(channels_csv, 'r', (err, fd) => {
         if(err) {
             readChannels();
         } else {
-            fs.readFile(__dirname + '/channels.csv', 'utf-8', (err, data) => {
+            fs.readFile(channels_csv, 'utf-8', (err, data) => {
                 if(err) {
                     console.log(err);
                 } else {
@@ -306,13 +309,13 @@ function main(req, res){
     console.log("Search: "+search);
 
     if(channels.length > 0) {
-        fs.writeFile(__dirname + '/channels.csv', '', (err) => {
+        fs.writeFile(channels_csv, '', (err) => {
             if(err) {
                 console.log(err);
             } else {
                 channels.forEach((channel) => {
             //Serialize channel to CSV
-                    fs.appendFile(__dirname + '/channels.csv', channel.language + ',' + channel.category + ',' + channel.name + ',' + channel.uri + '\n', (err) => {
+                    fs.appendFile(channels_csv, channel.language + ',' + channel.category + ',' + channel.name + ',' + channel.uri + '\n', (err) => {
                         if(err) {
                             console.log(err);
                         }
@@ -327,13 +330,13 @@ function main(req, res){
 
 app.get('/style.css', (req, res) => {
     //__dirname = path to the directory that the executing script resides in, functions/index.js
-    res.sendFile(__dirname + '/style.css');    
+    res.sendFile(__dirname + '/styles/style.css');    
 });
 
 
 app.get('/dist/style.css', (req, res) => {
     //__dirname = path to the directory that the executing script resides in, functions/index.js
-    res.sendFile(__dirname + '/style.css');    
+    res.sendFile(__dirname + '/styles/style.css');    
 });
 
 app.get('/dist/index.html', (req, res) => {

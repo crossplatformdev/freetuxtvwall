@@ -8,8 +8,8 @@
     "copy_win": ".\\copy_win.bat",
     "dev": "node functions/index.js",
     "start": "node dist/index.js",
-    "build": "netlify deploy --prod",
-    "export": "netlify-lambda build functions"
+    "deploy": "netlify deploy --prod",
+    "build": "netlify-lambda build functions"
   },
   "author": "",
   "license": "ISC",

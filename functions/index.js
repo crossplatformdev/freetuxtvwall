@@ -4,10 +4,11 @@ const serverless = require('serverless-http');
 const fs = require('fs');
 const countryjs = require('i18n-iso-countries');
 const xml2js = require('xml2js');
+const { dirname } = require('path');
 const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest
 const app = express();
 const router = express.Router();
-const port = 3000;
+const port = 443;
 
 
 let languageIndex = 0;
@@ -48,77 +49,86 @@ let countryNames = [];
 
 let hasLoaded = false;
 
-function stickyHeader(){
-        //Deserialize channels.csv to channels array
-    fs.open('channels.csv', 'r', (err, fd) => {
+function readChannels(){
+    fs.readFile(__dirname + '/channels.xml', 'utf-8', (err, data) => {
         if(err) {
-            fs.readFile('channels.xml', 'utf-8', (err, data) => {
+            console.log(err);
+        } else {
+            xml2js.parseString(data, (err, result) => {
                 if(err) {
                     console.log(err);
                 } else {
-                    xml2js.parseString(data, (err, result) => {
-                        if(err) {
-                            console.log(err);
-                        } else {
-                            result.channels_groups.language.forEach((lang) => {
-                                languages.push(lang.$.id);
-    
-                                for(let i = 0; i < lang.channels_group.length; i++) {
-                                    let group = lang.channels_group[i];
-                                    let xml = new XMLHttpRequest();
-                                    xml.open("GET", group.$.uri, false);
-                                    xml.send();
-                                    let channelsLines = xml.responseText;
-                                    let lines = channelsLines.split('\n');
-                                    let name = '';
-                                    for(let j = 0; j < lines.length; j++) {
-                                        let line = lines[j];
-                                        if(line.startsWith('http')) {
-                                            channel = { uri: '', name: '', language: '', category: '' };
-                                            channel.uri = line;
-                                            channel.language = lang.$.id;
-                                            channel.name = name;
-    
-                                            if(group.$._name.startsWith("Web TV")) {
-                                                channel.category = "Web TV";
-                                            }
-                                            if(group.$._name.startsWith("Web Radio")) {
-                                                channel.category = "Web Radio";
-                                            }
-                                            if(group.$._name.startsWith("Web Cam")) {
-                                                channel.category = "Web Cam";
-                                            }
-                                            if(group.$._name.startsWith("Web Programmes")) {
-                                                channel.category = "Web Programmes";
-                                            }
-                                            channels.push(channel);
-                                        } else {
-                                            name = line.split(',')[1];
-                                        }
+                    result.channels_groups.language.forEach((lang) => {
+                        languages.push(lang.$.id);
+
+                        for(let i = 0; i < lang.channels_group.length; i++) {
+                            let group = lang.channels_group[i];
+                            let xml = new XMLHttpRequest();
+                            xml.open("GET", group.$.uri, false);
+                            xml.send();
+                            let channelsLines = xml.responseText;
+                            let lines = channelsLines.split('\n');
+                            let name = '';
+                            for(let j = 0; j < lines.length; j++) {
+                                let line = lines[j];
+                                if(line.startsWith('http')) {
+                                    channel = { uri: '', name: '', language: '', category: '' };
+                                    channel.uri = line;
+                                    channel.language = lang.$.id;
+                                    channel.name = name;
+
+                                    if(group.$._name.startsWith("Web TV")) {
+                                        channel.category = "Web TV";
                                     }
-                                }                         
-                            });
-                        }
+                                    if(group.$._name.startsWith("Web Radio")) {
+                                        channel.category = "Web Radio";
+                                    }
+                                    if(group.$._name.startsWith("Web Cam")) {
+                                        channel.category = "Web Cam";
+                                    }
+                                    if(group.$._name.startsWith("Web Programmes")) {
+                                        channel.category = "Web Programmes";
+                                    }
+                                    channels.push(channel);
+                                } else {
+                                    name = line.split(',')[1];
+                                }
+                            }
+                        }                         
                     });
                 }
             });
+        }
+    });
+}
+
+function stickyHeader(){
+        //Deserialize channels.csv to channels array
+    fs.open(__dirname + '/channels.csv', 'r', (err, fd) => {
+        if(err) {
+            readChannels();
         } else {
-            fs.readFile('channels.csv', 'utf-8', (err, data) => {
+            fs.readFile(__dirname + '/channels.csv', 'utf-8', (err, data) => {
                 if(err) {
                     console.log(err);
                 } else {
                     let lines = data.split('\n');
-                    lines.forEach((line) => {
-                        let parts = line.split(',');
-                        if(parts.length == 4) {
-                            channel = { uri: '', name: '', language: '', category: '' };
-                            channel.language = parts[0];
-                            channel.category = parts[1];
-                            channel.name = parts[2];
-                            channel.uri = parts[3];
-                            channels.push(channel);
-                        }
-                    });
+
+                    if(lines.length < 10) {
+                        readChannels();                                              
+                    } else {
+                        lines.forEach((line) => {
+                            let parts = line.split(',');
+                            if(parts.length == 4) {
+                                channel = { uri: '', name: '', language: '', category: '' };
+                                channel.language = parts[0];
+                                channel.category = parts[1];
+                                channel.name = parts[2];
+                                channel.uri = parts[3];
+                                channels.push(channel);
+                            }
+                        });
+                    }
                 }
             });
 
@@ -296,13 +306,13 @@ function main(req, res){
     console.log("Search: "+search);
 
     if(channels.length > 0) {
-        fs.writeFile('channels.csv', '', (err) => {
+        fs.writeFile(__dirname + '/channels.csv', '', (err) => {
             if(err) {
                 console.log(err);
             } else {
                 channels.forEach((channel) => {
             //Serialize channel to CSV
-                    fs.appendFile('channels.csv', channel.language + ',' + channel.category + ',' + channel.name + ',' + channel.uri + '\n', (err) => {
+                    fs.appendFile(__dirname + '/channels.csv', channel.language + ',' + channel.category + ',' + channel.name + ',' + channel.uri + '\n', (err) => {
                         if(err) {
                             console.log(err);
                         }

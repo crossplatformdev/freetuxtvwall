@@ -1,0 +1,32 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "netlify deploy --prod",
+    "build": "netlify-lambda build functions",
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@netlify/functions": "^3.0.0",
+    "@types/express": "^5.0.0",
+    "app": "file:",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.21.2",
+    "express-session": "^1.17.2",
+    "http": "^0.0.1-security",
+    "http-errors": "~1.6.3",
+    "i18n-iso-countries": "^7.13.0",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1",
+    "netlify": "13.3.3",
+    "netlify-lambda": "^2.0.16",
+    "serverless-http": "^3.2.0",
+    "xml2js": "^0.6.2",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "netlify-cli": "^18.0.4"
+  }
+}

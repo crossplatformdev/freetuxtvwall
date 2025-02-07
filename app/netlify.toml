@@ -30,8 +30,8 @@
 
 [[redirects]]
   force = true
-  from = ""
-  status = 304
-  to = "/.netlify/functions/api/wall"
+  from = "?$"
+  status = 200
+  to = "$"
 
   

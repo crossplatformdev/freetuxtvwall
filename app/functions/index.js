@@ -186,7 +186,7 @@ function stickyHeader(req, res){
     html += '<input type="text" type="search" id="search_box" onchange="javascript:form2OnChange()" />';
     html += '<input value="Search" type="submit" />';
     html += '</form>';    
-    html += '<script> function form2OnChange() { search = document.getElementById(\'search_box\').value; var sb = document.getElementById(\'form2\').action = \'/api/wall/search/\'+ search; } form2OnChange(); </script>';
+    html += '<script> function form2OnChange() { var search = document.getElementById(\'search_box\').value; var sb = document.getElementById(\'form2\').action = \'/api/wall/search/\'+ window.btoa(search); } form2OnChange(); </script>';
 
     var availableTags = '[';
 
@@ -320,16 +320,12 @@ export function main(req, res){
     } else {
         categoryIndex = 0;
     }
-    if(undefined != req.params.search) {     
-        if('string' == typeof req.params.search) {
-            req.params.search_box = req.params.search_box.replaceAll('?', '');
+    if(undefined != req.params.search_box) {     
+        if('string' == typeof req.params.search_box) {
+            req.params.search_box = atob(req.params.search_box).replaceAll('?', '');
             search = req.params.search_box;
-        }  else {
-            search = '';            
-        }
-    } else{
-        search = '';
-    }
+        } 
+    } 
 
     
     console.log("Language Index: "+languageIndex);

@@ -195,7 +195,7 @@ input[type=search] {
     width: 250px;
 }
 /*Css to target the dropdownbox*/
-ul.ui-autocomplete {
+ul.ui-autocomplete, input[type=search]:focus {
     color: #333 !important;
     -moz-border-radius: 15px;
     border-radius: 15px;

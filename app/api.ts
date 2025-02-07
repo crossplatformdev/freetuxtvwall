@@ -65,7 +65,7 @@ router.get('/wall/lang/:language/cat/:category', (req, res) => {
 });
 
 ///?search_box=24h
-router.get('/wall/search/:search_box?', (req, res) => {
+router.get('/wall/search/:search_box', (req, res) => {
     main(req, res);
 });
 

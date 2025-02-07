@@ -283,7 +283,7 @@ function renderChannel(render, channel, counter) {
     render += '<td>' + channel.name.toUpperCase() + '</td>';
     render += '<td>';
 
-    let videorender = '<video id="'+selector+'" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="640" height="264" data-setup="{}">';
+    let videorender = '<video id="'+selector+'" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="960" height="640" data-setup="{}">';
     videorender += '<source src="'+channel.uri+'" type="'+channel.type+'">';
     videorender += '</video>';
     let videoJS = '<script>var player = videojs("'+selector+'");</script>';
@@ -306,6 +306,7 @@ export function main(req, res){
         } else if('number' == typeof req.params.language) {
             languageIndex = req.params.language;
         }
+        search = '';
     } else {
         languageIndex = 0;
     }
@@ -316,7 +317,8 @@ export function main(req, res){
             categoryIndex = parseInt(req.params.category);
         } else if('number' == typeof req.params.category) {
             categoryIndex = req.params.category;
-        }                 
+        }           
+        search = '';      
     } else {
         categoryIndex = 0;
     }
@@ -324,6 +326,8 @@ export function main(req, res){
         if('string' == typeof req.params.search_box) {
             req.params.search_box = atob(req.params.search_box).replaceAll('?', '');
             search = req.params.search_box;
+            categoryIndex = -1;
+            languageIndex = -1;
         } 
     } 
 
@@ -342,21 +346,15 @@ export function main(req, res){
     html += '   <div id="header" class="header">';
     html += '       {{header}}';
     html += '   </div>';
-
-    if(channels.length > 0) {
-        html += '   <div class="content-wrapper">';    
-        html += '       <div class="content">';
-        html += '          {{table}}';
-        html += '       </div>';
-        html += '   </div>';
+    html += '   <div class="content-wrapper">';    
+    html += '       <div class="content">';
+    if(channels.length != 0) {
+        html += '          {{table}}';        
     } else  {
-        html += '   <div class="content-wrapper">';
-        html += '       <div class="content">';
         html += '           <p>Ready to load channels...</p>';
-        html += '       </div>';
-        html += '   </div>';
     }
-
+    html += '       </div>';
+    html += '   </div>';
     html += '   <div class="footer">';
     html += '       {{footer}}';
     html += '   </div>';
@@ -366,11 +364,9 @@ export function main(req, res){
     html = html.replace('{{title}}', 'Free Tux TV Wall');
     html = html.replace('{{header}}', stickyHeader(req, res));
     html = html.replace('{{links}}', links.join('')+'<link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />');
-    if(channels.length > 0) {
+    if(channels.length != 0) {
         html = html.replace('{{table}}', new_render());
-    } else {
-        html = html.replace('{{table}}', '');
-    }
+    } 
     html = html.replace('{{footer}}', footer());
     res.send(html);
 }

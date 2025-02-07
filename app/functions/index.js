@@ -26,7 +26,12 @@ let links = [
     '<!-- Dash.js -->',
     '<script src="https://cdnjs.cloudflare.com/ajax/libs/dashjs/4.7.4/dash.all.min.js" integrity="sha512-LyDgm9kfqyKlZOe+QjpNA6L/ZpcjNj+cKSJ/bQLTGkKXaxYNpYGN9Fe6DpI0H0w3Da2WcXVX8ACjL14y3iWGBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>',
     '<!-- videojs-contrib-dash script -->',
-    '<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-dash/5.1.1/videojs-dash.min.js" integrity="sha512-jmpCwJ7o9/MxR36dZX+SQc4Ta2PDvMwM5MHmW0oDcy/UzkuppIj+F9FiN+UW/Q8adlOwb5Tx06zHsY/7yg4OYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>'
+    '<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-dash/5.1.1/videojs-dash.min.js" integrity="sha512-jmpCwJ7o9/MxR36dZX+SQc4Ta2PDvMwM5MHmW0oDcy/UzkuppIj+F9FiN+UW/Q8adlOwb5Tx06zHsY/7yg4OYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>',
+    '<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">',
+    '<script src="//code.jquery.com/jquery-1.10.2.js"></script>',
+    '<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>',
+    '<link rel="icon" type="image/jpg" href="/public/images/favicon.jpg"/>'
+
     ];
 
 const channels_csv = 'public/assets/channels.csv';
@@ -178,10 +183,22 @@ function stickyHeader(req, res){
     html += '<script> function form1OnChange() { var lang = document.getElementById(\'language\').selectedIndex; var cat = document.getElementById(\'category\').selectedIndex; document.getElementById(\'form1\').action = \'/api/wall/lang/\'+ lang + \'/cat/\' + cat; } form1OnChange(); </script>';
     html += "<form id='form2' method=\"get\" >";
     html += '<label for="search">Channel Name:</label>';
-    html += '<input type="text" id="search_box" onchange="javascript:form2OnChange()" />';
+    html += '<input type="text" type="search" id="search_box" onchange="javascript:form2OnChange()" />';
     html += '<input value="Search" type="submit" />';
     html += '</form>';    
     html += '<script> function form2OnChange() { search = document.getElementById(\'search_box\').value; var sb = document.getElementById(\'form2\').action = \'/api/wall/search/\'+ search; } form2OnChange(); </script>';
+
+    var availableTags = '[';
+
+    channels.forEach((channel) => {
+        availableTags += '"'+channel.name+'",';
+    });
+    availableTags = availableTags.endsWith(',') ? availableTags.slice(0, -1) : availableTags;
+    availableTags += ']';
+
+
+
+    html += '<script> $("#search_box").autocomplete({ source: '+availableTags+'  }) </script>';
     html += '</div>';
     return html;
 }

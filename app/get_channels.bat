@@ -17,4 +17,6 @@ curl ^"https://database.freetuxtv.net/playlists/list?format=xml^" ^
   -H ^"sec-ch-ua-mobile: ?0^" ^
   -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^"  > channels.xml
 
-  
+
+node app\parse_channels.js  
+

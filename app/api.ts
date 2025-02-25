@@ -1,11 +1,12 @@
 import express from "express";
-import http from "http";
 import router from './routes/index';
 import serverless from "serverless-http";
-import { channels, main, readChannels } from "./functions/index";
 import * as XMLHttpRequest from "xmlhttprequest";
-import fs from "fs";
-import { exec } from "child_process";
+import http from "node:http";
+import https from "node:https";
+import fs from "node:fs";
+import { channels, main, readChannels } from "./functions/index";
+
 const api = express();
 
 router.get("/hello", (req, res) => {res.send("Hello World!") });
@@ -71,13 +72,12 @@ router.get('/wall/search/:search_box', (req, res) => {
 
 router.get('/proxy/:urlencoded', (req, res) => {
     let urlencoded = req.params.urlencoded;
-    let urldecoded = decodeURIComponent(urlencoded);
+    let urldecoded = btoa(urlencoded);
     
     let allowed = false;
     let ch;
-    console.log(urldecoded);
 
-    if(channels.length < 10) {
+    if(channels.length == 0) {
         readChannels();
     }
 
@@ -101,30 +101,14 @@ router.get('/proxy/:urlencoded', (req, res) => {
 
     //run wget command to get the content of the url
     let result = '';
-    try {
-        http.get(urldecoded, (response) => {
-            if(undefined != response.statusCode) {
-                if (response.statusCode === 200 || response.statusCode === 301 || response.statusCode === 302 || response.statusCode === 303 || response.statusCode === 304) {
-                    console.log("Got response: " + res.statusCode);
-                    res.header('Content-Type', response.headers['content-type']);
-                    response.on('data', (chunk) => {
-                        result += chunk;
-                    });
-                } 
-                
-                if (response.statusCode > 304) {
-                    res.redirect(404, '/404');
-                    return;
-                }
-            }   
+    http.get(urldecoded, (response) => {
+        response.on('data', (chunk) => {
+            result += chunk;
         });
-    } catch (error) {
-        console.log(error);
-        res.redirect(404, '/404');
-        return;
-    }
-
-    res.send(result);
+        response.on('end', () => {
+            res.send(result);
+        });
+    });
 });
 
 api.use("/api/", router);

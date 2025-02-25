@@ -247,7 +247,35 @@ function new_render(){
 
 function renderChannel(render, channel, counter) {
 
-    if(!channel.uri.includes('https')) {
+    if(channel.uri.includes('https://')) {
+        try {
+            //you need to run in a higher memory lambda runtime.
+            
+            https.get(channel.uri, (res) => {
+                if(res.statusCode == 413) {
+                    return render;
+                }
+                //If 200 or redirect
+                if(res.statusCode == 200 || res.statusCode == 301 || res.statusCode == 302 || res.statusCode == 303 || res.statusCode == 307 || res.statusCode == 308) {
+                    let type = res.headers['content-type'];
+                    if(type != undefined) {
+                        channel.type = type;
+                    } 
+                    
+                } else {
+                    console.log("URI: "+channel.uri+" Status: "+res.statusCode);
+                }
+            });
+        
+            //we pass it through our proxy
+            channel.uri = 'https://freetuxtvwall.netlify.app/api/proxy_s/' + atob(channel.uri);
+    
+        } catch(err) {
+            console.log("URI: "+channel.uri);
+            console.log(err);
+        }
+
+    } else if(channel.uri.includes('http://')) {
         //http request to channel.uri to get the type and status
         try {
             //you need to run in a higher memory lambda runtime.
@@ -269,7 +297,7 @@ function renderChannel(render, channel, counter) {
             });
         
             //we pass it through our proxy
-            channel.uri = 'https://freetuxtvwall.netlify.app/api/proxy/' + encodeURIComponent(channel.uri);
+            channel.uri = 'https://freetuxtvwall.netlify.app/api/proxy/' + atob(channel.uri);
     
         } catch(err) {
             console.log("URI: "+channel.uri);

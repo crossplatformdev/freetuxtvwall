@@ -1,0 +1,9 @@
+#EXTM3U
+#EXTINF:0,Alcudia Ràdio
+https://streaming.enacast.com/alcudiaradio128.mp3
+#EXTINF:0,Amposta Ràdio
+http://endirecte.amposta.cat:8000/radio
+#EXTINF:0,Catalunya Ràdio
+https://directes-radio-int.ccma.cat/int/mp4:catradio/playlist.m3u8?DVR
+#EXTINF:0,Cugat ràdio
+http://directe.cugat.cat:80/directeHQ.mp3

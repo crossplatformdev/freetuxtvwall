@@ -4,7 +4,7 @@
   # Default build command.
   functions = "/"
   publish = "/"
-  command = "npm run start"
+  command = "npm run build"
   environment = { NODE_VERSION = "22.8.0" }
 
 # Redirects for role-based access control don’t use the 'to' property.
@@ -14,24 +14,15 @@
 [functions]
   external_node_modules = ["express"]
   node_bundler = "esbuild"
-  included_files = ["public/**"]
+  included_files = ["public/**", "public/assets/channels.xml"]
+
 
 [[redirects]]
-  force = true
-  from = "/api/*"
-  status = 200
-  to = "/.netlify/functions/api/:splat"
-
-[[redirects]]
-  force = true
   from = "/"
-  status = 304
-  to = "/.netlify/functions/api/wall"
+  to = "/api/wall"
 
 [[redirects]]
+  from = "/*"
+  to = ".netlify/functions/:splat"
   force = true
-  from = "?$"
-  status = 304
-  to = "$"
-
-  
+  status = 200

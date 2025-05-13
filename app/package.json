@@ -3,12 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "deploy": "netlify deploy --prod",
-    "build": "netlify-lambda build functions",
-    "start": "node ./bin/www"
+    "build": "netlify deploy --prod" 
   },
   "dependencies": {
-    "@netlify/functions": "^3.0.0",
+    "@eyevinn/web-player": "^0.10.1",
+    "@eyevinn/web-player-component": "^0.9.1",
+    "@eyevinn/web-player-core": "^0.16.2",
+    "@hosseintaromi/video_player": "^0.1.251",
+    "@netlify/functions": "^3.1.8",
     "app": "file:",
     "axios": "^1.7.9",
     "cookie-parser": "^1.4.7",
@@ -17,6 +19,7 @@
     "http": "^0.0.1-security",
     "https": "^1.0.0",
     "i18n-iso-countries": "^7.14.0",
+    "m3u8-parser": "^7.2.0",
     "morgan": "^1.10.0",
     "serverless-http": "^3.2.0",
     "xml2js": "^0.6.2",

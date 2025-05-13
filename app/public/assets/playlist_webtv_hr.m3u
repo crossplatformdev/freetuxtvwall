@@ -1,0 +1,15 @@
+#EXTM3U
+#EXTINF:0,Al Jazeera Balkans (1080p)
+https://live-hls-web-ajb.getaj.net/AJB/index.m3u8
+#EXTINF:0,Banovina TV
+rtmp://video.radio-banovina.hr/live/myStream
+#EXTINF:0,N1 HR
+https://best-str.umn.cdn.united.cloud/stream?stream=sp1400&sp=n1info&channel=n1hrv&u=n1info&p=n1Sh4redSecre7iNf0
+#EXTINF:0,OTV
+https://www.dailymotion.com/video/x654gen
+#EXTINF:0,TV Jadran
+https://www.dailymotion.com/video/x670ug8
+#EXTINF:0,TV Nova
+https://www.dailymotion.com/video/x694rtu
+#EXTINF:0,UNA TV Hrvatska (720p)
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/48519/48519_264_live.m3u8

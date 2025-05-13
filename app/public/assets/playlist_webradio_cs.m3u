@@ -1,0 +1,53 @@
+#EXTM3U
+#EXTINF:0,Alternative times Radio
+http://ice3.abradio.cz/alternative128.mp3
+#EXTINF:0,Applaus Rádio
+http://mp3stream3.abradio.cz:8000/applaus128.mp3
+#EXTINF:0,Cesky rozhlas 1 - Radiozurnal (cz)
+http://radio.cesnet.cz/cgi-bin/cro1-256-ogg.pls
+#EXTINF:0,Chillout
+http://mp3stream4.abradio.cz/chillout128.mp3
+#EXTINF:0,CRo Hradec Kralove
+http://icecast2.play.cz/crohk128.mp3
+#EXTINF:0,Dechovka
+http://icecast5.play.cz:8000/dechovka128.mp3
+#EXTINF:0,Drumandbass Radio
+http://ice3.abradio.cz/shadowbox128.mp3
+#EXTINF:0,Folk
+http://mp3stream2.abradio.cz:8000/folk.mp3
+#EXTINF:0,Ohen v krbu
+http://ice6.abradio.cz/relax-fire128.mp3
+#EXTINF:0,Oldies radio
+http://ice.abradio.cz/oldiesradio128.mp3
+#EXTINF:0,Oldies Rock
+http://mp3stream4.abradio.cz/oldiesrock128.mp3
+#EXTINF:0,Pohadka
+http://ice3.abradio.cz/pohadka128.mp3
+#EXTINF:0,Povidka
+http://ice3.abradio.cz/povidka128.mp3
+#EXTINF:0,Radio 1
+https://icecast2.play.cz/radio1-192.mp3
+#EXTINF:0,Radio Beat
+http://icecast2.play.cz/radiobeat128.mp3
+#EXTINF:0,Radio Blanik
+http://ice.abradio.cz/blanikcz128.mp3
+#EXTINF:0,Radio Domino
+http://mp3stream4.abradio.cz/domino128.mp3
+#EXTINF:0,Radio Humor
+http://mp3stream4.abradio.cz:8000/humor128.mp3
+#EXTINF:0,Radio Humor
+http://mp3stream4.abradio.cz/humor128.mp3
+#EXTINF:0,Radio Krokodyl
+http://icecast4.play.cz/krokodyl128.mp3
+#EXTINF:0,Radio Raggakings
+https://raggakings.radio:8443/stream.ogg
+#EXTINF:0,Radio1
+http://icecast1.play.cz/radio1.mp3
+#EXTINF:0,Slow radio - Vtaci zpev
+http://icecast3.play.cz/slowradio32.aac
+#EXTINF:0,Zpev vtaku
+http://ice6.abradio.cz/relax-morning-birds128.mp3
+#EXTINF:0,Zvuk burky
+http://ice6.abradio.cz/relax-thunder-rain128.mp3
+#EXTINF:0,Zvuk mora
+http://ice6.abradio.cz/relax-sea128.mp3

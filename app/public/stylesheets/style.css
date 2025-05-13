@@ -48,13 +48,46 @@ body {
 
 }
 
-/* Content: content centerted inside wrapper, with accent colour */
+/* Content: content centerted inside wrapper, with accent colour. content is a table that must display 3 items per row in a grid */
 .content {
     background-color: purple;
     border-radius: 5px;
     box-shadow: 5px 5px 5px #555;
     margin: 10px;
     padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 1760px;
+    height: 100%;
+    max-height: 565px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #555;    
+}
+
+/* beautify .content overflow */
+.content::-webkit-scrollbar {
+    width: 25px;
+    background-color: #555;
+    border-radius: 5px;
+    /* scroll paddle black */
+    box-shadow: 5px 5px 5px #555;
+    color: #333;
+    
+}
+
+/* scroll bar paddle*/
+.content::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #777;
 }
 
 /* Footer, like header*/
@@ -94,6 +127,10 @@ tr:nth-child(even) {
 
 tr:nth-child(odd) {
     background-color: rebeccapurple;
+}
+
+td:nth-child(even) {
+    background-color: darkviolet;
 }
 
 td {

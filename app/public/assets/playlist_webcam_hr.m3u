@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:0,Hrvatski radio Karlovac
+https://5b57bb229a2e6.streamlock.net/live/_definst_/karlovac/playlist.m3u8
+#EXTINF:0,Radio Makarska Rivijera
+http://144.76.237.59:1935/makarska/makarska.stream/Fplaylist.m3u8

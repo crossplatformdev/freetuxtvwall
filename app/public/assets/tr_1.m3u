@@ -1,0 +1,9 @@
+#EXTM3U
+#EXTINF:0,24 TV
+https://turkmedya-live.ercdn.net/tv24/tv24_480p.m3u8
+#EXTINF:0,HALK TV
+https://halktv.blutv.com/blutv_halktv_live/live.m3u8
+#EXTINF:0,Kanal 3
+rtmp://stream.taksimbilisim.com/kanal3/bant1
+#EXTINF:0,TV41 (Turkey)
+rtmp://stream.taksimbilisim.com/tv41/bant1

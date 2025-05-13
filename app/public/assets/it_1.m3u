@@ -1,0 +1,27 @@
+#EXTM3U
+#EXTINF:0,Canale 7 [ITALY]
+http://wms.shared.streamshow.it:1935/canale7/canale7/live.m3u8?IPTVCOTIA
+#EXTINF:0,deejay.it/tv
+https://streamcdnb4-4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S85984808/sMO0tz9Sr2Rk/playlist.m3u8
+#EXTINF:0,LA7
+https://d15umi5iaezxgx.cloudfront.net/LA7/CLN/HLS-B/Live.m3u8
+#EXTINF:0,m2o.it/tv
+https://streamcdnm2-4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S62628868/uhdWBlkC1AoO/chunklist_b1064000.m3u8
+#EXTINF:0,MondoKids.it
+https://mondotv-mondotvkids-1-it.samsung.wurl.tv/playlist.m3u8
+#EXTINF:0,Rai 3
+http://wzstreaming.rai.it/TVlive/liveStream/chunklist_w823540263.m3u8
+#EXTINF:0,Rai Südtirol
+http://wzstreaming.rai.it/TVlive/liveStream/chunklist_w1379656191.m3u8
+#EXTINF:0,RakutenFamily.it
+https://rakuten-family-6-it.samsung.wurl.tv/playlist.m3u8
+#EXTINF:0,rtvsport
+https://d2hrvno5bw6tg2.cloudfront.net/smrtv-ch02/smil:ch-02.smil/master.m3u8
+#EXTINF:0,supersixtv.net
+https://5db313b643fd8.streamlock.net/SUPERSIXLombardia/SUPERSIXLombardia/playlist.m3u8
+#EXTINF:0,SuperTennis.it
+https://supertennix-l3-live1.secure.footprint.net/restreamer/supertennix_client/gpu-a-c0-16/restreamer/rtmp/hls/h24_supertennix/manifest.m3u8
+#EXTINF:0,Teletricolore
+https://59d7d6f47d7fc.streamlock.net/rs2/rs2/chunklist_w980140357.m3u8
+#EXTINF:0,TG3 (TeleGiornale 3)
+http://wzstreaming.rai.it/TVlive/liveStream/playlist.m3u8

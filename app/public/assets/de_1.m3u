@@ -1,0 +1,135 @@
+#EXTM3U
+#EXTINF:0,ARTE HD
+https://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/master_v720.m3u8
+#EXTINF:0,AUTO BILD TV
+https://auto-bild.personalstream.tv/v1/bildde/master.m3u8
+#EXTINF:0,baden tv sued
+https://cdn.icu.de/rtplive/smil:btvsued.smil/playlist.m3u8
+#EXTINF:0,baden-tv
+http://cdn.icu.de/rtplive/btv.stream/chunklist_w574389438.m3u8
+#EXTINF:0,BLK Regional TV
+https://h056.video-stream-hosting.de/medienasa-live/_definst_/mp4:BLKonline_high/playlist.m3u8
+#EXTINF:0,BR Fernsehen Nord HD
+https://mcdn.br.de/br/fs/bfs_nord/hls/de/master.m3u8
+#EXTINF:0,BR Fernsehen Süd HD
+https://mcdn.br.de/br/fs/bfs_sued/hls/de/master.m3u8
+#EXTINF:0,Das Erste HD
+https://mcdn.daserste.de/daserste/de/master.m3u8
+#EXTINF:0,Das Wort TV
+https://stream.daswort.tv/master.m3u8
+#EXTINF:0,DASDING-VisualRadio
+https://swrdasdingvr-hls.akamaized.net/hls/live/2018681/dasdingvr/master.m3u8
+#EXTINF:0,Deutsche Welle
+https://dwamdstream111.akamaized.net/hls/live/2017972/dwstream111/index.m3u8
+#EXTINF:0,Deutsche Welle+
+https://dwamdstream110.akamaized.net/hls/live/2017971/dwstream110/index.m3u8
+#EXTINF:0,Die Neue Zeit TV
+https://www.onairport.live/die-neue-zeit-tv-live/livestream_high/playlist.m3u8
+#EXTINF:0,DW-TV English
+https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
+#EXTINF:0,DW-TV Español
+https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
+#EXTINF:0,Filstalwelle
+https://586c58b20c86e.streamlock.net/filstalwelle-live/_definst_/mp4:livestream/chunklist_w788671625.m3u8
+#EXTINF:0,gott24.tv
+https://jfmedien01.de:5443/LiveApp/streams/470906932351128240316939.m3u8
+#EXTINF:0,hr-fernsehen
+https://hrhls.akamaized.net/hls/live/2024525/hrhls/index.m3u8
+#EXTINF:0,Light Channel TV Deutschland
+http://streamer1.streamhost.org:1935/salive/lctvde/playlist.m3u8
+#EXTINF:0,MDF.1
+https://h056.video-stream-hosting.de/medienasa-live/_definst_/mdf1_high/playlist.m3u8
+#EXTINF:0,nbydeggendorf.de
+https://stream03.welocal.stream/stream/fhd-nbydeggendorf_99148/ngrp:stream_all/index.m3u8
+#EXTINF:0,nbylandshut.de
+https://stream03.welocal.stream/stream/fhd-nbylandshut_75262/ngrp:stream_all/index.m3u8
+#EXTINF:0,NDR 1 Radio MV-VisualRadio
+https://ndrvisualradiohls.akamaized.net/hls/live/2018951/ndrvr_mv_ndr1/master_540.m3u8
+#EXTINF:0,NDR 1 Radio MV-VisualRadio
+https://ndrvisualradiohls.akamaized.net/hls/live/2018951/ndrvr_mv_ndr1/master.m3u8
+#EXTINF:0,NDR Hamburg HD
+https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_hh/master.m3u8
+#EXTINF:0,NiederbayernTV.de
+https://stream03.welocal.stream/stream/sat-nby/ngrp:sat-nby.stream_all/index.m3u8
+#EXTINF:0,NRWision HD
+https://fms.nrwision.de/live/livestreamHD.stream_source/chunklist.m3u8
+#EXTINF:0,Offener Kanal Wernigerode
+https://h056.video-stream-hosting.de/medienasa-live/_definst_/ok-wernigerode_high/playlist.m3u8
+#EXTINF:0,OK Dessau
+https://h056.video-stream-hosting.de/medienasa-live/_definst_/mp4:ok-dessau_high/playlist.m3u8
+#EXTINF:0,OK Fulda
+https://s.ok54.de/mok-fu/livestream/playlist.m3u8
+#EXTINF:0,OK Gießen
+https://s.ok54.de/mok-gi/mok-gi/playlist.m3u8
+#EXTINF:0,OK Kaiserslautern
+https://s.ok54.de/abr_okkl/webstream/playlist.m3u8
+#EXTINF:0,OK Kassel
+https://s.ok54.de/mok-ks/kassel/playlist.m3u8
+#EXTINF:0,OK Kiel
+https://live-cdn.oksh.de/play/hls/kieltv/index.m3u8
+#EXTINF:0,OK Ludwigshafen
+https://s.ok54.de/oklu/livestream/playlist.m3u8
+#EXTINF:0,OK Magdeburg
+https://h056.video-stream-hosting.de/medienasa-live/_definst_/mp4:ok-magdeburg_high/playlist.m3u8
+#EXTINF:0,OK Merseburg-Querfurt
+https://h056.video-stream-hosting.de/medienasa-live/_definst_/mp4:ok-merseburg_high/playlist.m3u8
+#EXTINF:0,OK naheTV (Idar-Oberstein)
+https://s.ok54.de/nahetv/webstream/chunks.m3u8
+#EXTINF:0,OK Rhein-Main (Offenbach Frankfurt)
+https://s.ok54.de/mok-rm/mok-rm/playlist.m3u8
+#EXTINF:0,OK RheinLokal (Worms)
+https://s.ok54.de/rheinlokal/rheinlOKal_stream/chunks.m3u8
+#EXTINF:0,OK Salzwedel
+https://h056.video-stream-hosting.de/medienasa-live/_definst_/mp4:ok-salzwedel_high/playlist.m3u8
+#EXTINF:0,OK Stendal
+http://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:ok-stendal_high/playlist.m3u8
+#EXTINF:0,OK Suedwestpfalz
+https://s.ok54.de/okswp/test/chunks.m3u8
+#EXTINF:0,OK Weinstraße (Neustadt)
+https://s.ok54.de/okweinstrasse/okweinstrasse/chunks.m3u8
+#EXTINF:0,OK Wernigerode
+http://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:ok-wernigerode_high/playlist.m3u8
+#EXTINF:0,OK4 (Adenau Andernach Koblenz Neuwied)
+https://s.ok54.de/abr_ok4/live/playlist.m3u8
+#EXTINF:0,OK4 Live
+https://s.ok54.de/abr_ok4/live/ok4/live_720p/playlist.m3u8
+#EXTINF:0,OK54 (Trier)
+https://s.ok54.de/ott/webstream/tv/webstream_720p/chunks.m3u8
+#EXTINF:0,Okto (Austria)
+https://cdn3.wowza.com/1/MHFtazJReW5rOFhP/N2NWNDZ2/hls/live/playlist.m3u8
+#EXTINF:0,Parlamentsfernsehen 2
+https://cldf-hlsgw.r53.cdn.tv1.eu/1000153copo/hk2.m3u8
+#EXTINF:0,PUNKTum
+https://h056.video-stream-hosting.de/medienasa-live/_definst_/mp4:punktum_high/playlist.m3u8
+#EXTINF:0,RAN1
+https://h056.video-stream-hosting.de/medienasa-live/_definst_/mp4:ran1_high/playlist.m3u8
+#EXTINF:0,RBW
+https://h056.video-stream-hosting.de/medienasa-live/_definst_/mp4:rbw_high/playlist.m3u8
+#EXTINF:0,RFH
+https://h056.video-stream-hosting.de/medienasa-live/_definst_/mp4:RFH_high/playlist.m3u8
+#EXTINF:0,saarland1.de
+http://saarland1.iptv-playoutcenter.de/saarland1/saarland1.stream_1/playlist.m3u8
+#EXTINF:0,saarland2.de
+http://saarland2.iptv-playoutcenter.de/saarland2/saarland2.stream_2/playlist.m3u8
+#EXTINF:0,Sachsen eins
+http://sachsen1.iptv-playoutcenter.de/sachsen1/sachsen1.stream_1/playlist.m3u8
+#EXTINF:0,sachsen-fernsehen.de
+http://vogtland.iptv-playoutcenter.de/vogtland/vogtlandfernsehen.stream_1/playlist.m3u8
+#EXTINF:0,sofy.tv/de
+https://sofy-ger-samsung.amagi.tv/playlist.m3u8
+#EXTINF:0,sr.de/sr
+https://srfs.akamaized.net/hls/live/689649/srfsgeo/index.m3u8
+#EXTINF:0,SWR3-VisualRadio
+https://swrswr3vr-hls.akamaized.net/hls/live/2018683/swr3vr/master.m3u8
+#EXTINF:0,sylt1.tv
+https://5f7f7503aa549.streamlock.net/Sylt1_Channel_1_PGM/sylt1_high/Playlist.m3u8
+#EXTINF:0,Tide TV
+https://5889e7d0d6e28.streamlock.net/tide-live/_definst_/smil:livestream.smil/playlist.m3u8
+#EXTINF:0,UNSERDING-VisualRadio
+https://srde.akamaized.net/hls/live/2031842/visualradio-unserding/master-540p-1728.m3u8
+#EXTINF:0,WDR HD
+https://mcdn.wdr.de/wdr/wdrfs/de/master.m3u8
+#EXTINF:0,Welt
+https://welt.personalstream.tv/v1/master.m3u8
+#EXTINF:0,WTV (OK Wettin)
+https://h056.video-stream-hosting.de/medienasa-live/_definst_/mp4:ok-wettin_high/playlist.m3u8

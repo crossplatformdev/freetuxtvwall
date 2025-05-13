@@ -1,0 +1,11 @@
+#EXTM3U
+#EXTINF:0,PWR HIT RADIO
+https://ice.leviracloud.eu/phr96-aac
+#EXTINF:0,Raadio Kuku
+https://router.euddn.net/8103046e16b71d15d692b57c187875c7/kuku.mp3
+#EXTINF:0,SKY Radio
+http://sky.babahhcdn.com/SKY
+#EXTINF:0,SSS-Radio
+http://217.146.76.112:8000/sss-radio
+#EXTINF:0,Радио 4
+http://icecast.err.ee/raadio4.ogg

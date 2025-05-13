@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:0,Abu Dhabi TV
+https://admdn2ta.cdn.mangomolo.com/adtv/smil:adtv.stream.smil/chunklist.m3u8
+#EXTINF:0,National Geographic Abu Dhabi AR ARB
+https://admdn2.cdn.mangomolo.com/nagtv/smil:nagtv.stream.smil/playlist.m3u8
+#EXTINF:0,Sky News Arabia
+https://stream.skynewsarabia.com/hls/sna_720.m3u8

@@ -1,0 +1,23 @@
+#EXTM3U
+#EXTINF:0,GTV
+http://91.220.221.60/gtv_hls/gtv_03.m3u8
+#EXTINF:0,Koper TV
+https://27-rtvslo-tv-kp-int.cdn.eurovisioncdn.net/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0,MMC (720p)
+https://29-rtvslo-tv-mmc-int.cdn.eurovisioncdn.net/playlist.m3u8?DVR
+#EXTINF:0,MMC TV
+https://29-rtvslo-tv-mmc-int.cdn.eurovisioncdn.net/playlist.m3u8?checkedby:iptvcat.com
+#EXTINF:0,N1 SLO
+https://best-str.umn.cdn.united.cloud/stream?stream=sp1400&sp=n1info&channel=n1slv&u=n1info&p=n1Sh4redSecre7iNf0
+#EXTINF:0,SLO 1
+https://31-rtvslo-tv-slo1-int.cdn.eurovisioncdn.net/chunklist_b2328000_DVR.m3u8
+#EXTINF:0,SLO 2
+https://21-rtvslo-tv-slo2-int.cdn.eurovisioncdn.net/playlist.m3u8?DVR
+#EXTINF:0,SLO 3
+https://16-rtvslo-tv-slo3-int.cdn.eurovisioncdn.net/playlist.m3u8?DVR
+#EXTINF:0,TV Maribor
+https://24-rtvslo-tv-mb-slo.cdn.eurovisioncdn.net/playlist.m3u8?DVR
+#EXTINF:0,TVDX
+http://5ca49f2417d90.streamlock.net/live/dolnykubin1/playlist.m3u8
+#EXTINF:0,Veseljak TV
+https://stream.veseljak.tv/hls/stream.m3u8

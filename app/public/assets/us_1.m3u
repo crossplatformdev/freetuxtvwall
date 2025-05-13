@@ -1,0 +1,37 @@
+#EXTM3U
+#EXTINF:0,30A TV
+https://30a-tv.com/my999.m3u8
+#EXTINF:0,30A TV MUSIC
+https://30a-tv.com/music.m3u8
+#EXTINF:0,Angel TV America
+https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angelamerica_all/chunklist_b1431072.m3u8
+#EXTINF:0,CBN NEWS
+https://bcovlive-a.akamaihd.net/re8d9f611ee4a490a9bb59e52db91414d/us-east-1/734546207001/playlist.m3u8
+#EXTINF:0,edition.cnn
+https://cnn-cnninternational-1-eu.rakuten.wurl.tv/206849c7acd1570962df1ad525fa8688.m3u8
+#EXTINF:0,Hmong TV
+https://livefta.malimarcdn.com/ftaedge00/hmongusatv.sdp/chunklist.m3u8
+#EXTINF:0,Hunt Channel
+https://1111296894.rsc.cdn77.org/LS-ATL-56868-1/index.m3u8
+#EXTINF:0,LegoChannel.us
+https://legochannel-vizio.amagi.tv/playlist.m3u8
+#EXTINF:0,LiveNOWfromFOX.us
+https://fox-foxnewsnow-vizio.amagi.tv/playlist.m3u8
+#EXTINF:0,MAVTV.us
+https://mavtv-1.sinclair.wurl.com/manifest/playlist.m3u8
+#EXTINF:0,MAVTVSelect.us
+https://mavtv-mavtvglobal-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:0,NBC News
+https://nbcnews2.akamaized.net/hls/live/723426/NBCNewsPlaymaker24x7Linear99a3a827-ua/master.m3u8
+#EXTINF:0,NRB Network [USA]
+https://uni10rtmp.tulix.tv/nrbtvlive/nrbtvlive.stream/playlist.m3u8
+#EXTINF:0,OneNewsNetwork.us
+http://oneamericanews-roku-us.amagi.tv/playlist.m3u8
+#EXTINF:0,OutsideTVPlus.us
+https://outsidetvplus-xumo.amagi.tv/playlist.m3u8
+#EXTINF:0,skitv.tv
+https://d2xeo83q8fcni6.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/SkiTV-SynapseTV/193.m3u8
+#EXTINF:0,uctv
+https://59e8e1c60a2b2.streamlock.net/509/509.stream/playlist.m3u8
+#EXTINF:0,Weatherspy TV
+https://jukin-weatherspy-1.samsung.wurl.com/manifest/playlist.m3u8

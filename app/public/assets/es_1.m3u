@@ -1,0 +1,21 @@
+#EXTM3U
+#EXTINF:0,101TV Malaga
+https://limited38.todostreaming.es/live/101tv-web101tv.m3u8
+#EXTINF:0,24h
+https://rtvelivestreamv3.akamaized.net/24h/24h_main_dvr.m3u8
+#EXTINF:0,24h Canarias
+https://ztnr.rtve.es/ztnr/5473142.m3u8
+#EXTINF:0,Alcarria TV
+https://cls.alcarria.tv/live/alcarriatv-livestream.m3u8
+#EXTINF:0,Aragon TV
+https://cartv.streaming.aranova.es/hls/live/aragontv_canal1.m3u8
+#EXTINF:0,Canalcosta TV
+https://5d8d85cf2c308.streamlock.net:1936/CanalcostaTV/WXP6YT/playlist.m3u8
+#EXTINF:0,Ibiza Global TV
+https://ibgrtv.streaming-pro.com/hls/ibgrlive.m3u8
+#EXTINF:0,La 1
+https://rtvelivestreamv3.akamaized.net/rtvesec/la1/la1_main.m3u8
+#EXTINF:0,La 2 ES-IP
+https://rtvelivestreamv3.akamaized.net/rtvesec/la2/la2_main.m3u8
+#EXTINF:0,Pequeradio TV
+https://canadaremar2.todostreaming.es/live/peque-pequetv.m3u8

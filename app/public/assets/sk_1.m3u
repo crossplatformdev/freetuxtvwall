@@ -1,0 +1,21 @@
+#EXTM3U
+#EXTINF:0,Fashion TV
+http://lb.streaming.sk/fashiontv/stream/playlist.m3u8
+#EXTINF:0,LocAll
+http://tv.geniusnet.sk:8081/localltv/pl.m3u8
+#EXTINF:0,NOVE ZAMKY TV
+http://s1.media-planet.sk/live/novezamky/playlist.m3u8
+#EXTINF:0,NOVE ZAMKY TV
+rtmp://s1.media-planet.sk:80/live/novezamky
+#EXTINF:0,Raj TV
+https://ottst05.flexitv.sk/2827-tv-pc.m3u8
+#EXTINF:0,Senzi TV
+http://lb.streaming.sk/senzi/stream/playlist.m3u8
+#EXTINF:0,Severka.tv
+http://88.212.7.11/live/test_severka_web_player/playlist.m3u8
+#EXTINF:0,TA3
+https://get-a-flippin-ta3-url-dss6dgprdpjf.runkit.sh/
+#EXTINF:0,Turzovka
+rtmp://s1.media-planet.sk:80/live/turzovka
+#EXTINF:0,tvNRSR (national congress)
+https://n15.stv.livebox.sk/stv-tv/_definst_/stv7.smil/playlist.m3u8

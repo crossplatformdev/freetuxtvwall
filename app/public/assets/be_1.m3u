@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:0,BX1
+https://59959724487e3.streamlock.net/stream/live/chunklist_w1203497461.m3u8
+#EXTINF:0,EbS Live (Europe by Satellite)
+https://euc-live.fl.freecaster.net/live/eucom/ebs-audio_int=96000-video=2600000.m3u8
+#EXTINF:0,EbS+ Live (Europe by Satellite)
+https://euc-live.fl.freecaster.net/live/eucom/ebsp-audio_int=96000-video=2600000.m3u8

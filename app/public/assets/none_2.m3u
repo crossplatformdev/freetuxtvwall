@@ -1,0 +1,81 @@
+#EXTM3U
+#EXTINF:0,BeatlesDay
+http://listen.radionomy.com/beatlesday.m3u
+#EXTINF:0,Beur FM
+http://broadcast.infomaniak.ch/beurfm-high.mp3
+#EXTINF:0,CinéTaRadio
+http://listen.radionomy.com/cinetaradio.m3u
+#EXTINF:0,DMode Radio (Dépêche Mode et Pop/Rock)
+http://listen.radionomy.com/dmode-radio.m3u
+#EXTINF:0,Eko des Garrigues (MP3)
+http://91.121.159.124:8000/eko-des-garrigues-128k.mp3
+#EXTINF:0,Gaga Face (Lady Gaga)
+http://listen.radionomy.com/gaga-face.m3u
+#EXTINF:0,Hit West (AAC)
+http://broadcast.infomaniak.ch/hitwest-high.aac
+#EXTINF:0,Hit West (MP3) (Haut débit)
+http://broadcast.infomaniak.ch/hitwest-high.mp3
+#EXTINF:0,Jazz Radio (ex-Fréquence Jazz)
+http://broadcast.infomaniak.ch/jazzradio-high.mp3
+#EXTINF:0,Jazz Radio Black Music
+http://broadcast.infomaniak.ch/jazzblackmusic-high.mp3
+#EXTINF:0,Jazz Radio Blues
+http://broadcast.infomaniak.ch/jazzblues-high.mp3
+#EXTINF:0,Jazz Radio Ladies and Crooners
+http://broadcast.infomaniak.ch/jazzladiescrooners-high.mp3
+#EXTINF:0,Jazz Radio Lounge
+http://broadcast.infomaniak.ch/jazzlounge-high.mp3
+#EXTINF:0,Jazz Radio Reprises
+http://broadcast.infomaniak.ch/reprises-high.mp3
+#EXTINF:0,le85
+https://shoutcast.le85.com/le85.mp3
+#EXTINF:0,legalcrimeradio.com
+https://s44.myradiostream.com/8240/listen.mp3
+#EXTINF:0,Lounge Radio (AAC+)
+http://live.streamhosting.ch:8010
+#EXTINF:0,Michael Jackson Radio
+http://listen.radionomy.com/michael-jackson-radio.m3u
+#EXTINF:0,miraath.net al-anbiyya
+https://radio.al7eah.net/8010/stream
+#EXTINF:0,Puls Radio
+http://www.pulsradio.com/pls/puls-adsl.m3u
+#EXTINF:0,Puls Radio Version 8.0
+http://www.pulsradio.com/pls/pulsV80-adsl.m3u
+#EXTINF:0,Puls Radio Version 9.0
+http://www.pulsradio.com/pls/pulsV90-adsl.m3u
+#EXTINF:0,Quran Translation
+http://islam2day.tv:4000
+#EXTINF:0,Radio Britney (Britney Spears)
+http://listen.radionomy.com/radio-britney.m3u
+#EXTINF:0,RADIO CRNE GORE 1
+http://radio.beotel.net:8008/;stream.nsv
+#EXTINF:0,Radio Galega Música
+https://wecast-b01-04.flumotion.com/radiogalega-musica/live.mp3
+#EXTINF:0,Radio Hallyday (Johnny & David)
+http://listen.radionomy.com/radio-hallyday.m3u
+#EXTINF:0,Radio Junior (Bas débit)
+http://91.121.62.121:8010/listen.pls
+#EXTINF:0,Radio Junior (Haut débit)
+http://91.121.62.121:8080/listen.pls
+#EXTINF:0,Radio Mélodie
+http://players.creacast.com/creacast/melodie/playlist.m3u
+#EXTINF:0,Radio Novi Sad 1
+rtmp://79.101.121.123:1935/rns1/prviprogram/livestream
+#EXTINF:0,Radio Novi Sad 2
+rtmp://79.101.121.123:1935/rns2/drugiprogram/livestream
+#EXTINF:0,Radio Novi Sad 3
+rtmp://79.101.121.123:1935/rns3/treciprogram/livestream
+#EXTINF:0,radio Oost
+https://mediacdn.rtvoost.nl/icecast/rtvoost/radio-oost-aac
+#EXTINF:0,RadioCinéma
+http://listen.radionomy.com/radiocinema.m3u
+#EXTINF:0,Rastapuls
+http://radio.rastapuls.com:8000/rastapuls
+#EXTINF:0,Rastapuls
+http://www.rastapuls.com/rastapuls.m3u
+#EXTINF:0,RPA Radio
+https://cdnlive.codev8.net/rtpalive/smil:radio.smil/chunklist_b1000000.m3u8
+#EXTINF:0,Schwarz (MP3)
+http://streaming02.sr-online.de/unserding-schwarz.m3u
+#EXTINF:0,Sveriges Radio P1
+http://http-live.sr.se/p1-ogg-vbr.ogg

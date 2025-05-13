@@ -1,0 +1,43 @@
+#EXTM3U
+#EXTINF:0,1000 Christmas
+https://ais-sa2.cdnstream1.com/2553_128.mp3
+#EXTINF:0,Alex Jones - Infowars.com
+http://stream.infowars.com
+#EXTINF:0,Astronomy FM Radio
+http://radio.astronomy.fm:8111/live
+#EXTINF:0,Boston Media House
+http://edge.iono.fm/xice/bmh_live_high.aac
+#EXTINF:0,Detour Talk Radio US
+http://thedetour.us/player/talk.pls
+#EXTINF:0,EWTN english
+https://ewtn-sgrewind.streamguys1.com/sgrewind/english/playlist.m3u8
+#EXTINF:0,gnostic radio
+https://s2.radio.co/sb5e5eca60/listen
+#EXTINF:0,groovesalad (somafm)
+http://ice1.somafm.com/groovesalad-128-mp3
+#EXTINF:0,KBRD 680 AM Lacey Washington
+http://205.134.192.90:680
+#EXTINF:0,LRN.FM - Liberty Radio Network
+https://lrn.fm/files/lrn.pls
+#EXTINF:0,LRN.FM - Liberty Radio Network - 64K Stream 24/7
+http://s2.voscast.com:7392/listen.pls
+#EXTINF:0,OLD CHRISTIAN RADIO
+https://stream.radio.co/sf2c714555/listen
+#EXTINF:0,Praise Radio - Radio For Life
+http://streaming.live365.com/a70255
+#EXTINF:0,Queercraft Radio
+http://mc.queercraft.net:8008/
+#EXTINF:0,Queercraft Radio
+http://mc.queercraft.net:8008/listen.pls
+#EXTINF:0,Radio Paradise
+https://stream.radioparadise.com/aac-64
+#EXTINF:0,RadioMv German (Christliches Radio)
+http://163.172.137.24:2488/;
+#EXTINF:0,Rockabilly-radio.net
+http://lin3.ash.fast-serv.com:6026/stream_96
+#EXTINF:0,SomaFM Groove Salad
+http://ice3.somafm.com/groovesalad-128-mp3
+#EXTINF:0,WFED Federal News Radio
+http://playerservices.streamtheworld.com/api/livestream-redirect/WFEDAM.mp3?nocache=1454940168
+#EXTINF:0,WFMU - Freeform Radio the Way it Oughta Be
+https://wfmu.org/wfmu.pls

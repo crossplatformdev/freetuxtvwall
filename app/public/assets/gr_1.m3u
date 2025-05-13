@@ -1,0 +1,35 @@
+#EXTM3U
+#EXTINF:0,4E TV
+http://eu2.tv4e.gr:554/live/smil:myStream.sdp.smil/playlist.m3u8
+#EXTINF:0,Action 24 Greece HD
+http://dai.ly/x61fbhs
+#EXTINF:0,baraza tv greek music 3
+https://eco.streams.ovh/BarazaTV/BarazarazaTV/BarazaTV/playlist.m3u8
+#EXTINF:0,barazatv hd
+https://eco.streams.ovh:443/BarazaTV/BarazaTV/playlist.m3u8
+#EXTINF:0,barazatv hd dance & pop music
+https://video1.getstreamhosting.com:1936/8490/8490/playlist.m3u8
+#EXTINF:0,Greek Voice TV (wzra)
+http://wpso.com:1936/hls/wzra.m3u8
+#EXTINF:0,hellenic parliament (WebTV-1)
+https://streamer-cache.grnet.gr/parliament/hls/webtv_1280_960x540/index.m3u8
+#EXTINF:0,hellenic parliament (WebTV-2)
+https://streamer-cache.grnet.gr/parliament/hls/webtv2_1280_960x540/index.m3u8
+#EXTINF:0,Kontra TV
+rtmp://flashcloud.mediacdn.com/live/kontratv
+#EXTINF:0,MEGA TV (GR-IP)
+https://streamcdnh4-c98db5952cb54b358365984178fb898a.msvdn.net/live/S86713049/gonOwuUacAxM/playlist.m3u8
+#EXTINF:0,MesogeiosTV
+https://e-e.cyou:8222/mesogeiostv/stream/playlist.m3u8
+#EXTINF:0,ONETV
+https://streaming.onetv.gr/show/onetv.m3u8
+#EXTINF:0,PlayTV.gr
+http://web.onair-radio.eu:1935/Alpha-Host/Alpha-Host/playlist.m3u8
+#EXTINF:0,SAMIAKI TV
+https://live.cast-control.eu:443/samiaki/samiaki/playlist.m3u8
+#EXTINF:0,STAR
+https://livestar.siliconweb.com/media/star1/star1lowhd.m3u8
+#EXTINF:0,Star Lamia
+https://dai.ly/xqjey2
+#EXTINF:0,Star TV
+https://livestar.siliconweb.com/media/star1/star1mediumhd.m3u8

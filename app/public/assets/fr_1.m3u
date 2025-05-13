@@ -1,0 +1,41 @@
+#EXTM3U
+#EXTINF:0,Bip TV
+https://biptv.tv/live/biptvstream_orig/index.m3u8
+#EXTINF:0,clubbingtv.com
+https://clubbingtv-rakuten.amagi.tv/playlist720_p.m3u8
+#EXTINF:0,CNA SAT TV
+rtmp://str81.creacast.com:80/cna/live.sdp
+#EXTINF:0,dbm-tv.fr
+http://dbmtv.vedge.infomaniak.com/livecast/dbmtv/playlist.m3u8
+#EXTINF:0,Euronews Espanol
+https://dai.ly/x2j7hpf
+#EXTINF:0,euronews português
+https://dai.ly/x2j7lv2
+#EXTINF:0,Euronews Ελληνικά
+https://dai.ly/x2j7kha
+#EXTINF:0,Euronews русски
+https://dai.ly/x2j7igz
+#EXTINF:0,Fashion TV
+http://fash1043.cloudycdn.services/slive/_definst_/ftv_paris_adaptive.smil/chunklist.m3u8
+#EXTINF:0,fr.euronews.com
+https://rakuten-euronews-2-fr.samsung.wurl.com/manifest/playlist.m3u8
+#EXTINF:0,funradio.fr/tv
+https://edge20.vedge.infomaniak.com/livecast/funradiovisionhd/chunklist_w470534363.m3u8
+#EXTINF:0,generations.fr
+https://edge19.vedge.infomaniak.com/livecast/ik:generation-tv/chunklist_w697757887.m3u8
+#EXTINF:0,m6.fr
+https://shls-m6-int-prod-dub.shahid.net/out/v1/a315ab77ee7343a7a17dbe7e32eee3ba/index_1.m3u8
+#EXTINF:0,Monde du Loisir TV
+http://tv.mondeduloisir.fr:1935/tixtv/smil:web.smil/chunklist_w822985751_b3555000_t64SEQ=.m3u8
+#EXTINF:0,QwestTVJazzBeyond.fr
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/qwestAAAA-qwestjazz-uk-samsungtv/playlist.m3u8
+#EXTINF:0,QwestTVMix.fr
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/qwestAAAA-qwestmix-uk-samsungtv/playlist.m3u8
+#EXTINF:0,RakutenFamily.fr
+https://rakuten-family-7-fr.samsung.wurl.tv/playlist.m3u8
+#EXTINF:0,rougetv.ch
+http://edge14.vedge.infomaniak.com/livecast/event.stream/chunklist_w190750142.m3u8
+#EXTINF:0,Trace Urban tv
+https://lightning-traceurban-samsungau.amagi.tv/playlist.m3u8
+#EXTINF:0,trace.tv
+https://lightning-traceurban-samsungau.amagi.tv/playlist720p.m3u8

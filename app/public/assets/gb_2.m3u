@@ -1,0 +1,37 @@
+#EXTM3U
+#EXTINF:0,BBC Radio 1
+https://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/dash/nonuk/dash_low/cfs/bbc_radio_one.mpd
+#EXTINF:0,BBC Radio 2
+https://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/dash/nonuk/dash_low/cfs/bbc_radio_two.mpd
+#EXTINF:0,BBC Radio 3
+https://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/dash/nonuk/dash_low/aks/bbc_radio_three.mpd
+#EXTINF:0,BBC Radio 4
+https://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/dash/nonuk/dash_low/cfs/bbc_radio_fourfm.mpd
+#EXTINF:0,BBC Radio Cymru
+http://stream.live.vc.bbcmedia.co.uk/bbc_radio_cymru
+#EXTINF:0,BBC Radio Cymru 2
+http://stream.live.vc.bbcmedia.co.uk/bbc_radio_cymru_2
+#EXTINF:0,BBC Radio nan Gaidheal
+http://stream.live.vc.bbcmedia.co.uk/bbc_radio_nan_gaidheal
+#EXTINF:0,BFBS UK
+http://tx.sharp-stream.com/icecast.php?i=ssvcbfbs1.mp3
+#EXTINF:0,birdsong.fm
+https://streaming.radio.co/s5c5da6a36/listen
+#EXTINF:0,Cheesy fm uk
+http://listen-cheesyfm.sharp-stream.com/cheesyfm.mp3
+#EXTINF:0,Joint Radio Beat
+https://jointil.com/stream-beat
+#EXTINF:0,Joint Radio Blues Rock
+https://jointil.com/stream-blues
+#EXTINF:0,Joint Radio Reggae
+https://jointil.com/stream-reggae
+#EXTINF:0,Radio Caroline
+http://sc5.radiocaroline.net:8010/listen.pls
+#EXTINF:0,Radio Paradise
+http://stream-uk1.radioparadise.com/aac-320
+#EXTINF:0,V2Beat
+https://de1se01.v2beat.live/icecast.audio?t=file.mp3
+#EXTINF:0,WRN English for Europe - www.wrn.org
+http://shoutcast.wrn.org:8026/
+#EXTINF:0,WRN Russkij - Всемирная радиосеть - www.wrn.ru
+http://193.42.152.215:8006/listen.pls

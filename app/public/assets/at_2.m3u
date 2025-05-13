@@ -1,0 +1,35 @@
+#EXTM3U
+#EXTINF:0,FM4
+https://orf-live.ors-shoutcast.at/fm4-q2a
+#EXTINF:0,Hitradio Ö3
+https://orf-live.ors-shoutcast.at/oe3-q2a
+#EXTINF:0,Krone Hit
+http://onair.krone.at/kronehit.mp3
+#EXTINF:0,Kronehit
+http://onair-ha1.krone.at/kronehit-hp.mp3
+#EXTINF:0,Kronehit
+https://secureonair.krone.at/kronehit1058.mp3
+#EXTINF:0,Ö1
+https://orf-live.ors-shoutcast.at/oe1-q2a
+#EXTINF:0,Ö1 Campus
+https://orf-live.ors-shoutcast.at/campus-q2a
+#EXTINF:0,Radio B138 (at)
+http://radiob138.out.airtime.pro:8000/radiob138_a
+#EXTINF:0,Radio Burgenland (at)
+https://orf-live.ors-shoutcast.at/bgl-q1a?player=radiothek_v1&referer=burgenland.orf.at
+#EXTINF:0,Radio Kärnten (at)
+https://orf-live.ors-shoutcast.at/ktn-q1a?player=radiothek_v1&referer=kaernten.orf.at
+#EXTINF:0,Radio Max Penny
+http://listen.radiomax.technology/penny
+#EXTINF:0,Radio Niederösterreich (at)
+https://orf-live.ors-shoutcast.at/noe-q1a?player=radiothek_v1&referer=noe.orf.at
+#EXTINF:0,Radio Salzburg (at)
+https://orf-live.ors-shoutcast.at/sbg-q1a?player=radiothek_v1&referer=salzburg.orf.at
+#EXTINF:0,Radio Steiermark
+https://orf-live.ors-shoutcast.at/stm-q2a
+#EXTINF:0,Radio Tirol (at)
+https://orf-live.ors-shoutcast.at/tir-q1a?player=radiothek_v1&referer=tirol.orf.at
+#EXTINF:0,Radio Vorarlberg (at)
+https://orf-live.ors-shoutcast.at/vbg-q1a?player=radiothek_v1&referer=vorarlberg.orf.at
+#EXTINF:0,Radio Wien
+https://orf-live.ors-shoutcast.at/wie-q2a

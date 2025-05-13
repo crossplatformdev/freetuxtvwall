@@ -1,0 +1,33 @@
+#EXTM3U
+#EXTINF:0,European Hit Radio
+http://stream.europeanhitradio.lv:8000/ehr.mp3
+#EXTINF:0,Krievijas hitu radio
+http://stream.hitirossii.com:8000/khr.mp3.m3u
+#EXTINF:0,Latgales radio
+http://www.lr.lv/stereo_96k.pls
+#EXTINF:0,Latvijas Radio 1
+mms://lr1w.latvijasradio.lv/pplr1
+#EXTINF:0,Latvijas Radio 2
+mms://lr2w.latvijasradio.lv/pplr2
+#EXTINF:0,Latvijas Radio 3
+mms://lr1w.latvijasradio.lv/pplr3
+#EXTINF:0,Latvijas Radio 4
+mms://lr1w.latvijasradio.lv/pplr4
+#EXTINF:0,LRADIO - BEST DANCE MUSIC
+http://www.lradiostation.com/listen.asx
+#EXTINF:0,Pieci FM
+http://live.pieci.lv/live19-hq.mp3
+#EXTINF:0,Radio energy
+http://radio1.radioenergy.lv:8000/listen.pls
+#EXTINF:0,Radio Merkurs
+http://www.radionord.lv/raadionord.m3u
+#EXTINF:0,Radio Skonto
+http://www.radioskonto.lv/online_radio/stereo.m3u
+#EXTINF:0,Radio SWH
+https://live.radioswh.lv:8443/swhmp3
+#EXTINF:0,Radio SWH Rock
+https://live.radioswh.lv:8443/rockmp3
+#EXTINF:0,Radio SWH+
+https://live.radioswh.lv:8443/plusmp3
+#EXTINF:0,Top Radio
+http://195.13.200.164:8000/listen.pls

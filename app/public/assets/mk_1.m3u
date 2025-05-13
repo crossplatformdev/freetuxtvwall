@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:0,Koha TV
+rtmp://live.tvkoha.tv:1935/live/koha/livestream
+#EXTINF:0,SKY FOLK
+http://www.skyfolk.mk/live.m3u8

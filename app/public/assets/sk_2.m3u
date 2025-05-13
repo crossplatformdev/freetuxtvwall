@@ -1,0 +1,35 @@
+#EXTM3U
+#EXTINF:0,NRJ - HITS (kladivo na nekvalitné SK rádia)
+http://cdn.nrjaudio.fm/adwz1/fr/30043/aac_64.mp3
+#EXTINF:0,Radio 7
+https://play.radio7.sk/128
+#EXTINF:0,Radio Kosice
+http://stream.21.sk/radiokosice-128.mp3
+#EXTINF:0,Rádio Lumen
+https://audio.lumen.sk/live64.mp3
+#EXTINF:0,Radio Rock
+https://stream.bauermedia.sk/rock-hi.mp3
+#EXTINF:0,Radio Slovakia Int.
+https://icecast.stv.livebox.sk/rsi_128.mp3
+#EXTINF:0,Radio Slovensko
+https://icecast.stv.livebox.sk/slovensko_128.mp3
+#EXTINF:0,Radio TLIS - rádio študentov v Bratislave
+https://stream.tlis.sk/tlis.mp3
+#EXTINF:0,Radio Viva
+https://stream.sepia.sk/viva128.mp3
+#EXTINF:0,Rádio Vlna
+http://stream.radiovlna.sk/vlna-hi.mp3
+#EXTINF:0,RTVS Radio Devin
+http://icecast.stv.livebox.sk/devin_128.mp3
+#EXTINF:0,RTVS Radio Patria
+http://icecast.stv.livebox.sk/patria_128.mp3
+#EXTINF:0,RTVS Radio Regina Banska Bystrica
+http://icecast.stv.livebox.sk/regina-bb_128.mp3
+#EXTINF:0,RTVS Radio Regina Bratislava
+http://icecast.stv.livebox.sk/regina-ba_128.mp3
+#EXTINF:0,RTVS Radio Regina Košice
+http://icecast.stv.livebox.sk/regina-ke_128.mp3
+#EXTINF:0,RTVS Radio Slovensko (icecast 128 mp3)
+http://icecast.stv.livebox.sk/slovensko_128.mp3
+#EXTINF:0,Trnavské Rádio
+http://stream.trnavskeradio.sk/trnavske

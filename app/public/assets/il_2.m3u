@@ -1,0 +1,21 @@
+#EXTM3U
+#EXTINF:0,88 FM (Radio-IL)
+http://switch3.castup.net/cunet/gm.asp?ai=31&ar=88FM
+#EXTINF:0,Eco99 99 FM
+mms://194.90.203.111/99fm
+#EXTINF:0,Joint Radio
+http://jointil.com/broadcast/jointil_winamp.pls
+#EXTINF:0,Joint Radio Beat
+http://jointil.com/broadcast/jointil_beat_winamp.pls
+#EXTINF:0,Joint Radio Blues
+http://jointil.com/broadcast/jointil_blues_winamp.pls
+#EXTINF:0,Lev Hamedina 91 FM
+mms://213.8.143.171/91FM
+#EXTINF:0,Radio Emtsa Haderech - 90.0 FM
+rtmp://fms02.mediacast.co.il/106-live/radio90
+#EXTINF:0,Radio Jerusalem 101 FM
+mms://212.150.243.29/101fm
+#EXTINF:0,Radio Tel Aviv 102 FM
+rtmp://fms3.mediacast.co.il/liveradio/102fm.stream
+#EXTINF:0,REQA IBA World 101.2FM
+http://switch3.castup.net/cunet/gm.asp?ai=31&ar=Reka

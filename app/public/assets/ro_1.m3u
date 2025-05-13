@@ -1,0 +1,19 @@
+#EXTM3U
+#EXTINF:0,a7TV
+https://play.streamkit.tv/content/channel/aseventv/live/aseventv.player.m3u8
+#EXTINF:0,Aleph News
+https://stream-aleph.m.ro/Aleph/ngrp:Alephnewsmain.stream_all/playlist.m3u8
+#EXTINF:0,Banat TV
+https://www.btv.ro/hls/banat-tv.m3u8
+#EXTINF:0,Bucovina TV
+http://46.4.14.12:9999/btvsvlive/playlist.m3u8
+#EXTINF:0,LightChannel.ro
+http://streamer1.streamhost.org:1935/salive/GMIlcbgM/playlist.m3u8
+#EXTINF:0,Profit
+https://stream1.profit.ro:1945/profit/livestream/playlist.m3u8
+#EXTINF:0,RAPSODIA TV
+http://92.86.248.141:8080/ram/playlist.m3u8
+#EXTINF:0,Speranta TV
+https://play.streamkit.tv/content/channel/sperantatv/live/sperantatv.player.m3u8
+#EXTINF:0,TELE M BOTOSANI
+http://89.137.197.15:8080/testing/pl5/playlist/ram/playlist.m3u8

@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:0,PUBLIKA MD
+https://livebeta.publika.md/LIVE/P/1000.m3u8
+#EXTINF:0,Publika TV
+https://livebeta.publika.md/LIVE/P/2000.m3u8

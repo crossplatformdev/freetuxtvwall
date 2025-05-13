@@ -13,16 +13,13 @@
  *   - npm install xml2js axios
  */
 
-import e from 'express';
-
 const fs = require('fs');
 const xml2js = require('xml2js');
 const axios = require('axios');
 const https = require('https');
 const http = require('http');
 const m3u8Parser = require('m3u8-parser');
-
-
+const { errorCodes } = require('./index');
 
 export async function loadM3U() {
 
@@ -30,134 +27,140 @@ export async function loadM3U() {
   let xmlData = '';
   let csvLines = [];
   let languages = [
-    "public/assets/playlist_webtv_none.m3u",
-    "public/assets/playlist_webradio_none.m3u",
-    "public/assets/playlist_webcam_none.m3u",
-    "public/assets/playlist_webtv_sq.m3u",
-    "public/assets/playlist_webtv_ar.m3u",
-    "public/assets/playlist_webradio_ar.m3u",
-    "public/assets/playlist_webtv_az.m3u",
-    "public/assets/playlist_webradio_bn.m3u",
-    "public/assets/playlist_webtv_bg.m3u",
-    "public/assets/playlist_webcam_bg.m3u",
-    "public/assets/playlist_webradio_ca.m3u",
-    "public/assets/playlist_webradio_zh.m3u",
-    "public/assets/playlist_webtv_hr.m3u",
-    "public/assets/playlist_webradio_hr.m3u",
-    "public/assets/playlist_webcam_hr.m3u",
-    "public/assets/playlist_webtv_cs.m3u",
-    "public/assets/playlist_webradio_cs.m3u",
-    "public/assets/playlist_webtv_da.m3u",
-    "public/assets/playlist_webtv_nl.m3u",
-    "public/assets/playlist_webradio_nl.m3u",
-    "public/assets/playlist_webtv_en.m3u",
-    "public/assets/playlist_webradio_en.m3u",
+    "none", "af", "al", "dz", "as", "ad", "ao", "ai", "aq", "ag", "ar", "am", "aw", "au", "at", "az", "bs", "bh", "bd", "bb", "by", "be", "bz", "bj", "bm", "bt", "bo", "ba", "bw", "bv", "br", "io", "bn", "bg", "bf", "bi", "kh", "cm", "ca", "cv", "ky", "cf", "td", "cl", "cn", "cx", "cc", "co", "km", "cg", "cd", "ck", "cr", "ci", "hr", "cu", "cy", "cz", "dk", "dj", "dm", "do", "ec", "eg", "sv", "gq", "er", "ee", "et", "fk", "fo", "fj", "fi", "fr", "gf", "pf", "tf", "ga", "gm", "ge", "de", "gh", "gi", "gr", "gl", "gd", "gp", "gu", "gt", "gn", "gw", "gy", "ht", "hm", "va", "hn", "hk", "hu", "is", "in", "id", "ir", "iq", "ie", "il", "it", "jm", "jp", "jo", "kz", "ke", "ki", "kp", "kr", "kw", "kg", "la", "lv", "lb", "ls", "lr", "ly", "li", "lt", "lu", "mo", "mg", "mw", "my", "mv", "ml", "mt", "mh", "mq", "mr", "mu", "yt", "mx", "fm", "md", "mc", "mn", "ms", "ma", "mz", "mm", "na", "nr", "np", "nl", "an", "nc", "nz", "ni", "ne", "ng", "nu", "nf", "mk", "mp", "no", "om", "pk", "pw", "ps", "pa", "pg", "py", "pe", "ph", "pn", "pl", "pt", "pr", "qa", "re", "ro", "ru", "rw", "sh", "kn", "lc", "pm", "vc", "ws", "sm", "st", "sa", "sn", "rs", "cs", "sc", "sl", "sg", "sk", "si", "sb", "so", "za", "gs", "es", "lk", "sd", "sr", "sj", "sz", "se", "ch", "sy", "tw", "tj", "tz", "th", "tl", "tg", "tk", "to", "tt", "tn", "tr", "tm", "tc", "tv", "ug", "ua", "ae", "gb", "us", "um", "uy", "uz", "vu", "ve", "vn", "vg", "vi", "wf", "eh", "ye", "zm", "zw", 
   ];
 
+  let types = [ 1, 2, 3, 4, 5];
+
   for (let u = 0; u < languages.length; u++) {
-    let uri = languages[u];
-    console.log('URI:', uri);
-    let lang = uri.split('_')[2].replace('.m3u', '');
-    console.log('lang:', lang);
+    let lang = languages[u];
     let countryName = { name: '', code: '' };
-
-    if (lang == 'none') {
-      countryName.name = 'No lang Web TV and Radio';
-      countryName.code = lang;
-    } else {
-      //country name from country code using locale
-      let code = new Intl.DisplayNames("en", { type: 'language' });
-      countryName.name = code.of(lang);
-      countryName.code = lang;
-    }
-
-    const groupName = uri.split('_')[1];
-    console.log('groupName:', groupName);
-
-    // Determinamos la categoría a partir del _name
-    // (Web TV, Web Radio, Web Cam o Web Programmes)
-    let category = '';
-    if (groupName.includes('tv')) {
-      category = 'Web TV';
-    } else if (groupName.includes('radio')) {
-      category = 'Web Radio';
-    } else if (groupName.includes('cam')) {
-      category = 'Web Cam';
-    } else if (groupName.includes('programmes')) {
-      category = 'Web Programmes';
-    }
-
-    // Definimos un content_type según la categoría
-    // (ej. para Radio usamos "audio", para TV/WebCam/WebProgrammes "video")
-    let contentType = "";
-
-    //read the m3u file
-    const m3uFile = fs.readFileSync(uri, 'utf8');
-    //parse the m3u file
-    const parser = new m3u8Parser.Parser();
-    parser.push(m3uFile);
-    parser.end();
-    const parsedM3U = parser.manifest;
-    console.log('parsedM3U', parsedM3U);
-    //get the lines from the m3u file
-    const lines = parsedM3U.segments;
-    console.log('lines', lines);
-    //for each line get the name and url
-    let name = '';
-    let url = '';
-    let error, statusCode, csvLine;
-    for (let i = 0; i < lines.length; i++) {
+    for (let i = 0; i < types.length; i++) {
+      let type = types[i];
       //get the line
-      let line = lines[i];
-      //get the name and url
-      name = line.title;
-      url = line.uri;
-      console.log('name', name);
-      console.log('url', url);
-      //get the content type
-      if (category == 'Web TV') {
-        contentType = 'video';
-      } else if (category == 'Web Radio') {
-        contentType = 'audio';
-      } else if (category == 'Web Cam') {
-        contentType = 'video';
-      } else if (category == 'Web Programmes') {
-        contentType = 'video';
-      }
-      //get the status code
-      error = false;
-      try {
-        ({ error, statusCode, csvLine } = testUrl(url, countryName, category, name, contentType, csvLines));
-        if (error) {
-          console.log('Error: ' + error);
-          statusCode = 404;
-        } else {
-          console.log('statusCode:', statusCode);
-          csvLines.push(csvLine);
-        }
+      // 2. Hacemos una petición HTTP/HTTPS a la URI indicada para obtener una lista .m3u
+      let uri = `/${lang}/${type}`;
+      console.log('uri', uri);
+      // 3. Parseamos la lista M3U, extraemos los nombres de cada canal (línea #EXTINF)
+      // y la URL (la línea inmediatamente siguiente).
+      // 4. Generamos un CSV con las columnas: <idioma>,<categoria>,<nombre>,<url>,<content_type>
+      // 5. Por defecto se guardará en un fichero 'output.csv'.
 
-      } catch (error) {
-        console.error('Error:', error);
-        //handle the error
-        if (error.code === 'ENOTFOUND') {
-          console.log('Error: ' + error.message);
-          statusCode = 404;
-        } else if (error.code === 'ECONNREFUSED') {
-          console.log('Error: ' + error.message);
-          statusCode = 404;
-        } else if (error.code === 'ETIMEDOUT') {
-          console.log('Error: ' + error.message);
-          statusCode = 404;
-        } else if (error.code === 'ECONNRESET') {
-          console.log('Error: ' + error.message);
-          statusCode = 404;
-        } else {
-          console.log('Error: ' + error.message);
-          statusCode = 404;
-        }
-      }
+      // Definimos un array para almacenar los códigos de error
+      // Definimos un content_type según la categoría
+      // (ej. para Radio usamos "audio", para TV/WebCam/WebProgrammes "video")
+      let contentType = "";
+
+      //read the m3u file
+      let m3uFile = '';
+      let notExist = false;
+      let segments = [];
+
+
+      https.get(uri, (res) => {
+        res.on('data', (chunk) => {
+          m3uFile += chunk;
+        });
+
+        res.on('end', () => {
+          console.log('m3uFile', m3uFile);
+          //parse the m3u file
+          const parser = new m3u8Parser.Parser();
+          parser.push(m3uFile);
+          parser.end();
+          const parsedM3U = parser.manifest;
+          console.log('parsedM3U', parsedM3U);
+          //get the lines from the m3u file
+          segments = parsedM3U.segments;
+          console.log('lines', segments);
+
+          for (let j = 0; j < segments.length; j++) {
+            let segment = segments[j];
+            if (lang == 'none') {
+              countryName.name = 'No lang Web TV and Radio';
+              countryName.code = lang;
+            } else {
+              //country name from country code using locale
+              let code = new Intl.DisplayNames("en", { type: 'language' });
+              countryName.name = code.of(lang);
+              countryName.code = lang;
+            }
+            console.log('lang:', lang);
+            const groupName = uri.split('_')[1];
+            console.log('groupName:', groupName);
+
+            // Determinamos la categoría a partir del _name
+            // (Web TV, Web Radio, Web Cam o Web Programmes)
+            let category = line;
+            if (type == 1) {
+              category = 'Web TV';
+              contentType = 'video';
+            } else if (type == 2) {
+              category = 'Web Radio';
+              contentType = 'audio';
+            } else if (type == 3) {
+              category = 'Web Cam';
+              contentType = 'video';
+            } else if (type == 4) {
+              category = 'Web Programmes';
+              contentType = 'video';
+            }
+            let name = segment.name;
+            let url = segment.uri;
+            let error, statusCode, csvLine;
+            //get the name and url
+
+            console.log('name', name);
+            console.log('url', url);
+
+            error = false;
+            try {
+              ({ error, statusCode, csvLine } = testUrl(url, countryName, category, name, contentType, csvLines, errorCodes));
+              if (error) {
+                console.log('Error: ' + error);
+                statusCode = 404;
+              } else {
+                console.log('statusCode:', statusCode);
+                csvLines.push(csvLine);
+              }
+
+            } catch (error) {
+              console.error('Error:', error);
+              //handle the error
+              if (error.code === 'ENOTFOUND') {
+                console.log('Error: ' + error.message);
+                statusCode = 404;
+              } else if (error.code === 'ECONNREFUSED') {
+                console.log('Error: ' + error.message);
+                statusCode = 404;
+              } else if (error.code === 'ETIMEDOUT') {
+                console.log('Error: ' + error.message);
+                statusCode = 404;
+              } else if (error.code === 'ECONNRESET') {
+                console.log('Error: ' + error.message);
+                statusCode = 404;
+              } else {
+                console.log('Error: ' + error.message);
+                statusCode = 404;
+              }
+            }
+          }
+        });       
+
+        res.on('error', (e) => {
+          console.error(e);
+          console.log('Error: ' + e.message);
+          notExist = true;
+        });
+
+      }).on('error', (e) => {
+        console.error(e);
+        console.log('Error: ' + e.message);
+        notExist = true;
+      });
     }
   }
+
 
   csvLines.forEach(element => {
     let parts = element.split(',');
@@ -179,7 +182,7 @@ export async function loadM3U() {
   return csvContent;
 }
 
-function testUrl(url, countryName, category, name, contentType, csvLines) {
+function testUrl(url, countryName, category, name, contentType, csvLines, errorCodes) {
   let error = false;
   let statusCode = 0;
   if (url.startsWith('http://')) {
@@ -230,6 +233,5 @@ function testUrl(url, countryName, category, name, contentType, csvLines) {
   }
   return { error, statusCode, line };
 }
-
 
 export default loadM3U;

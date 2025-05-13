@@ -1,0 +1,21 @@
+#EXTM3U
+#EXTINF:0,CATVE HD
+http://wowza4.catve.com.br:1935/live/livestream/playlist.m3u8?CANAISGLAU
+#EXTINF:0,Catve HD
+http://wowza4.catve.com.br:1935/live/livestream/playlist.m3u8?IPTVCOTIA++++
+#EXTINF:0,IMPD TV
+https://58a4464faef53.streamlock.net/impd/ngrp:impd_all/playlist.m3u8?PEDROJUNIORTUTORIAIS
+#EXTINF:0,Novo Tempo RS
+http://stream.novotempo.com:1935/tv/smil:TvNovoTempoCom.smil/playlist.m3u8?PEDROJUNIORTUTORIAIS
+#EXTINF:0,Novo Tempo SP
+http://stream.novotempo.com:1935/tv/tvnovotempo.stream/playlist.m3u8?PEDROJUNIORTUTORIAIS
+#EXTINF:0,Preve TV
+https://video01.kshost.com.br/paulispar7372/paulispar7372/playlist.m3u8
+#EXTINF:0,SBT (TV Jornal Caruaru)
+http://evpp.mm.uol.com.br:1935/ne10/_definst_/ne10-tvjornal-caruaru-video-web.sdp/live.m3u8?IPTVCOTIA++++
+#EXTINF:0,SBT PE interior
+http://evpp.mm.uol.com.br:1935/ne10/ne10-tvjornal-caruaru-video-web.sdp/playlist.m3u8?PEDROJUNIORTUTORIAIS
+#EXTINF:0,TV Camara
+https://stream3.camara.gov.br/tv1/manifest.m3u8
+#EXTINF:0,TV Maná Brasil
+https://w1.manasat.com/tvmana-brasil/smil:tvmana-brasil.smil/chunklist_w954408022_b1548000_sleng.m3u8

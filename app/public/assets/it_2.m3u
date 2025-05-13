@@ -1,0 +1,23 @@
+#EXTM3U
+#EXTINF:0,Lolliradio Italia
+https://stream.lolliradio.net/lolli_italia.mp3
+#EXTINF:0,Radio 103 (radio103.it)
+https://onair11.xdevel.com/proxy/sc_103im?mp=/;stream/;
+#EXTINF:0,Radio 105
+https://icy.unitedradio.it/1052kandMore.mp3
+#EXTINF:0,radio BCS
+http://str01.fluidstream.net:7200/;
+#EXTINF:0,Radio DanceFloor 90's
+https://audio.radiodancefloor.it/dancefloor.mp3
+#EXTINF:0,RADIO RV1
+https://rv1-superhit.stream.laut.fm/rv1-superhit
+#EXTINF:0,Rai Bozen (MP3)
+http://radiobzlive.rai.it/RAIBZ_Livestream
+#EXTINF:0,Südtirol 1 (MP3)
+http://str2.creacast.com:80/sudtirol1a
+#EXTINF:0,Top Italia Radio
+https://streaming.cst98.com/tir.php
+#EXTINF:0,YES Radio
+https://sr2.inmystream.it/proxy/yesradio2?mp=/stream
+#EXTINF:0,Zoo Radio 105
+https://icy.unitedradio.it/105Zoo.mp3

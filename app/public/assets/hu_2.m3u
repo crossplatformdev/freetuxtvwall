@@ -1,0 +1,45 @@
+#EXTM3U
+#EXTINF:0,Aktív Rádió
+http://aktivradio.hu:8000/aktiv.mp3.m3u
+#EXTINF:0,Balaton Rádió
+http://wssgd.gdsinfo.com:8200/listen.pls
+#EXTINF:0,Best FM Budapest
+https://icast.connectmedia.hu/5101/live.mp3
+#EXTINF:0,Civil Rádió
+http://civilradio.hu:8000/listen.pls
+#EXTINF:0,Dankó Rádió (aac)
+http://stream001.radio.hu:8080/mr7.aac.m3u
+#EXTINF:0,Első Pesti Egyetemi Rádió
+http://radio.elte.hu:8000/eper2
+#EXTINF:0,Fezen Radio
+http://enyingfm.com:8080/fezen_bk
+#EXTINF:0,Hobby Rádió - Irodalmi rádio
+http://www.hobbyradio.hu/hobbyradio.m3u
+#EXTINF:0,Kerepes Rádió
+http://109.169.76.104:36854/;
+#EXTINF:0,Lépés Rádió
+http://lepesradio.hu/live.mp3
+#EXTINF:0,LUXFUNK BLACKMIX
+http://www.luxfunkradio.com/luxfunkblackmix.pls
+#EXTINF:0,LUXFUNK DANCE
+http://www.luxfunkradio.com/luxfunkdance.pls
+#EXTINF:0,LUXFUNK RADIO
+http://www.luxfunkradio.com/luxfunkradio.pls
+#EXTINF:0,Magyar Katolikus Rádió
+http://katolikusradio.hu/listen-hi.m3u
+#EXTINF:0,MR1-Kossuth Rádió (mp3)
+http://stream001.radio.hu:8080/mr1.mp3.m3u
+#EXTINF:0,MR2-Petofi Rádió (aac)
+http://stream001.radio.hu:8080/mr2.aac.m3u
+#EXTINF:0,MR3-Bartók Rádió
+http://stream001.radio.hu:8080/mr3.aac.m3u
+#EXTINF:0,MR5-Parlamenti Rádio
+http://stream001.radio.hu:8080/mr5.mp3.m3u
+#EXTINF:0,Mustár FM Rádió
+http://193.138.125.14:8500/;stream
+#EXTINF:0,Parlamenti adasok
+http://mr-stream.mediaconnect.hu/4746/mr5.mp3
+#EXTINF:0,Periszkop Radio
+http://sztrim.periszkopradio.hu:8088
+#EXTINF:0,Tilos Rádió
+http://stream.tilos.hu/tilos_128.mp3.m3u

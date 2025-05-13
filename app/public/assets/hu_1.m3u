@@ -1,0 +1,15 @@
+#EXTM3U
+#EXTINF:0,1Music Hungary
+http://1music.hu/1music.m3u8
+#EXTINF:0,ATV
+http://streamservers.atv.hu/atvlive/atvstream_1_aac/playlist.m3u8
+#EXTINF:0,Balaton TV
+https://stream.iptvservice.eu/hls/balatontv.m3u8
+#EXTINF:0,Budakalasz
+https://stream.streaming4u.hu/TVBudakalasz/tracks-v1a1/mono.m3u8
+#EXTINF:0,Tisza TV
+https://www.tiszatv.hu/onlinetv/tiszatv_1.m3u8
+#EXTINF:0,Williems Tv
+rtmp://79.120.178.90:1935/williams/williamstv
+#EXTINF:0,Zuglo TV
+https://cloudfront44.lexanetwork.com:1344/freerelay/zuglotv.sdp/playlist.m3u8

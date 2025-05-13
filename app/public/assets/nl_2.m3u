@@ -1,0 +1,47 @@
+#EXTM3U
+#EXTINF:0,100% NL
+http://stream.100p.nl
+#EXTINF:0,Bijbelgelovende Radio
+https://stream.radio.co/s9e53d1d27/listen
+#EXTINF:0,BNR Nieuwsradio
+https://stream.bnr.nl/bnr_mp3_128_01
+#EXTINF:0,BNR NIEUWSRADIO
+https://playerservices.streamtheworld.com/api/livestream-redirect/BNR_NIEUWSRADIO.mp3
+#EXTINF:0,Omroep Flevoland
+https://stream.omroepflevoland.nl/icecast/omroepflevoland/stream1
+#EXTINF:0,Omroep Flevoland Mp3
+https://stream.omroepflevoland.nl/icecast/omroepflevoland/stream2
+#EXTINF:0,Omroep Zeeland Radio
+https://icecast.zeelandnet.nl/omroepzeeland_radio
+#EXTINF:0,OogTV Radio
+https://olon.az.icecast.ebsd.ericsson.net/oog_radio
+#EXTINF:0,Qmusic Nederland
+https://stream.qmusic.nl/qmusic/aachigh
+#EXTINF:0,Radio 538
+https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO538.mp3
+#EXTINF:0,Radio 538 Dance Department
+https://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR01.mp3
+#EXTINF:0,Radio 538 Drops
+https://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR08.mp3
+#EXTINF:0,Radio 538 Hitzone
+https://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR11.mp3
+#EXTINF:0,Radio 538 Ibiza
+https://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR19.mp3
+#EXTINF:0,Radio 538 Non-Stop
+https://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR09.mp3
+#EXTINF:0,Radio 538 Party
+https://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR16.mp3
+#EXTINF:0,Radio 538 Top 50 Radio
+https://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR13.mp3
+#EXTINF:0,Radio 538 Verrückte Stunde
+https://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR21.mp3
+#EXTINF:0,Radio West
+https://liveradio.omroepwest.nl/chunklist.m3u8
+#EXTINF:0,salto mokum
+https://olon.quortex.ctl.cdn.ebsd.ericsson.net/olonradio/saltomokumradio/master.m3u8
+#EXTINF:0,salto radio
+https://olon.quortex.ctl.cdn.ebsd.ericsson.net/olonradio/saltostadsfm/master.m3u8
+#EXTINF:0,salto razo
+https://olon.quortex.ctl.cdn.ebsd.ericsson.net/olonradio/saltorazo/master.m3u8
+#EXTINF:0,ZuidWest Radio
+https://icecast.zuidwestfm.nl/zuidwest.mp3

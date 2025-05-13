@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:0,8 TV (RU)
+https://v4.proofix.ru/8tv-europe/tracks-v1a1/mono.m3u8
+#EXTINF:0,bnptv
+mms://bnptv.info:10801/

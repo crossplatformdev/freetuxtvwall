@@ -1,0 +1,23 @@
+#EXTM3U
+#EXTINF:0,Kelyje (Kaunas)
+mms://82.135.234.194/KelyjeKaunas
+#EXTINF:0,Klasika
+mms://82.135.234.194/Klasika
+#EXTINF:0,Laisvoji banga
+http://82.135.147.147:8000/stream.m3u
+#EXTINF:0,Lietus
+http://radio.m-1.fm:80/LIETUS
+#EXTINF:0,Lietuvos radijas
+mms://82.135.234.194/LR
+#EXTINF:0,M-1
+http://stream.m-1.fm:80/m1/mp3
+#EXTINF:0,M-1 plius
+http://stream.m-1.fm:80/m1plius/mp3
+#EXTINF:0,Power Hit Radio
+https://ice1.powerhitradio.lt/PHR_AAC
+#EXTINF:0,Radio centras
+http://84.46.205.13:80/rc128.mp3
+#EXTINF:0,StartFM
+http://eteris.startfm.lt/startfm.ogg
+#EXTINF:0,ZipFM
+http://84.46.205.13:80/zipfm64.aac

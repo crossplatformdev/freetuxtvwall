@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:0,srf.ch
+https://58de7a369a9c4.streamlock.net/srf/stream_720p/playlist.m3u8
+#EXTINF:0,TVM 3
+http://livevideo.infomaniak.com/streaming/livecast/tvm3/playlist.m3u8

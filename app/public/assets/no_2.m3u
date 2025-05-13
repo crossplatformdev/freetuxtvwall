@@ -1,0 +1,13 @@
+#EXTM3U
+#EXTINF:0,NRK Alltid nyheter
+http://lyd.nrk.no/nrk_radio_alltid_nyheter_aac_h
+#EXTINF:0,NRK P1 Østlandssendingen
+http://lyd.nrk.no/nrk_radio_p1_ostlandssendingen_aac_h
+#EXTINF:0,NRK P2
+http://lyd.nrk.no/nrk_radio_p2_aac_h
+#EXTINF:0,NRK P3
+http://lyd.nrk.no/nrk_radio_p3_aac_h
+#EXTINF:0,NRK Urørt
+http://lyd.nrk.no/nrk_radio_p3_urort_aac_h
+#EXTINF:0,Radio NOVA
+http://stream.radionova.no/mp3.m3u

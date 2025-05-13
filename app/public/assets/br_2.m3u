@@ -1,0 +1,15 @@
+#EXTM3U
+#EXTINF:0,Energia 97 FM
+https://audio.97fm.com.br/energia
+#EXTINF:0,Jovempan FM
+https://26373.live.streamtheworld.com/JP_SP_FMAAC.aac
+#EXTINF:0,Rádio Atlântida FM
+http://42747t.lp.azioncdn.net/2747t/a/mp4:access_options/rtmp-live/atl_poa.sdp/playlist.m3u8
+#EXTINF:0,Rádio Atlântida FM
+https://player.hdradios.net/player/7602/iphone.m3u
+#EXTINF:0,Rádio Esperança AM
+https://eu4.fastcast4u.com/proxy/esperancaevora?mp=/1
+#EXTINF:0,Rádio Jovem Pan FM Grande Porto Alegre 90.7 (MB RECASTER)
+http://centova6.ciclanohost.com.br:9256/;
+#EXTINF:0,Rádio Transamerica FM
+https://22833.live.streamtheworld.com/RT_SPAAC.aac

@@ -14,7 +14,7 @@
 [functions]
   external_node_modules = ["express"]
   node_bundler = "esbuild"
-  included_files = ["public/**", "public/assets/channels.xml"]
+  included_files = ["**"]
 
 
 [[redirects]]
@@ -24,5 +24,11 @@
 [[redirects]]
   from = "/*"
   to = ".netlify/functions/:splat"
+  force = true
+  status = 200
+
+[[redirects]]
+  from = '/api/:lang/:type'
+  to = '/public/assets/:lang_:type.m3u'
   force = true
   status = 200

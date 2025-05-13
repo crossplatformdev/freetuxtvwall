@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:0,asianet news
+https://vidcdn.vidgyor.com/asianet-origin/liveabr/asianet-origin/live2/chunks.m3u8
+#EXTINF:0,Madha TV
+http://103.109.45.5:1935/madhatv/madhatv.stream_HDp/chunklist_w1300032347.m3u8
+#EXTINF:0,Sooriyan TV
+http://cdn.jwplayer.com/videos/1m0nMXhZ-3SDdwqdV.m3u8

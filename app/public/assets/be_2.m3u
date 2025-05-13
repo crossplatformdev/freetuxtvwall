@@ -1,0 +1,15 @@
+#EXTM3U
+#EXTINF:0,BEL RTL
+http://audiostream.rtl.be/belrtl128
+#EXTINF:0,BRF1
+https://streaming.brf.be/brf1-high.mp3
+#EXTINF:0,BRF2
+https://streaming.brf.be/brf2-high.mp3
+#EXTINF:0,Radio Air Libre
+http://www.radioairlibre.be/radioairlibre.ogg.m3u
+#EXTINF:0,Radio Contact
+http://audiostream.rtl.be/contactfr192
+#EXTINF:0,Radio Mint
+http://audiostream.rtl.be/mint
+#EXTINF:0,Radio Sunshine
+http://streamlive.syndicationradio.fr:8158/stream

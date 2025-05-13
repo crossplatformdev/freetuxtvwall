@@ -1,0 +1,9 @@
+#EXTM3U
+#EXTINF:0,Gospel Channel Scandinavia
+https://169lawskfzaua3opl.hlscdn.obs-server.com/hls/puc9djrh2cg7wjqw8v9was5fu5kh4a.m3u8
+#EXTINF:0,Himlen TV 7
+https://vod.tv7.fi/tv7-se/_definst_/smil:tv7-se.smil/playlist.m3u8
+#EXTINF:0,Meteonews.ch
+https://streaming.meteonews.net/hls/stream.m3u8
+#EXTINF:0,Västmanlands Television
+https://edg01-prd-se-dcs.solidtango.com/edge/_lo9yf4l5_/lo9yf4l5/playlist.m3u8

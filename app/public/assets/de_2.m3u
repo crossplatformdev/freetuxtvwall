@@ -1,0 +1,499 @@
+#EXTM3U
+#EXTINF:0,1000 HITS Love
+https://ais-sa2.cdnstream1.com/2210_128.mp3
+#EXTINF:0,103.7 UnserDing SR (MP3)
+http://streaming01.sr-online.de/unserding_2.m3u
+#EXTINF:0,105'5 Spreeradio
+http://stream.spreeradio.de/spree-live/mp3-128/konsole
+#EXTINF:0,105'5 Spreeradio 80er
+http://stream.spreeradio.de/spree-80er/mp3-128/konsole
+#EXTINF:0,105'5 Spreeradio Love
+http://stream.spreeradio.de/spree-love/mp3-128/konsole
+#EXTINF:0,105'5 Spreeradio Rock
+http://stream.spreeradio.de/spree-rock/mp3-128/konsole
+#EXTINF:0,105'5 Spreeradio Weihnachtsradio
+http://stream.spreeradio.de/spree-event/mp3-128/konsole
+#EXTINF:0,1LIVE (MP3)
+http://www.wdr.de/wdrlive/media/einslive.m3u
+#EXTINF:0,1LIVE diggi (MP3)
+http://www.wdr.de/wdrlive/media/einslivedigi.m3u
+#EXTINF:0,99drei Radio Mittweida
+http://netradio.ext.htwm.de:8000/live256
+#EXTINF:0,Allelon Webradio
+http://allelon.stream.vip/allelon/mp3-128/Homepage/;stream
+#EXTINF:0,Anbetungsradio.de
+http://worship.lobpreisradio.de:8000/intern89486648977sdzuzigkztzi0plo9i8t7wm6f5mynwjiturwnwjgtv
+#EXTINF:0,Antenne Bayern (MP3)
+http://www.antenne.de/webradio/antenne.m3u
+#EXTINF:0,Antenne Bayern 80er Kulthits (AAC)
+http://www.antenne.de/webradio/channels/80er-kulthits.aac.pls
+#EXTINF:0,Antenne Bayern 80er Kulthits (MP3)
+http://www.antenne.de/webradio/channels/80er-kulthits.m3u
+#EXTINF:0,Antenne Bayern Black Beatz (AAC)
+http://www.antenne.de/webradio/channels/black-beatz.aac.pls
+#EXTINF:0,Antenne Bayern Black Beatz (MP3)
+http://www.antenne.de/webradio/channels/black-beatz.m3u
+#EXTINF:0,Antenne Bayern Chillout (AAC)
+http://www.antenne.de/webradio/channels/chillout.aac.pls
+#EXTINF:0,Antenne Bayern Chillout (MP3)
+http://www.antenne.de/webradio/channels/chillout.m3u
+#EXTINF:0,Antenne Bayern Classic Rock Live (AAC)
+http://www.antenne.de/webradio/channels/classic-rock-live.aac.pls
+#EXTINF:0,Antenne Bayern Classic Rock Live (MP3)
+http://www.antenne.de/webradio/channels/classic-rock-live.m3u
+#EXTINF:0,Antenne Bayern Das Antenne Bayern 'Event' Radio (M
+http://www.antenne.de/webradio/channels/event.m3u
+#EXTINF:0,Antenne Bayern Hits fur Kids (AAC)
+http://www.antenne.de/webradio/channels/hits-fuer-kids.aac.pls
+#EXTINF:0,Antenne Bayern Hits fur Kids (MP3)
+http://www.antenne.de/webradio/channels/hits-fuer-kids.m3u
+#EXTINF:0,Antenne Bayern Lovesongs (AAC)
+http://www.antenne.de/webradio/channels/lovesongs.aac.pls
+#EXTINF:0,Antenne Bayern Lovesongs (MP3)
+http://www.antenne.de/webradio/channels/lovesongs.m3u
+#EXTINF:0,Antenne Bayern Oldies but Goldies (AAC)
+http://www.antenne.de/webradio/channels/oldies-but-goldies.aac.pls
+#EXTINF:0,Antenne Bayern Oldies but Goldies (MP3)
+http://www.antenne.de/webradio/channels/oldies-but-goldies.m3u
+#EXTINF:0,Antenne Bayern Partyschlager (AAC)
+http://www.antenne.de/webradio/channels/das-schlager-karussell.aac.pls
+#EXTINF:0,Antenne Bayern Partyschlager (MP3)
+http://www.antenne.de/webradio/channels/das-schlager-karussell.m3u
+#EXTINF:0,Antenne Bayern Top 40 (AAC)
+http://www.antenne.de/webradio/channels/top-40.aac.pls
+#EXTINF:0,Antenne Bayern Top 40 (MP3)
+http://www.antenne.de/webradio/channels/top-40.m3u
+#EXTINF:0,Antenne Brandenburg (MP3)
+http://www.antennebrandenburg.de/live.m3u
+#EXTINF:0,Beit Schomer Isreal
+https://5ae99077600e5.streamlock.net/live/shoutcast.stream/playlist.m3u8
+#EXTINF:0,Biblischer Hörfunk
+https://streams.radiomast.io/79ce8dd0-c0e9-4443-b887-0fdc1617f8bc
+#EXTINF:0,BLN.FM
+http://media.bln.fm:9000/stream-low
+#EXTINF:0,bonn.fm
+http://131.220.107.145:8000/live_high.m3u
+#EXTINF:0,BonnFM
+https://stream.bonn.fm/live_high
+#EXTINF:0,BR B5 aktuell (MP3) (HQ)
+http://streams.br-online.de/b5aktuell_2.m3u
+#EXTINF:0,BR B5 aktuell (MP3) (LQ)
+http://streams.br-online.de/b5aktuell_1.m3u
+#EXTINF:0,BR B5 plus (MP3) (HQ)
+http://streams.br-online.de/b5plus_2.m3u
+#EXTINF:0,BR B5 plus (MP3) (LQ)
+http://streams.br-online.de/b5plus_1.m3u
+#EXTINF:0,BR Bayern 1 (MP3) (HQ)
+http://streams.br-online.de/bayern1_2.m3u
+#EXTINF:0,BR Bayern 1 (MP3) (LQ)
+http://streams.br-online.de/bayern1_1.m3u
+#EXTINF:0,BR Bayern 2 (MP3) (HQ)
+http://streams.br-online.de/bayern2_2.m3u
+#EXTINF:0,BR Bayern 2 (MP3) (LQ)
+http://streams.br-online.de/bayern2_1.m3u
+#EXTINF:0,BR Bayern 3 (MP3) (HQ)
+http://streams.br-online.de/bayern3_2.m3u
+#EXTINF:0,BR Bayern 3 (MP3) (LQ)
+http://streams.br-online.de/bayern3_1.m3u
+#EXTINF:0,BR Bayern plus (MP3) (HQ)
+http://streams.br-online.de/bayernplus_2.m3u
+#EXTINF:0,BR Bayern plus (MP3) (LQ)
+http://streams.br-online.de/bayernplus_1.m3u
+#EXTINF:0,BR BR-Klassik (MP3) (HQ)
+http://streams.br-online.de/br-klassik_2.m3u
+#EXTINF:0,BR BR-Klassik (MP3) (LQ)
+http://streams.br-online.de/br-klassik_1.m3u
+#EXTINF:0,BR Schlager
+http://dispatcher.rndfnk.com/br/brschlager/live/mp3/mid
+#EXTINF:0,BR-KLASSIK
+http://streams.br.de/br-klassik_2.m3u
+#EXTINF:0,Bremen 1
+http://httpmedia.radiobremen.de/bremeneins.m3u
+#EXTINF:0,Campus Crew (Universität Passau)
+https://server14575.streamplus.de/;stream.mp3
+#EXTINF:0,CampusFM (Hochschulradio Universität Duisburg-Essen)
+http://5.9.16.111:8510/campusfm
+#EXTINF:0,CampusFM (Hochschulradio Universität Duisburg-Essen)
+http://campusfm.de
+#EXTINF:0,Christliches Webradio
+http://streamplus54.leonex.de:10220/;095028416412602stream.nsv
+#EXTINF:0,CT das radio (Uniradio Bochum)
+https://www.ctdasradio.de/wp-content/themes/nd_theme/listen.pls
+#EXTINF:0,DASDING SWR
+https://dispatcher.rndfnk.com/swr/dasding/live/mp3/128/stream.mp3
+#EXTINF:0,DELUXE EASY
+https://audiostreams.deluxemusic.tv/easy/aac-64
+#EXTINF:0,DELUXE LOUNGE RADIO
+https://audiostreams.deluxemusic.tv/lounge/aac-64
+#EXTINF:0,DELUXE MUSIC RADIO
+https://audiostreams.deluxemusic.tv/music/aac-64
+#EXTINF:0,Deutschlandfunk (MP3)
+http://www.dradio.de/streaming/dlf.m3u
+#EXTINF:0,Deutschlandfunk Dokumente und Debatten
+https://st04.sslstream.dlf.de/dlf/04/128/mp3/stream.mp3
+#EXTINF:0,Deutschlandfunk Kultur (MP3)
+http://www.dradio.de/streaming/dkultur.m3u
+#EXTINF:0,Deutschlandfunk Nova (DRadio Wissen)
+http://www.dradio.de/streaming/dradiowissen.m3u
+#EXTINF:0,domradio.de
+https://dom.audiostream.io/domradio/1000/mp3/128/domradio-rp.mp3
+#EXTINF:0,DWG Lyra
+https://server34599.streamplus.de/;stream.mp3
+#EXTINF:0,DWG Pur
+https://server25531.streamplus.de/;stream.mp3
+#EXTINF:0,DWG Radio Bibel
+http://server25531.streamplus.de/;stream.mp3
+#EXTINF:0,DWG Radio German
+https://server23644.streamplus.de/;stream.mp3
+#EXTINF:0,Eldoradio (Hochschulradio Dortmund)
+https://sender.eldoradio.de/icecast/128.webm
+#EXTINF:0,erfplus
+http://stream.erf.de/erfplus.m3u
+#EXTINF:0,FFN
+http://player.ffn.de/ffn.mp3
+#EXTINF:0,FL24 Radio (https://fl24radio.de, https://twitter.com/FL24Radio)
+https://fl24radio.radioca.st/stream
+#EXTINF:0,Freikirche Heidenoldendorf (segenswelle.de)
+http://segenswelle.de:8000/freikirche-hd
+#EXTINF:0,Fritz (MP3)
+http://www.fritz.de/live.m3u
+#EXTINF:0,Gemeinde Gottes Hamm
+http://49.12.36.4:8000/;stream.mp3
+#EXTINF:0,Gemeinde Gottes Herford Live
+http://49.12.36.4:8088/;
+#EXTINF:0,Gemeinde Gottes in Pforzheim
+https://server34107.streamplus.de/;?type=http&nocache=2352
+#EXTINF:0,Glaubenskampf Bibel Radio
+https://streams.radio.co/s06c02a443/listen
+#EXTINF:0,Guericke FM (Uniradio Magdeburg)
+https://server14976.streamplus.de/stream.mp3
+#EXTINF:0,Hertz 87.9 (Campusradio Bielefeld)
+https://stream.radiohertz.de/hertz-hq.mp3.m3u
+#EXTINF:0,HITRADIO RT1 Augsburg
+https://rt1.radio/augsburg
+#EXTINF:0,Hitradio RT1 für Memmingen und das Unterallgaeu
+https://rt1.radio/suedschwaben
+#EXTINF:0,Hitradio RT1 Neuburg-Schrobenhausen
+https://rt1.radio/nds
+#EXTINF:0,HITRADIO RT1 Nordschwaben
+https://rt1.radio/nordschwaben
+#EXTINF:0,Hochschulradio Aachen
+http://stream.hochschulradio-aachen.de/radio.mp3
+#EXTINF:0,Hochschulradio Aachen / RWTH Aachen
+https://stream.hochschulradio-aachen.de/radio.mp3
+#EXTINF:0,Hochschulradio Düsseldorf
+http://listen.hochschulradio.de:58000/hsr-192.m3u
+#EXTINF:0,Hochschulradio Ilmenau
+https://stream.radio-hsf.de/hsf.mp3
+#EXTINF:0,horeb
+https://rs16.stream24.net/horeb-event.mp3
+#EXTINF:0,hr1 (MP3)
+http://metafiles.gl-systemhaus.de/hr/hr1_2.m3u
+#EXTINF:0,hr2 Kultur (MP3)
+http://metafiles.gl-systemhaus.de/hr/hr2_2.m3u
+#EXTINF:0,hr3 (MP3)
+http://metafiles.gl-systemhaus.de/hr/hr3_2.m3u
+#EXTINF:0,hr4 (MP3)
+http://metafiles.gl-systemhaus.de/hr/hr4_2.m3u
+#EXTINF:0,Ichtys Radio
+http://server33109.streamplus.de/;?type=http&nocache=100024
+#EXTINF:0,Inforadio (MP3)
+http://www.inforadio.de/live.m3u
+#EXTINF:0,inselradio
+https://inselradio--di--nacs-ais-lgc--02--cdn.cast.addradio.de/inselradio/live/mp3/high
+#EXTINF:0,Jesus Coming FM – German
+http://live.jesuscomingfm.com:8282/stream/
+#EXTINF:0,jesuscomingfm.com (german)
+http://live.jesuscomingfm.com:8282/listen.pls?sid=1
+#EXTINF:0,Jugoton Hit Radio Wien
+http://s8.iqstreaming.com:8060/;stream.nsv
+#EXTINF:0,Kanal Bethesda
+http://stream.radiojar.com/a2dd2q0kb
+#EXTINF:0,Kibo.FM
+http://listen.kibo.fm:8000/kibofm
+#EXTINF:0,Kölncampus (Campusradio Köln)
+https://live.koelncampus.com/live
+#EXTINF:0,Kulturradio (MP3)
+http://www.kulturradio.de/live.m3u
+#EXTINF:0,L'UniCo (Campusradio Paderborn)
+http://icecast.l-uni.co:8001/lunico_high_mp3.m3u
+#EXTINF:0,Lobpreisradio.de
+http://worship.lobpreisradio.de:8000/intern89486648977sdzuzigkztzi0plo9i8t7wm6f5mynwjiturwnwjgtu
+#EXTINF:0,LORA München (128kps)
+http://live.lora924.de:8000/lora-hq.mp3
+#EXTINF:0,M94.5
+https://stream.m945.de/m945-hq.mp3
+#EXTINF:0,MAGIC Top100
+http://stream.laut.fm/magic-top100
+#EXTINF:0,MAX NEO
+https://stream.m945.de/afkmax-hq.mp3
+#EXTINF:0,MBG Harsewinkel Gottesdienst
+https://stream.mbg-hsw.de/radio/8000/radio.mp3
+#EXTINF:0,MBG Versmold
+https://server7.streamserver24.com:61424/klein
+#EXTINF:0,MBG Versmold
+https://server7.streamserver24.com:61424/stream
+#EXTINF:0,MDR 1 Radio Sachsen (MP3)
+http://avw.mdr.de/streams/284280-0_mp3_high.m3u
+#EXTINF:0,MDR 1 Radio Thüringen (MP3)
+http://avw.mdr.de/streams/284300-0_mp3_high.m3u
+#EXTINF:0,MDR AKTUELL (MP3)
+http://avw.mdr.de/streams/284340-0_mp3_high.m3u
+#EXTINF:0,MDR JUMP (MP3)
+http://avw.mdr.de/streams/284320-0_mp3_high.m3u
+#EXTINF:0,MDR JUMP In the Mix Channel (mp3)
+http://avw.mdr.de/streams/284321-2_mp3_high.m3u
+#EXTINF:0,MDR JUMP Rockchannel (mp3)
+http://avw.mdr.de/streams/284321-1_mp3_high.m3u
+#EXTINF:0,MDR JUMP Trendchannel (mp3)
+http://avw.mdr.de/streams/284321-0_mp3_high.m3u
+#EXTINF:0,MDR KLASSIK (MP3)
+http://avw.mdr.de/streams/284350-0_mp3_high.m3u
+#EXTINF:0,MDR KULTUR (MP3)
+http://avw.mdr.de/streams/284310-0_mp3_high.m3u
+#EXTINF:0,MDR KULTUR - Klassik im Konzert (mp3)
+http://avw.mdr.de/streams/284311-0_mp3_high.m3u
+#EXTINF:0,MDR SACHSEN - SORBISCHES PROGRAMM (mp3)
+http://avw.mdr.de/streams/990100-0_mp3_high.m3u
+#EXTINF:0,mdr sachsen anhalt
+http://avw.mdr.de/streams/284290-1_mp3_high.m3u
+#EXTINF:0,MDR SCHLAGERWELT Sachsen (mp3)
+http://avw.mdr.de/streams/990801-0_mp3_high.m3u
+#EXTINF:0,MDR SPUTNIK Black Channel (MP3)
+http://www.sputnik.de/m3u/black.hi.m3u
+#EXTINF:0,MDR SPUTNIK Black-Channel (mp3)
+http://avw.mdr.de/streams/284331-0_mp3_high.m3u
+#EXTINF:0,MDR SPUTNIK Club Channel (MP3)
+http://www.sputnik.de/m3u/club.hi.m3u
+#EXTINF:0,MDR SPUTNIK Club-Channel (mp3)
+http://avw.mdr.de/streams/284331-2_mp3_high.m3u
+#EXTINF:0,MDR SPUTNIK Insomnia Channel (MP3)
+http://www.sputnik.de/m3u/insomnia.hi.m3u
+#EXTINF:0,MDR SPUTNIK OnAir Channel (MP3)
+http://www.sputnik.de/m3u/live.hi.m3u
+#EXTINF:0,MDR SPUTNIK Popkult Channel (MP3)
+http://www.sputnik.de/m3u/popkult.hi.m3u
+#EXTINF:0,MDR SPUTNIK Roboton-Channel (mp3)
+http://avw.mdr.de/streams/284331-5_mp3_high.m3u
+#EXTINF:0,MDR SPUTNIK Rock Channel (MP3)
+http://www.sputnik.de/m3u/rock.hi.m3u
+#EXTINF:0,MDR SPUTNIK Soundcheck Channel (MP3)
+http://www.sputnik.de/m3u/soundcheck.hi.m3u
+#EXTINF:0,MDR Tweens
+http://avw.mdr.de/streams/991101-0_mp3_high.m3u
+#EXTINF:0,Metal Only
+http://metal-only.streampanel.cloud/listen.m3u
+#EXTINF:0,N-JOY (MP3)
+https://www.ndr.de/resources/metadaten/audio_ssl/m3u/n-joy.m3u
+#EXTINF:0,NDR 1 Niedersachsen
+https://dispatcher.rndfnk.com/ndr/ndr1niedersachsen/hannover/mp3/128/stream.mp3
+#EXTINF:0,NDR 1 Radio MV
+https://dispatcher.rndfnk.com/ndr/ndr1radiomv/schwerin/mp3/128/stream.mp3
+#EXTINF:0,NDR 1 Welle Nord
+https://dispatcher.rndfnk.com/ndr/ndr1wellenord/kiel/mp3/128/stream.mp3
+#EXTINF:0,NDR 2 (mp3)
+https://www.ndr.de/resources/metadaten/audio_ssl/m3u/ndr2.m3u
+#EXTINF:0,NDR 2 NDS
+https://www.ndr.de/resources/metadaten/audio_ssl/m3u/ndr2_nds.m3u
+#EXTINF:0,NDR Info
+https://dispatcher.rndfnk.com/ndr/ndrinfo/niedersachsen/mp3/128/stream.mp3
+#EXTINF:0,NDR Info Spezial
+https://dispatcher.rndfnk.com/ndr/ndrinfospezial/live/mp3/128/stream.mp3
+#EXTINF:0,NDR kultur
+https://dispatcher.rndfnk.com/ndr/ndrkultur/live/mp3/128/stream.mp3
+#EXTINF:0,NDR_Info
+http://www.ndr.de/resources/metadaten/audio/m3u/ndrinfo.m3u
+#EXTINF:0,Ohrfunk.de
+http://icecast.multhielemedia.de:8000/ohrfunk.m3u
+#EXTINF:0,PfarrRadio Schlern
+http://live.verbumradio.com:8074/;stream.mp3
+#EXTINF:0,planet radio
+http://mp3.planetradio.de/planetradio/hqlivestream.mp3
+#EXTINF:0,PlanetRadi
+http://streams.planetradio.de/planetradio/mp3/hqlivestream.m3u
+#EXTINF:0,Radio 8 Ansbach
+http://stream.radio8.de:8000/live
+#EXTINF:0,Radio Allelon
+http://allelon.stream.vip/allelon/mp3-128/allelon.stream.vip/
+#EXTINF:0,Radio BOB!
+http://streams.radiobob.de/bob-national/mp3-192/mediaplayer
+#EXTINF:0,Radio F 94.5
+https://edge66.streamonkey.net/fhn-radiof945/stream/mp3
+#EXTINF:0,radio ffn
+https://player.ffn.de/radioffn.mp3
+#EXTINF:0,radio freundesdienst
+http://radiofd.ice.infomaniak.ch/radiofd.mp3
+#EXTINF:0,Radio Galaxy
+http://webstream.galaxy-oberfranken.de/galaxy-oberfranken.mp3
+#EXTINF:0,Radio Gong
+https://radiogong-live.cast.addradio.de/radiogong/live/mp3/high?ar-distributor=f0b7
+#EXTINF:0,Radio HBR
+http://stream2.radiohbr.de:8080/stream.aac
+#EXTINF:0,radio hcjb
+http://segenswelle.de/hcjb
+#EXTINF:0,radio hcjb
+http://segenswelle.de/hcjb
+#EXTINF:0,Radio Horeb
+https://rs16.stream24.net/horeb.mp3
+#EXTINF:0,Radio KIT (Karlsruhe)
+http://campusradio.zak.kit.edu:8000/campusradiokitbib
+#EXTINF:0,Radio Leipzig
+https://hermes.bcs-systems.de/radio-leipzig_simulcast_192k_mp3
+#EXTINF:0,Radio Leipzig 2
+https://hermes.bcs-systems.de/radio-leipzig2_simulcast_192k_mp3
+#EXTINF:0,Radio Lora
+http://live.lora924.de:8000/loramp3.mp3
+#EXTINF:0,Radio Neue Hoffnung
+https://stream.mnr.ch/rnh-mp3
+#EXTINF:0,Radio Paloma
+http://pool.radiopaloma.de/RADIOPALOMA.mp3
+#EXTINF:0,Radio Paloma
+http://www.radiopaloma.de/RP-Hauptkanal.pls
+#EXTINF:0,Radio Q (Campusradio Münster)
+https://rqstream.radioq.de/stream/192.mp3
+#EXTINF:0,Radio Segenswelle (plautdietsch)
+http://www.segenswelle.de:8000/plautdietsch
+#EXTINF:0,radio slubfurt
+http://streaming.fueralle.org:8000/slubfurt
+#EXTINF:0,Radio SRF 2 Kultur
+http://stream.srg-ssr.ch/m/drs2/mp3_128
+#EXTINF:0,Radio T
+http://streaming.fueralle.org:8000/radiot.mp3
+#EXTINF:0,Radio Wegbereiter
+https://radio.missionsdienst-wegbereiter.de:8000/radio.mp3
+#EXTINF:0,Radio Z
+http://snd.radio-z.net:8000/Radio-Z
+#EXTINF:0,Radioaktiv / Universität Mannheim
+https://stream.radioaktiv.org/VeryHiFi
+#EXTINF:0,radioBerlin 88,8 (MP3)
+http://www.radioberlin.de/live.m3u
+#EXTINF:0,Radioeins (MP3)
+http://www.radioeins.de/live.m3u
+#EXTINF:0,radioFH! (Fachhochschule Südwestfalen / Meschede)
+https://server28989.streamplus.de/stream.mp3
+#EXTINF:0,RadioHBR
+https://stream1.radiohbr.de:80/stream.mp3
+#EXTINF:0,Radius 92,1 - Das Campusradio (Siegen)
+http://141.99.154.10:8002/;
+#EXTINF:0,Rock Antenne (AAC)
+http://www.rockantenne.de/webradio/rockantenne-aac.pls
+#EXTINF:0,Rock Antenne (MP3)
+http://www.rockantenne.de/webradio/rockantenne.m3u
+#EXTINF:0,RT1 80er
+https://rt1.radio/80s
+#EXTINF:0,RT1 Chillout
+https://rt1.radio/chillout
+#EXTINF:0,RT1 Classic Rock
+https://rt1.radio/classicrock
+#EXTINF:0,RT1 Clubbing
+https://rt1.radio/chillhouse
+#EXTINF:0,RT1 Cocktail & Dinner Hits
+https://rt1.radio/cocktail
+#EXTINF:0,RT1 Coffee
+https://rt1.radio/coffee
+#EXTINF:0,RT1 Home Office
+https://rt1.radio/homeoffice
+#EXTINF:0,RT1 InTheMix
+https://rt1.radio/in-the-mix
+#EXTINF:0,RT1 Relax
+https://rt1.radio/relax
+#EXTINF:0,RT1 ROCK
+https://rt1.radio/rock
+#EXTINF:0,RT1 Running
+https://rt1.radio/running
+#EXTINF:0,RTL 104,6 Smooth
+http://stream.104.6rtl.com/smooth/mp3-192/vtuner/
+#EXTINF:0,schlagerparadies
+https://webstream.schlagerparadies.de/schlagerparadies128.mp3
+#EXTINF:0,Spirit Live Radio
+https://server7606.streamplus.de/;?type=http&nocache=250516;
+#EXTINF:0,SR 1 Europawelle (MP3)
+http://streaming01.sr-online.de/sr1_2.m3u
+#EXTINF:0,SR 1-Klassiker (MP3)
+http://streaming02.sr-online.de/sr1klassiker.m3u
+#EXTINF:0,SR 1-Lounge (MP3)
+http://streaming02.sr-online.de/sr1lounge.m3u
+#EXTINF:0,SR 2 KulturRadio (MP3)
+http://streaming01.sr-online.de/sr2_2.m3u
+#EXTINF:0,SR 2-OffBeat (MP3)
+http://streaming02.sr-online.de/sr2offbeat.m3u
+#EXTINF:0,SR 3 Saarlandwelle (MP3)
+http://streaming01.sr-online.de/sr3_2.m3u
+#EXTINF:0,SR 3-OldieWelt (MP3)
+http://streaming02.sr-online.de/sr3oldiewelt.m3u
+#EXTINF:0,SR 3-SchlagerWelt (MP3)
+http://streaming02.sr-online.de/sr3schlagerwelt.m3u
+#EXTINF:0,Studentenfunk (Universität Regensburg)
+https://studentenfunk.out.airtime.pro/studentenfunk_a#
+#EXTINF:0,sunshine live
+http://stream.sunshine-live.de/live/mp3-192/Webradio-Player/
+#EXTINF:0,SW-Radio (segenswelle.de)
+http://www.segenswelle.de:8000/deutsch-aac
+#EXTINF:0,SWR1 Baden-Württemberg
+https://dispatcher.rndfnk.com/swr/swr1/bw/mp3/128/stream.mp3
+#EXTINF:0,SWR1 Rheinland-Pfalz
+https://dispatcher.rndfnk.com/swr/swr1/rp/mp3/128/stream.mp3
+#EXTINF:0,SWR2
+https://liveradio.swr.de/sw282p3/swr2/
+#EXTINF:0,SWR2
+https://dispatcher.rndfnk.com/swr/swr2/live/mp3/256/stream.mp3
+#EXTINF:0,SWR3
+https://dispatcher.rndfnk.com/swr/swr3/live/mp3/128/stream.mp3
+#EXTINF:0,SWR4 Baden-Württemberg
+https://dispatcher.rndfnk.com/swr/swr4/bw/mp3/128/stream.mp3
+#EXTINF:0,SWR4 Rheinland-Pfalz
+https://dispatcher.rndfnk.com/swr/swr4/rp/mp3/128/stream.mp3
+#EXTINF:0,TechnoBase
+http://listen.technobase.fm/dsl.pls
+#EXTINF:0,TechnoBase (HQ)
+http://listen.technobase.fm/aac-hd.pls
+#EXTINF:0,TechnoBase (mp3)
+http://mp3.stream.tb-group.fm/tb.mp3
+#EXTINF:0,Toxic.fm (Universität St. Gallen)
+http://toxicfm.ice.infomaniak.ch/toxicfm-128.mp3
+#EXTINF:0,Triquency (Hochschulradio TH OWL / Lemgo)
+http://livestream.triquency.de:8000/live192.mp3
+#EXTINF:0,Tru
+http://stream.laut.fm/tru
+#EXTINF:0,Uni-Vox (Otto-Friedrich-Universität Bamberg)
+http://81.169.227.97:8000/live
+#EXTINF:0,WDR 2 (Ostwestfalen-Lippe)
+https://wdr-wdr2-ostwestfalenlippe.icecastssl.wdr.de/wdr/wdr2/ostwestfalenlippe/mp3/128/stream.mp3
+#EXTINF:0,WDR 2 Aachen und Region (MP3)
+http://www.wdr.de/wdrlive/media/wdr2_aachen.m3u
+#EXTINF:0,WDR 2 Bergisches Land (MP3)
+http://www.wdr.de/wdrlive/media/wdr2_wuppertal.m3u
+#EXTINF:0,WDR 2 Münsterland (MP3)
+http://www.wdr.de/wdrlive/media/wdr2_muenster.m3u
+#EXTINF:0,WDR 2 Ostwestfalen-Lippe (MP3)
+http://www.wdr.de/wdrlive/media/wdr2_bielefeld.m3u
+#EXTINF:0,WDR 2 Rhein und Ruhr (MP3)
+http://www.wdr.de/wdrlive/media/wdr2_essen_duesseldorf.m3u
+#EXTINF:0,WDR 2 Rheinland (MP3)
+http://www.wdr.de/wdrlive/media/wdr2.m3u
+#EXTINF:0,WDR 2 Ruhrgebiet (MP3)
+http://www.wdr.de/wdrlive/media/wdr2_dortmund.m3u
+#EXTINF:0,WDR 2 Südwestfalen (MP3)
+http://www.wdr.de/wdrlive/media/wdr2_siegen.m3u
+#EXTINF:0,WDR 3 (MP3)
+http://www.wdr.de/wdrlive/media/wdr3.m3u
+#EXTINF:0,WDR 3 (mp3, 256 kBit/s)
+http://wdr-wdr3-live.icecast.wdr.de/wdr/wdr3/live/mp3/256/stream.mp3
+#EXTINF:0,WDR 4 (MP3)
+http://www.wdr.de/wdrlive/media/wdr4.m3u
+#EXTINF:0,WDR 5 (MP3)
+http://www.wdr.de/wdrlive/media/wdr5.m3u
+#EXTINF:0,WDR COSMO
+https://wdr-cosmo-live.icecastssl.wdr.de/wdr/cosmo/live/mp3/128/stream.mp3
+#EXTINF:0,WDR Die Maus
+https://wdr.de/wdrlive/media/diemaus.m3u
+#EXTINF:0,WDR Die Maus (mp3, 128 kBit/s)
+https://wdr-diemaus-live.icecastssl.wdr.de/wdr/diemaus/live/mp3/128/stream.mp3
+#EXTINF:0,WDR Die Maus (mp3, 56 kBit/s)
+https://wdr-diemaus-live.icecastssl.wdr.de/wdr/diemaus/live/mp3/56/stream.mp3
+#EXTINF:0,YOU FM
+https://dispatcher.rndfnk.com/hr/youfm/live/mp3/128/stream.mp3
+#EXTINF:0,YOU FM (MP3)
+http://metafiles.gl-systemhaus.de/hr/youfm_2.m3u
+#EXTINF:0,ZUKUNFT (MP3)
+http://streaming02.sr-online.de/unserding-zukunft.m3u

@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:0,Chaula TV
+https://video.chaula.tv/hls/live/high/playlist_high.m3u8
+#EXTINF:0,Chaula TV Rīga
+https://video.chaula.tv/hls/live/playlist.m3u8
+#EXTINF:0,Chaula TV Rīga
+http://video.chaula.tv/hls/live/high/playlist_high.m3u8

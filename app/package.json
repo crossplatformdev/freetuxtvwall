@@ -1,10 +1,10 @@
 {
   "name": "app",
   "version": "0.0.0",
-  "private": true,
+  "private": true,  
   "scripts": {
     "build": "netlify deploy --prod" 
-  },
+   },
   "dependencies": {
     "@eyevinn/web-player": "^0.10.1",
     "@eyevinn/web-player-component": "^0.9.1",

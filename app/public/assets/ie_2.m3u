@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:0,Dublin City FM
+https://stream.btsstream.com:8012/dcfm
+#EXTINF:0,Liveireland Radio
+https://lynx.prostreaming.net:2199/tunein/liveireland.pls
+#EXTINF:0,RTÉ Radio 1
+https://av.rasset.ie/av/live/radio/radio1.m3u

@@ -1,0 +1,31 @@
+#EXTM3U
+#EXTINF:0,AŞK FM
+http://yayin.asymedya.com:8020/
+#EXTINF:0,BİLECİK RADYO 11
+http://yayin2.yayindakiler.com:4042/
+#EXTINF:0,EDİRNE RADYO MOLA
+http://yayin1.yayindakiler.com:2018
+#EXTINF:0,HAMSİ FM
+http://radyo.hamsi.fm:8050/
+#EXTINF:0,KAY RADYO
+http://yayin1.yayindakiler.com:3054/
+#EXTINF:0,KAYSERİ GÖZDE FM
+http://yayin1.yayindakiler.com:3056/
+#EXTINF:0,KESKİN FM
+http://yayin1.canliyayin.org:8286/
+#EXTINF:0,KIRKLARELİ SOYLU FM
+http://yayin2.yayindakiler.com:4034/
+#EXTINF:0,KORDON FM
+http://38.96.148.39:8588/
+#EXTINF:0,NAZİLLİ RADYO ÖZDEN
+http://live.radyotvonline.com:9050
+#EXTINF:0,ORTACA FM
+http://live.radyotvonline.com:9100
+#EXTINF:0,RADYO FLASH
+http://yayin2.yayindakiler.com:4096/
+#EXTINF:0,Show Radyo (TR-IP)
+http://46.20.3.228:80/
+#EXTINF:0,SİVAS FM
+http://yayin1.canliyayin.org:8180/
+#EXTINF:0,TATVAN RADYO 13
+http://yayin1.yayindakiler.com:3050/

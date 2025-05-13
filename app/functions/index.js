@@ -113,67 +113,6 @@ export async function readChannels() {
     console.log("Reading channels.csv...");
     let cs = [];
     let us = [];
-    /*
-    fs.readFile(channels_csv, 'utf-8', (err, data) => {
-        if(err) {
-            console.log(err);
-        } else {
-            let lines = data.split('\n');
-            lines.forEach((line) => {
-                if(line != '') {
-                    let parts = line.split(',');
-                    for(let i = 0; i < parts.length; i++) {
-                        parts[i] = parts[i].replaceAll('\n', '').replaceAll('\r', '');
-                    }
-
-                    console.log(parts);
-                    console.log(parts[0] + ',' + parts[1] + ',' + parts[2] + ',' + parts[3] + ',' + parts[4] + ',' + parts[5]);
-
-                    if(!errorCodes.includes(parts[5]) && !parts[4].includes("text/html") || !parts[4].includes("text/plain")){
-                        //console.log(parts[0] + ',' + parts[1] + ',' + parts[2] + ',' + parts[3] + ',' + parts[4] + ',' + parts[5]);
-                        //tr,Web Radio,NAZİLLİ RADYO ÖZDEN,http://live.radyotvonline.com:9050,audio/mpegurl; charset=utf-8,200
-
-                        let channel = { language: parts[0], category: parts[1], name: parts[2], uri: parts[3], type: parts[4] };
-                        
-                        if(channel.category.includes('Web TV')) {
-                            channel.category = 'Web TV';
-                        }
-                        if(channel.category.includes('Web Radio')) {
-                            channel.category = 'Web Radio';
-                        }
-                        if(channel.category.includes('Web Cam')) {
-                            channel.category = 'Web Cam';
-                        }
-                        if(channel.category.includes('Web Programmes')) {
-                            channel.category = 'Web Programmes';
-                        }
-
-                        //guess content type from extension
-                        let filename = channel.uri.split('.');
-                        let ext = filename[filename.length - 1];
-
-                        //console.log(channel.uri);
-                        if(!us.includes(channel.uri)) {                     
-                            if(channel.uri.startsWith('http://') || channel.uri.startsWith('https://')) {
-                                //console.log(channel);
-                                us.push(channel.uri);
-                                if(channel.uri.startsWith('https://')) {
-                                    //channel.uri = '/api/proxy_s/' + toBinary(channel.uri);    
-                                } else if(channel.uri.startsWith('http://')) {
-                                    channel.uri = 'https://freetuxtvwall.netlify.app/api/proxy/' + toBinary(channel.uri);
-                                }
-                                cs.push(channel);
-                                hasLoaded = true;
-                            }
-                        }
-                        
-                    } 
-                } 
-            });
-        }
-    });
-    */
-
     let lines = await loadM3U();
     console.log("Lines: " + lines);
     console.log("Lines length: " + lines.length);
@@ -433,7 +372,7 @@ function renderChannel(render, ch, counter, search) {
         https.get(ch.uri, (res) => {
             console.log('statusCode:', res.statusCode);
             if (errorCodes.includes(res.statusCode.toString())) {
-                conserrorCole.log('Error: ' + res.statusCode);
+                console.log('Error: ' + res.statusCode);
                 error = true;
             }
         }).on('error', (e) => {

@@ -1,0 +1,39 @@
+#EXTM3U
+#EXTINF:0,Kurir TV
+https://kurir-tv.haste-cdn.net/providus/live2805_lq/index.m3u8
+#EXTINF:0,MuzzikHipHopSerbia.r
+https://muzzik-live.morescreens.com/mts-a4/playlist.m3u8
+#EXTINF:0,MuzzikJekaSerbia.rs
+https://muzzik-live.morescreens.com/mts-4/playlist.m3u8
+#EXTINF:0,MuzzikMediteraneoSer
+https://muzzik-live.morescreens.com/mts-a5/playlist.m3u8
+#EXTINF:0,MuzzikOKKSerbia.rs
+https://muzzik-live.morescreens.com/mts-2/playlist.m3u8
+#EXTINF:0,MuzzikRockRollSerbia
+https://muzzik-live.morescreens.com/mts-1/playlist.m3u8
+#EXTINF:0,MuzzikTVSerbia.rs
+https://muzzik-live.morescreens.com/mts-6/playlist.m3u8
+#EXTINF:0,MuzzikWorldwideSerbi
+https://muzzik-live.morescreens.com/mts-5/playlist.m3u8
+#EXTINF:0,N1 SR
+https://best-str.umn.cdn.united.cloud/stream?stream=sp1400&sp=n1info&channel=n1srp&u=n1info&p=n1Sh4redSecre7iNf0
+#EXTINF:0,Radio S TV
+https://sradio.ipradio.rs/sradio/radiostv/playlist.m3u8
+#EXTINF:0,Red TV (720p)
+https://live.rednet.rs/providus/redtv_multi.m3u8
+#EXTINF:0,RTV AS (576p)
+https://srv1.adriatelekom.com/TVAS/index.m3u8
+#EXTINF:0,RTV City Ub (576p)
+http://167.172.39.13/hls/tvcityub.m3u8
+#EXTINF:0,TV Belle Amie (720p)
+http://92.60.238.10:1935/live/belleamie/chunklist_w1811501290.m3u8
+#EXTINF:0,TV Duga Plus (480p)
+http://109.92.29.10:1935/tvduga/tvduga/chunklist_w1097511114.m3u8
+#EXTINF:0,TV Hram (576p)
+https://vod1.laki.eu/live/hram/index.m3u8
+#EXTINF:0,Tv Novi Pazar
+https://rtvnp.rs/hls/rtvnp.m3u8
+#EXTINF:0,TV Pi Canal Pirot (576p)
+http://stream.pikanal.rs/pikanal/pgm.m3u8?v=1617785340
+#EXTINF:0,UNA TV Srbija (720p)
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/47561/47561_264_live.m3u8

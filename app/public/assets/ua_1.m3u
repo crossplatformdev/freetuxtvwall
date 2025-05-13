@@ -1,0 +1,9 @@
+#EXTM3U
+#EXTINF:0,7kanal-odessa
+https://cdn10.live-tv.cloud/7tvod/7tvod-abr-lq/7tvod/7tvod-sub/chunks.m3u8
+#EXTINF:0,one.kr.ua
+https://cdn1.live-tv.cloud/1tvkr/1tvkr-abr-lq/1tvkr/1tvkr-sub/chunks.m3u8
+#EXTINF:0,Z Zaporozhye
+https://stream.ztv.zp.ua/hls/live.m3u8
+#EXTINF:0,НТК
+https://stream.ntktv.ua/s/ntk/ntk.m3u8

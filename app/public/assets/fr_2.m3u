@@ -1,0 +1,231 @@
+#EXTM3U
+#EXTINF:0,103 Radio (128kb/s)
+http://streaming.103radio.fr/128
+#EXTINF:0,103 Radio (320kb/s)
+http://streaming.103radio.fr/320
+#EXTINF:0,Ado FM
+http://broadcast.infomaniak.ch/start-adofm-high.mp3
+#EXTINF:0,Alouette
+https://alouette-finistere.ice.infomaniak.ch/alouette-finistere-128.mp3
+#EXTINF:0,Bide et Musique
+http://relay2.bide-et-musique.com:9100
+#EXTINF:0,Cause Commune
+https://stream.causecommune.fm/voixdulat_mp3
+#EXTINF:0,Chante France
+http://stream.chantefrance.com/stream_chante_france.mp3
+#EXTINF:0,Evasion FM
+http://stream1.evasionfm.com/Paris
+#EXTINF:0,FIP
+http://direct.fipradio.fr/live/fip-midfi.mp3
+#EXTINF:0,FIP
+https://stream.radiofrance.fr/fip/fip_hifi.m3u8
+#EXTINF:0,FIP électro
+https://stream.radiofrance.fr/fipelectro/fipelectro_hifi.m3u8
+#EXTINF:0,FIP groove
+https://stream.radiofrance.fr/fipgroove/fipgroove_hifi.m3u8
+#EXTINF:0,FIP Jazz
+http://icecast.radiofrance.fr/fipjazz-hifi.aac
+#EXTINF:0,FIP Jazz
+http://direct.fipradio.fr/live/fip-webradio2.mp3
+#EXTINF:0,FIP jazz
+https://stream.radiofrance.fr/fipjazz/fipjazz_hifi.m3u8
+#EXTINF:0,FIP Monde
+http://direct.fipradio.fr/live/fip-webradio4.mp3
+#EXTINF:0,FIP monde
+https://stream.radiofrance.fr/fipworld/fipworld_hifi.m3u8
+#EXTINF:0,FIP Nouveauté
+http://direct.fipradio.fr/live/fip-webradio5.mp3
+#EXTINF:0,FIP pop
+https://stream.radiofrance.fr/fippop/fippop_hifi.m3u8
+#EXTINF:0,FIP reggae
+https://stream.radiofrance.fr/fipreggae/fipreggae_hifi.m3u8
+#EXTINF:0,FIP Rock
+http://icecast.radiofrance.fr/fiprock-hifi.aac
+#EXTINF:0,FIP rock
+https://stream.radiofrance.fr/fiprock/fiprock_hifi.m3u8
+#EXTINF:0,France Bleu - Alsace
+https://stream.radiofrance.fr/fbalsace/fbalsace_midfi.m3u8
+#EXTINF:0,France Bleu - Armorique
+http://direct.francebleu.fr/live/fbarmorique-midfi.mp3
+#EXTINF:0,France Bleu - Auxerre
+http://direct.francebleu.fr/live/fbauxerre-midfi.mp3
+#EXTINF:0,France Bleu - Azur
+http://direct.francebleu.fr/live/fbazur-midfi.mp3
+#EXTINF:0,France Bleu - Béarn
+http://direct.francebleu.fr/live/fbbearn-midfi.mp3
+#EXTINF:0,France Bleu - Belfort-Montbéliard
+http://direct.francebleu.fr/live/fbbelfort-midfi.mp3
+#EXTINF:0,France Bleu - Berry
+http://direct.francebleu.fr/live/fbberry-midfi.mp3
+#EXTINF:0,France Bleu - Besançon
+http://direct.francebleu.fr/live/fbbesancon-midfi.mp3
+#EXTINF:0,France Bleu - Bourgogne
+http://direct.francebleu.fr/live/fbbourgogne-midfi.mp3
+#EXTINF:0,France Bleu - Breizh Izel
+http://direct.francebleu.fr/live/fbbreizizel-midfi.mp3
+#EXTINF:0,France Bleu - Champagne-Ardenne
+http://direct.francebleu.fr/live/fbchampagne-midfi.mp3
+#EXTINF:0,France Bleu - Cotentin
+http://direct.francebleu.fr/live/fbcotentin-midfi.mp3
+#EXTINF:0,France Bleu - Creuse
+http://direct.francebleu.fr/live/fbcreuse-midfi.mp3
+#EXTINF:0,France Bleu - Drome Ardèche
+http://direct.francebleu.fr/live/fbdromeardeche-midfi.mp3
+#EXTINF:0,France Bleu - Elsass
+https://stream.radiofrance.fr/fbelsass/fbelsass_midfi.m3u8
+#EXTINF:0,France Bleu - Gard Lozère
+http://direct.francebleu.fr/live/fbgardlozere-midfi.mp3
+#EXTINF:0,France Bleu - Gascogne
+http://direct.francebleu.fr/live/fbgascogne-midfi.mp3
+#EXTINF:0,France Bleu - Gironde
+http://direct.francebleu.fr/live/fbgironde-midfi.mp3
+#EXTINF:0,France Bleu - Hérault
+http://direct.francebleu.fr/live/fbherault-midfi.mp3
+#EXTINF:0,France Bleu - Isère
+http://direct.francebleu.fr/live/fbisere-midfi.mp3
+#EXTINF:0,France Bleu - La Rochelle
+http://direct.francebleu.fr/live/fblarochelle-midfi.mp3
+#EXTINF:0,France Bleu - Limousin
+http://direct.francebleu.fr/live/fblimousin-midfi.mp3
+#EXTINF:0,France Bleu - Loire Océan
+http://direct.francebleu.fr/live/fbloireocean-midfi.mp3
+#EXTINF:0,France Bleu - Lorraine Nord
+http://direct.francebleu.fr/live/fblorrainenord-midfi.mp3
+#EXTINF:0,France Bleu - Maine
+http://direct.francebleu.fr/live/fbmaine-midfi.mp3
+#EXTINF:0,France Bleu - Mayenne
+http://direct.francebleu.fr/live/fbmayenne-midfi.mp3
+#EXTINF:0,France Bleu - Nord
+http://direct.francebleu.fr/live/fbnord-midfi.mp3
+#EXTINF:0,France Bleu - Normandie (Calvados-Orne)
+http://direct.francebleu.fr/live/fbbassenormandie-midfi.mp3
+#EXTINF:0,France Bleu - Normandie (Seine-Maritime-Eure)
+http://direct.francebleu.fr/live/fbhautenormandie-midfi.mp3
+#EXTINF:0,France Bleu - Orléans
+http://direct.francebleu.fr/live/fborleans-midfi.mp3
+#EXTINF:0,France Bleu - Paris
+https://stream.radiofrance.fr/fb1071/fb1071_hifi.m3u8
+#EXTINF:0,France Bleu - Pays Basque
+http://direct.francebleu.fr/live/fbpaysbasque-midfi.mp3
+#EXTINF:0,France Bleu - Pays d'Auvergne
+http://direct.francebleu.fr/live/fbpaysdauvergne-midfi.mp3
+#EXTINF:0,France Bleu - Pays de Savoie
+http://direct.francebleu.fr/live/fbpaysdesavoie-midfi.mp3
+#EXTINF:0,France Bleu - Périgord
+http://direct.francebleu.fr/live/fbperigord-midfi.mp3
+#EXTINF:0,France Bleu - Picardie
+http://direct.francebleu.fr/live/fbpicardie-midfi.mp3
+#EXTINF:0,France Bleu - Poitou
+http://direct.francebleu.fr/live/fbpoitou-midfi.mp3
+#EXTINF:0,France Bleu - Provence
+http://direct.francebleu.fr/live/fbprovence-midfi.mp3
+#EXTINF:0,France Bleu - RCFM Frequenza Mora
+http://direct.francebleu.fr/live/fbfrequenzamora-midfi.mp3
+#EXTINF:0,France Bleu - Roussillon
+http://direct.francebleu.fr/live/fbroussillon-midfi.mp3
+#EXTINF:0,France Bleu - Saint-Etienne Loire
+http://direct.francebleu.fr/live/fbstetienne-midfi.mp3
+#EXTINF:0,France Bleu - Sud Lorraine
+http://direct.francebleu.fr/live/fbsudlorraine-midfi.mp3
+#EXTINF:0,France Bleu - Toulouse
+http://direct.francebleu.fr/live/fbtoulouse-midfi.mp3
+#EXTINF:0,France Bleu - Touraine
+http://direct.francebleu.fr/live/fbtouraine-midfi.mp3
+#EXTINF:0,France Bleu - Vaucluse
+http://direct.francebleu.fr/live/fbvaucluse-midfi.mp3
+#EXTINF:0,France Culture
+http://direct.franceculture.fr/live/franceculture-lofi.mp3
+#EXTINF:0,France Culture
+http://direct.franceculture.fr/live/franceculture-midfi.mp3
+#EXTINF:0,France Info
+http://direct.franceinfo.fr/live/franceinfo-midfi.mp3
+#EXTINF:0,France Inter
+http://direct.franceinter.fr/live/franceinter-lofi.mp3
+#EXTINF:0,France Inter
+http://direct.franceinter.fr/live/franceinter-midfi.mp3
+#EXTINF:0,France Musique
+http://direct.francemusique.fr/live/francemusique-midfi.mp3
+#EXTINF:0,France Musique - Classique Eeasy
+https://stream.radiofrance.fr/francemusiqueeasyclassique/francemusiqueeasyclassique_hifi.m3u8
+#EXTINF:0,France Musique - Classique Plus
+https://stream.radiofrance.fr/francemusiqueclassiqueplus/francemusiqueclassiqueplus_hifi.m3u8
+#EXTINF:0,France Musique - Concerts Radio France
+http://direct.francemusique.fr/live/francemusiqueconcertsradiofrance-hifi.mp3
+#EXTINF:0,France Musique - La Baroque
+https://stream.radiofrance.fr/francemusiquebaroque/francemusiquebaroque_hifi.m3u8
+#EXTINF:0,France Musique - La Contemporaine
+https://stream.radiofrance.fr/francemusiquelacontemporaine/francemusiquelacontemporaine_hifi.m3u8
+#EXTINF:0,France Musique - La Jazz
+https://stream.radiofrance.fr/francemusiquelajazz/francemusiquelajazz_hifi.m3u8
+#EXTINF:0,France Musique - Ocora - Musiques du monde
+http://direct.francemusique.fr/live/francemusiqueocoramonde-hifi.mp3
+#EXTINF:0,France Musique - Ocora - Musiques du monde
+https://stream.radiofrance.fr/francemusiqueocoramonde/francemusiqueocoramonde_hifi.m3u8
+#EXTINF:0,France Musique - Opéra
+https://stream.radiofrance.fr/francemusiqueopera/francemusiqueopera_hifi.m3u8
+#EXTINF:0,France-Bleue-107.1
+http://direct.francebleu.fr/live/fb1071-midfi.mp3
+#EXTINF:0,Fun Radio (Haut débit)
+http://streaming.radio.funradio.fr/fun-1-44-128
+#EXTINF:0,GENERATION SOUL DISCO FUNK
+http://www.generationdiscofunk.com/pls/hd.m3u
+#EXTINF:0,KIF Radio
+http://kifradio.kifradio.com
+#EXTINF:0,La Grosse Radio Metal
+http://hd.lagrosseradio.info:8200
+#EXTINF:0,La Grosse Radio Reggae
+http://hd.lagrosseradio.info:8300
+#EXTINF:0,La Grosse Radio Rock
+http://hd.lagrosseradio.info:8500
+#EXTINF:0,Latina (ex-Radio Latina)
+http://broadcast.infomaniak.ch/start-latina-high.mp3
+#EXTINF:0,Magic Radio (by PulsRadio)
+http://stream.magic-radio.net:8100
+#EXTINF:0,MFM (AAC)
+http://mfm.ice.infomaniak.ch/mfm-64.aac
+#EXTINF:0,MFM (MP3)
+http://mfm.ice.infomaniak.ch/mfm-128.mp3
+#EXTINF:0,Mouv'
+https://stream.radiofrance.fr/mouv/mouv_hifi.m3u8
+#EXTINF:0,Mouv' 100 percent mix
+https://stream.radiofrance.fr/mouv100p100mix/mouv100p100mix_hifi.m3u8
+#EXTINF:0,Mouv' Classics
+https://stream.radiofrance.fr/mouvclassics/mouvclassics_hifi.m3u8
+#EXTINF:0,Mouv' Dancehall
+https://stream.radiofrance.fr/mouvdancehall/mouvdancehall_hifi.m3u8
+#EXTINF:0,Mouv' Kids 'n Family
+https://stream.radiofrance.fr/mouvkidsnfamily/mouvkidsnfamily_hifi.m3u8
+#EXTINF:0,Mouv' R'N'B
+https://stream.radiofrance.fr/mouvrnb/mouvrnb_hifi.m3u8
+#EXTINF:0,Mouv' Rap Français
+https://stream.radiofrance.fr/mouvrapfr/mouvrapfr_hifi.m3u8
+#EXTINF:0,Mouv' Rap US
+https://stream.radiofrance.fr/mouvrapus/mouvrapus_hifi.m3u8
+#EXTINF:0,NRJ - Hit Music Only!
+https://scdn.nrjaudio.fm/audio1/fr/30001/aac_64.mp3
+#EXTINF:0,Puls Radio Version Trance
+http://www.pulsradio.com/pls/pulstrance-adsl.m3u
+#EXTINF:0,PulsRadio
+http://stream.pulsradio.com:5000
+#EXTINF:0,Radio Campus Lille
+http://radiocampuslille.ice.infomaniak.ch/radiocampuslille-128.mp3
+#EXTINF:0,Radio Ici et Maintenant (MP3)
+http://radio.rim952.fr:8000/stream.mp3
+#EXTINF:0,Radio Ici et Maintenant (OGG)
+http://radio.rim952.fr:8001/stream.ogg
+#EXTINF:0,Radio Sing Sing 128 Kb/s
+http://stream.sing-sing.org:8000/singsing128
+#EXTINF:0,radiofrance.fr
+http://icecast.radiofrance.fr/fip-midfi.mp3
+#EXTINF:0,RFI Monde
+http://live02.rfi.fr/rfimonde-32.mp3
+#EXTINF:0,RTL (HQ)
+http://streaming.radio.rtl.fr/rtl-1-44-128
+#EXTINF:0,RTL (LQ)
+http://streaming.radio.rtl.fr/rtl-1-44-64
+#EXTINF:0,Sud Radio
+http://broadcast.infomaniak.ch/start-sud-high.mp3
+#EXTINF:0,Top Music
+http://players.creacast.com/creacast/topmusic/playlist.pls
+#EXTINF:0,Voltage
+http://broadcast.infomaniak.ch/start-voltage-high.mp3

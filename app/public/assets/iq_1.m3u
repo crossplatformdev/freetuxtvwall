@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:0,Alsharqiya Tv
+rtmp://ns8.indexforce.com/alsharqiyalive/mystream
+#EXTINF:0,Alsharqiya Tv
+rtmp://ns8.indexforce.com/home/mystream

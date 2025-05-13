@@ -1,0 +1,19 @@
+#EXTM3U
+#EXTINF:0,Polskie Radio Jedynka
+http://stream3.polskieradio.pl:8900/
+#EXTINF:0,Radio ZET 2000
+http://zet.cdn.eurozet.pl/ZET200.mp3
+#EXTINF:0,Radio ZET 80
+http://zet.cdn.eurozet.pl/ZET080.mp3
+#EXTINF:0,Radio ZET 90
+http://zet.cdn.eurozet.pl/ZET090.mp3
+#EXTINF:0,Radio ZET Dance
+http://zet.cdn.eurozet.pl/ZETDAN.mp3
+#EXTINF:0,Radio ZET Hits
+http://zet.cdn.eurozet.pl/ZETHIT.mp3
+#EXTINF:0,Radio ZET Party
+http://zet.cdn.eurozet.pl/ZETPAR.mp3
+#EXTINF:0,Radio ZET PL
+http://zet.cdn.eurozet.pl/ZETPL1.mp3
+#EXTINF:0,radiowroclaw
+https://stream4.nadaje.com:9241/prw

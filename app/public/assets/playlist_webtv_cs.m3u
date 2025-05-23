@@ -1,0 +1,39 @@
+#EXTM3U
+#EXTINF:0,Elektrika
+https://rtmp.elektrika.cz/live/myStream.sdp/playlist.m3u8
+#EXTINF:0,Elektrika TV
+rtmp://rtmp.elektrika.cz/live/myStream.sdp
+#EXTINF:0,joj.sk
+https://nn.geo.joj.sk/hls/joj-720.m3u8
+#EXTINF:0,OČKO  Gold Star VLC3
+https://ocko-live-dash.ssl.cdn.cra.cz/cra_live2/ocko_gold.stream.1.smil/manifest.mpd
+#EXTINF:0,OČKO  VLC3
+https://ocko-live-dash.ssl.cdn.cra.cz/cra_live2/ocko.stream.1.smil/manifest.mpd
+#EXTINF:0,OČKO EXPRESS VLC3
+https://ocko-live-dash.ssl.cdn.cra.cz/cra_live2/ocko_expres.stream.1.smil/manifest.mpd
+#EXTINF:0,Ocko.cz
+https://ocko-live-dash.ssl.cdn.cra.cz/cra_live2/ocko.stream.1.smil/playlist.m3u8
+#EXTINF:0,ocko.tv/ocko-expres
+https://ocko-live.ssl.cdn.cra.cz/channels/ocko_expres/playlist.m3u8
+#EXTINF:0,ocko.tv/start
+https://ocko-live-dash.ssl.cdn.cra.cz/cra_live2/ocko_gold.stream.1.smil/playlist.m3u8
+#EXTINF:0,plus.joj.sk
+https://live.cdn.joj.sk/live/hls/jojplus-540.m3u8
+#EXTINF:0,Polar TV
+https://stream.polar.cz/polar/polarlive-1/playlist.m3u8
+#EXTINF:0,polar.cz
+https://stream.polar.cz/polar/polarlive-2/manifest_w635624816.mpd
+#EXTINF:0,Retro TV
+http://stream.mediawork.cz/retrotv//retrotvHQ1/playlist.m3u8
+#EXTINF:0,retromusic.cz/tv
+http://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8
+#EXTINF:0,retromusic.cz/tv
+http://stream.mediawork.cz/retrotv/retrotvHQ1/chunklist_w259077935.m3u8
+#EXTINF:0,RTM plus
+http://www.rtmplus.cz/live/1-playlist.m3u8
+#EXTINF:0,Šlagr TV
+https://stream-6.mazana.tv/slagr.m3u
+#EXTINF:0,tvnatura.cz/tv
+https://media1.tvnatura.cz/live_out/live.m3u8
+#EXTINF:0,Vychodoceska TV
+https://stream.polar.cz/vctv/vctvlive-1/playlist.m3u8

@@ -1,0 +1,9 @@
+#EXTM3U
+#EXTINF:0,Alvin_Channel.tv
+http://cdn10-alvinchannel.yayin.com.tr/alvinchannel/alvinchannel/playlist.m3u8
+#EXTINF:0,Azerbaijan_News.tv
+https://edge1.socialsmart.tv/aznews/smil/playlist.m3u8
+#EXTINF:0,baku.tv
+https://rtmp.baku.tv/live/bakutv_720p.m3u8
+#EXTINF:0,EL.tv
+http://85.132.53.162:1935/live/eltv/playlist.m3u8

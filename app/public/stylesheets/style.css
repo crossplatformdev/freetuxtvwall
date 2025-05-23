@@ -239,3 +239,17 @@ ul.ui-autocomplete, input[type=search]:focus {
     max-height: 600px;
     overflow-y: scroll;
 }
+
+/* Audio elements (the ones whom src or source ends in .mp3, or mimetype is audio) of the video player (videojs) display a headphones icon in CSS3, big centered in the player */
+.vjs-audio {
+    background: url(../images/favicon.png) no-repeat center center;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+

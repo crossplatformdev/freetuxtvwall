@@ -1,0 +1,15 @@
+#EXTM3U
+#EXTINF:0,Auto Moto TV
+http://100automoto.tv:1935/bgtv1/Stream1/playlist.m3u8
+#EXTINF:0,automoto/tv
+http://100automoto.tv:1935/bgtv1/autotv/playlist.m3u8
+#EXTINF:0,Bulgaria on air
+http://lb-hls.cdn.bg/2006/fls/bonair.stream/playlist.m3u8
+#EXTINF:0,city.bg/tv
+https://tv.city.bg/play/tshls/citytv/2.m3u8
+#EXTINF:0,rmtv.bg
+https://transcoder1.bitcare.eu/streaming/rimextv/rmtv.m3u8
+#EXTINF:0,thevoice.bg/tv
+https://bss1.neterra.tv/thevoice/stream_0.m3u8
+#EXTINF:0,tv.traveltv.bg
+https://streamer103.neterra.tv/travel/live.m3u8

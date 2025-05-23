@@ -1,10 +1,10 @@
 {
   "name": "app",
   "version": "0.0.0",
-  "private": true,  
+  "private": true,
   "scripts": {
-    "build": "netlify deploy --prod" 
-   },
+    "build": "netlify deploy --prod"
+  },
   "dependencies": {
     "@eyevinn/web-player": "^0.10.1",
     "@eyevinn/web-player-component": "^0.9.1",
@@ -12,6 +12,7 @@
     "@hosseintaromi/video_player": "^0.1.251",
     "@netlify/functions": "^3.1.8",
     "app": "file:",
+    "await": "^0.2.6",
     "axios": "^1.7.9",
     "cookie-parser": "^1.4.7",
     "express": "^4.21.2",
@@ -20,6 +21,8 @@
     "https": "^1.0.0",
     "i18n-iso-countries": "^7.14.0",
     "m3u8-parser": "^7.2.0",
+    "mime": "^4.0.7",
+    "mime-types": "^3.0.1",
     "morgan": "^1.10.0",
     "serverless-http": "^3.2.0",
     "xml2js": "^0.6.2",

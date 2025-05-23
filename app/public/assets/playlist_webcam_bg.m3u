@@ -1,0 +1,13 @@
+#EXTM3U
+#EXTINF:0,Bulgaria, Varna
+rtsp://91.191.213.49:554/live_mpeg4.sdp
+#EXTINF:0,Bulgarian - Pirdop
+rtsp://12345678:@83.228.67.155:554/mpeg4/ch01/main/av_stream
+#EXTINF:0,Wepcamera – Bulgaria – Kiten
+rtsp://k1ten:k1ten@84.54.158.14:554/live/ch00_0
+#EXTINF:0,Wepcamera, Plovdiv
+rtsp://212.73.150.228:554
+#EXTINF:0,Wepcamera, Plovdiv
+rtsp://212.73.150.90:554
+#EXTINF:0,Wepcamera, Plovdiv
+rtsp://212.73.150.79:554

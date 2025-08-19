@@ -426,11 +426,11 @@ export function fromBinary(str) {
 
 function stickyHeader(req, res) {
     let html = '';
-    html += '<div>';
+    html += '<div style="background: var(--accent);">';
     html += '<h1><a href="/">Free Tux TV Wall</a></h1>';
     html += '<p>Free Tux TV Wall is a collection of free Web TV, Web Radio and Web Cam channels from around the world. The channels are organized by language and category. Enjoy!</p>';
     html += '</div>';
-    html += '<div style="display: flex; justify-content: center;">';
+    html += '<div style="background: var(--accent);">';
     html += "<form id='form1' method=\"get\" >";
     html += '<label for="language">Language:</label>';
     html += '<select id="language" onchange="languageIndex = this.selectedIndex && form1OnChange();">';
@@ -486,7 +486,7 @@ function stickyHeader(req, res) {
 }
 
 function footer() {
-    let html = '<div>';
+    let html = '<div style="background: var(--accent);">';
     html += '   <p style="text-align:center;">';
     html += '   This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.';
     html += '   <br />';

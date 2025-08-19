@@ -1,255 +1,224 @@
-/* Style for index.js (Video Wall) */
+/* =========================
+   Free Tux TV Wall — CSS
+   (colores originales corregidos)
+   ========================= */
 
-/*
---------------------
-|     .header      |
-| <TITLE>  |  FORM |
---------------------
-| .content-wrapper |
---------------------
-|<->| .content |<->|
---------------------
-|     .footer      |
---------------------
-*/
+/* ---- Tokens (mismos colores) ---- */
+:root{
+  --bg: goldenrod;          /* body */
+  --text: #fff;
+  --card-bg: #333;          /* header, footer, wrapper */
+  --accent: purple;         /* .content */
+  --accent-soft: plum;      /* th, chips */
+  --row-odd: rebeccapurple; /* tr impares */
+  --row-even: blueviolet;   /* tr pares */
+  --cell-even: darkviolet;  /* td pares */
+  --scroll-track: palevioletred;
+  --scroll-thumb: #333;
 
-/* Header, with a shadow like a card like the content */
+  --radius: 8px;
+  --shadow: 5px 5px 5px #555;
+  --shadow-strong: 5px 5px 5px #333;
+  --space-1: 5px;
+  --space-2: 10px;
 
-/** font -> discord one */
-body {
-    font-family: 'Whitney', sans-serif;
-    background-color: goldenrod;
-    color: white;
+  --content-max-w: 1760px;  /* restaurado a original */
+  --content-max-h: 1960px;
+  --scroll-size: 25px;
 }
 
-
-
-.header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    box-shadow: 5px 5px 5px #555;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px;    
-    flex-direction: column;
+/* ---- Base ---- */
+*,
+*::before,
+*::after{ box-sizing: border-box; }
+html, body{ height: 100%; }
+body{
+  font-family: "Whitney", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
 }
 
-/* Content Wrapper: centers content inside */
-.content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    padding: 10px;
-    background-color: #333;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px #555;
+/* Enlaces (manteniendo tonos) */
+a{ color: #f1f1f1; text-decoration: none; }
+a:hover{ color: #e1e1e1; }
+a:visited{ color: #f1f1f1; }
 
+/* ---- Blocks con estilo de tarjeta ---- */
+.header,
+.content-wrapper,
+.footer{
+  background: var(--card-bg);   /* #333 como el original */
+  color: var(--text);
+  text-align: center;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  margin: var(--space-2);
+  padding: var(--space-2);
 }
 
-/* Content: content centerted inside wrapper, with accent colour. content is a table that must display 3 items per row in a grid */
-.content {
-    background-color: purple;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px #555;
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    max-width: 1760px;
-    height: 100%;
-    max-height: 565px;
-    overflow-y: scroll;
-    overflow-x: scroll;
-    border: 1px solid #333;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px #555;    
+/* Header */
+.header{ display: flex; flex-direction: column; gap: var(--space-1); }
+
+/* Chips originales: SOLO los div internos, h1, p y form en plum */
+.footer div,
+.header div,
+.header h1,
+p,
+form{
+  background: var(--accent-soft);  /* plum */
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-strong);
+  margin: var(--space-1);
+  padding: var(--space-1);
 }
 
-/* beautify .content overflow */
-.content::-webkit-scrollbar {
-    width: 25px;
-    background-color: #555;
-    border-radius: 5px;
-    /* scroll paddle black */
-    box-shadow: 5px 5px 5px #555;
-    color: #333;
-    
+/* Elimina la regla global que forzaba todos los div a #333 */
+/* (quitada) */
+
+/* Forzar color del enlace del título en header */
+.header h1 a{ color: #fff; }
+
+/* ---- Content Wrapper ---- */
+.content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* scroll bar paddle*/
-.content::-webkit-scrollbar-thumb {
-    background-color: #333;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px #777;
+/* ---- Content (contenedor de la tabla) ---- */
+.content{
+  background: var(--accent);             /* purple como el original */
+  border: 1px solid var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin: var(--space-2);
+  padding: var(--space-2);
+  width: 100%;
+  max-width: var(--content-max-w);
+  height: 100%;
+  max-height: var(--content-max-h);
+  overflow: auto;                        /* unifica X/Y */
 }
 
-/* Footer, like header*/
-.footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    box-shadow: 5px 5px 5px #555;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
+/* Scrollbars coherentes (WebKit + Firefox) */
+.content{
+  scrollbar-width: auto;
+  scrollbar-color: var(--scroll-thumb) var(--scroll-track);
+}
+.content::-webkit-scrollbar{
+  width: var(--scroll-size);
+  height: var(--scroll-size);
+  background: var(--scroll-track);       /* palevioletred */
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.content::-webkit-scrollbar-thumb{
+  background: var(--scroll-thumb);       /* #333 */
+  border-radius: var(--radius);
+  box-shadow: 5px 5px 5px #777;
 }
 
-/** td, with a shadow, like a card */
-th {
-    box-shadow: 5px 5px 5px #333;
-    border-radius: 5px;
-    background-color: plum;
-    color: white;
-    text-align: center; 
-    margin: 10px;
-    padding: 10px;
+/* ---- Tabla como grilla 3x por fila (sin cambiar tu HTML) ---- */
+.content table{
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: var(--space-2);
+  margin: 0 auto;
+}
+.content td,
+.content th{
+  background: transparent;   /* colores los pone fila/celda */
+  margin: 0;
+  padding: var(--space-2);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-strong);
+  color: var(--text);
+  text-align: center;
 }
 
-td {
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 5px 5px 5px #333;
-    border-radius: 5px;
-    color: white;
-    text-align: center;
+/* Cabeceras de tabla (plum) */
+th{ background: var(--accent-soft); }
+
+/* Coloreado de filas/celdas igual que original */
+tr:nth-child(odd){  background: var(--row-odd); }
+tr:nth-child(even){ background: var(--row-even); }
+td:nth-child(even){ background: var(--cell-even); }
+
+/* ---- Tipografía ---- */
+h1{ font-size: 2rem; font-weight: 700; color: #f1f1f1; margin: 0; }
+p{ color: #fff; }
+
+/* ---- Formularios ---- */
+form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  flex-wrap: wrap;
+}
+form label{
+  color: #fff;
+  padding: var(--space-1);
+  display: inline-flex;
+  align-items: center;
+}
+form input,
+form select{
+  padding: var(--space-1);
+  border-radius: var(--radius);
+  border: 1px solid var(--card-bg);
 }
 
-tr:nth-child(even) {
-    background-color: blueviolet;
+/* Search + autocomplete */
+input[type="search"],
+#search_box{
+  background: none;
+  font-weight: 700;
+  border: 2px solid #2e2e2e;
+  outline: none;
+  padding: 10px 20px;
+  width: 250px;
+}
+ul.ui-autocomplete,
+input[type="search"]:focus,
+#search_box:focus{
+  color: #333 !important;
+  border-radius: 15px;
+  max-height: 600px;
+  overflow-y: auto;
 }
 
-tr:nth-child(odd) {
-    background-color: rebeccapurple;
+/* ---- Video.js — placeholder para audio ---- */
+.vjs-audio{
+  background: url(../images/favicon.png) no-repeat center center / 100% 100%;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
 }
 
-td:nth-child(even) {
-    background-color: darkviolet;
+/* ---- Video.js dentro de tabla ---- */
+.video-js {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+/* ---- Accesibilidad ---- */
+@media (prefers-reduced-motion: reduce){
+  *{
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
 }
 
-td {
-    margin: 10px;
-    padding: 10px;
-}
+/* ---- Ajustes pequeños/bugfixes ---- */
+td{ /* intencionalmente vacío para no re-duplicar reglas */ }
 
-a {
-    color: #f1f1f1;
-}
+.header > div:last-of-type{ display: flex; justify-content: center; }
 
-a:hover {
-    color: #e1e1e1;
-}
-
-a:visited {
-    color: #f1f1f1;
-}
-
-h1 {
-    font-size: 2em;
-    font-weight: bold;
-    color: #f1f1f1;
-}
-
-.footer div, .header div {
-    
-    justify-content: center;
-    align-items: center;
-    background-color: purple;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px #555;
-    margin: 5px;
-    padding: 5px;
-
-}
-
-form {
-    /** inline, todo centrado vertical*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    background-color: plum;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px #333;
-    margin: 5px;
-    padding: 5px;
-
-
-}
-
-.header h1 {
-    color: white;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    margin: 5px;
-    background-color: plum;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px #333;
-}
-
-form label {
-    color: white;
-    padding: 5px;
-    display: flex;
-}
-
-form input {
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #333;
-    display: flex;
-}
-
-p {
-    background-color: plum;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px #333;
-    padding: 5px;
-    margin: 5px;
-    color: white;
-
-}
-
-input[type=search] {
-    background: none;
-    font-weight: bold;
-    border-color: #2e2e2e;
-    border-style: solid;
-    border-width: 2px 2px 2px 2px;
-    outline: none;
-    padding: 10px 20px 10px 20px;
-    width: 250px;
-}
-/*Css to target the dropdownbox*/
-ul.ui-autocomplete, input[type=search]:focus {
-    color: #333 !important;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    max-height: 600px;
-    overflow-y: scroll;
-}
-
-/* Audio elements (the ones whom src or source ends in .mp3, or mimetype is audio) of the video player (videojs) display a headphones icon in CSS3, big centered in the player */
-.vjs-audio {
-    background: url(../images/favicon.png) no-repeat center center;
-    background-size: 100% 100%;
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
+p{ margin: var(--space-1); }

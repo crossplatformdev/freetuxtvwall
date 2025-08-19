@@ -431,9 +431,9 @@ function stickyHeader(req, res) {
     html += '<p>Free Tux TV Wall is a collection of free Web TV, Web Radio and Web Cam channels from around the world. The channels are organized by language and category. Enjoy!</p>';
     html += '</div>';
     html += '<div style="background: var(--accent);">';
-    html += "<form id='form1' method=\"get\" >";
-    html += '<label for="language">Language:</label>';
-    html += '<select id="language" onchange="languageIndex = this.selectedIndex && form1OnChange();">';
+    html += "<form id='form1' method=\"get\" style=\"justify-content: center; align-items: center;\">";
+    html += '<label for="language" >Language:</label>';
+    html += '<select id="language" name="language" onchange="languageIndex = this.selectedIndex && form1OnChange();" >';
     let i = 0;
     for (let i = 0; i < languages.length; i++) {
         let lang = languages[i];
@@ -449,7 +449,7 @@ function stickyHeader(req, res) {
     html += '<label for="spacer"> </label>';
 
     html += '<label for="category">Category:</label>';
-    html += '<select id="category" onchange="categoryIndex = this.selectedIndex && form1OnChange();">';
+    html += '<select id="category" name="category" onchange="categoryIndex = this.selectedIndex && form1OnChange();" >';
     let j = 0;
     categories.forEach((cat) => {
         if (j == categoryIndex) {
@@ -463,7 +463,7 @@ function stickyHeader(req, res) {
     html += '<input type="submit" value="Submit"/>';
     html += '</form>';
     html += '<script> function form1OnChange() { var lang = document.getElementById(\'language\').selectedIndex; var cat = document.getElementById(\'category\').selectedIndex; document.getElementById(\'form1\').action = \'/api/wall/lang/\'+ lang + \'/cat/\' + cat; } form1OnChange(); </script>';
-    html += "<form id='form2' method=\"get\" >";
+    html += "<form id='form2' method=\"get\" style=\"display: flex; justify-content: center; align-items: center;\">";
     html += '<label for="search">Channel Name:</label>';
     html += '<input type="text" type="search" id="search_box" onchange="javascript:form2OnChange()" />';
     html += '<input value="Search" type="submit" />';
@@ -499,39 +499,30 @@ function footer() {
 }
 
 function new_render() {
-    let table = '';
     let grid_counter = 0;
+    let cs = r.cs.filter(channel => channel.name.toUpperCase() != 'DDD' && ((channel.language == languages[languageIndex] && channel.category == categories[categoryIndex]) || languages[languageIndex] == "all") || search != '' && channel.name.toLowerCase().includes(search.toLowerCase()));
     let grid_cells = 4;
-    table += '<table>';
-    //table += '<tr><th>Channel</th><th>URI</th></tr>';
+    
+    let table = '<table>';
     let counter = 0;
     let acc = 0;
     let begin = true;
-    r.cs.forEach((channel) => {
+    cs.forEach((channel) => {
         try {
 
             if (begin) {
-                table += '<tr>';
+                //Align center
+                table += '<tr style="text-align:center;">';
                 begin = false;
                 acc += counter;
                 counter = 0;
             }
 
-            if (channel.name.toUpperCase() != 'DDD') {
-                if (search != '' && channel.name.toLowerCase().includes(search.toLowerCase())) {
-                    let row = '';
-                    row = renderChannel(row, channel, acc + counter, true);
-                    table += row;
-                    counter++;
-                } else {
-                    if ((channel.language == languages[languageIndex] && channel.category == categories[categoryIndex]) || languages[languageIndex] == "all" ) {
-                        let row = '';
-                        row = renderChannel(row, channel, acc + counter, false);
-                        table += row;
-                        counter++;
-                    }
-                }
-            }
+
+            let row = renderChannel('', channel, acc + counter, search != '');
+            table += row;
+            counter++;
+         
 
             if (counter >= grid_cells) {
                 table += '</tr>';

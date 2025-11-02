@@ -382,11 +382,13 @@ export async function readChannels() {
                 if (channel.uri.startsWith('http://') || channel.uri.startsWith('https://')) {
                     //console.log(channel);
                     urls.push(channel.uri);
+                    let originalUri = channel.uri;
                     if (channel.uri.startsWith('https://')) {
-                        //channel.uri = '/api/proxy_s/' + toBinary(channel.uri);    
+                        channel.uri = '/api/proxy_s/' + toBinary(channel.uri);    
                     } else if (channel.uri.startsWith('http://')) {
-                        //channel.uri = 'https://freetuxtvwall.netlify.app/api/proxy/' + toBinary(channel.uri);
+                        channel.uri = '/api/proxy/' + toBinary(channel.uri);
                     }
+                    channel.originalUri = originalUri; // Store original for debugging
                     channels.push(channel);
                 }
             }
@@ -438,6 +440,9 @@ function stickyHeader(req, res) {
     for (let i = 0; i < languages.length; i++) {
         let lang = languages[i];
         let name = countries[i];
+        if (r.cs.find(channel => channel.language == lang) == undefined) {
+            continue;
+        }
         if (i == languageIndex) {
             html += '<option value="' + lang + '" selected>' + name + '</option>';
         } else {
@@ -538,6 +543,34 @@ function new_render() {
     return table;
 }
 
+function getStreamMimeType(uri, category) {
+    // Handle HLS streams
+    if (uri.includes('.m3u8') || uri.includes('/hls/') || uri.includes('.m3u')) {
+        return 'application/x-mpegURL';
+    }
+    
+    // Handle DASH streams
+    if (uri.includes('.mpd')) {
+        return 'application/dash+xml';
+    }
+    
+    // Category-based fallbacks
+    if (category === 'Web Radio') {
+        return 'audio/mpeg';
+    } else if (category === 'Web TV' || category === 'Web Cam' || category === 'Web Programmes') {
+        return 'video/mp4';
+    }
+    
+    // Fallback to mime-types library
+    let detectedType = mime.lookup(uri);
+    if (detectedType) {
+        return detectedType;
+    }
+    
+    // Final fallback
+    return 'application/x-mpegURL';
+}
+
 function renderChannel(render, ch, counter, search) {
     //try ch.uri with http and https
     let error = true;
@@ -581,13 +614,56 @@ function renderChannel(render, ch, counter, search) {
             videorender += '<p><a href="/api/wall/search/' + toBinary(ch.name) + '">' + ch.name.toUpperCase() + '</a></p>';
             videorender += '<video id="' + selector + '" muted="true" autoplay="true" class="video-js" controls preload="metadata" width="384" height="200" data-setup="{}">';
         }
-        videorender += '<source src="' + ch.uri + '" type="'+mime.lookup(ch.uri)+'"/>';
+        videorender += '<source src="' + ch.uri + '" type="' + getStreamMimeType(ch.originalUri || ch.uri, ch.category) + '"/>';
         videorender += '    <p class="vjs-no-js"> \
                                 To view this video please enable JavaScript, and consider upgrading to a \
                                 web browser that \
                             <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> \
                             </p>';
         videorender += '</video>';
+        
+        // Add error handling and retry logic
+        let errorHandlingScript = `
+            <script>
+            (function() {
+                var video = document.getElementById('${selector}');
+                var retryCount = 0;
+                var maxRetries = 3;
+                
+                function handleError() {
+                    retryCount++;
+                    console.log('Video error for ${ch.name}, attempt ' + retryCount);
+                    
+                    if (retryCount <= maxRetries) {
+                        setTimeout(function() {
+                            video.load();
+                        }, 2000 * retryCount);
+                    } else {
+                        console.log('Max retries reached for ${ch.name}');
+                        // Show fallback message
+                        var errorDiv = document.createElement('div');
+                        errorDiv.style.cssText = 'position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.8); color: white; padding: 10px; border-radius: 5px; font-size: 12px; text-align: center;';
+                        errorDiv.innerHTML = 'Stream temporarily unavailable<br><small>Click to retry</small>';
+                        errorDiv.onclick = function() { 
+                            retryCount = 0; 
+                            video.load(); 
+                            errorDiv.remove(); 
+                        };
+                        video.parentElement.style.position = 'relative';
+                        video.parentElement.appendChild(errorDiv);
+                    }
+                }
+                
+                video.addEventListener('error', handleError);
+                video.addEventListener('loadstart', function() {
+                    var existingError = video.parentElement.querySelector('div[style*="rgba(0,0,0,0.8)"]');
+                    if (existingError) existingError.remove();
+                });
+            })();
+            </script>
+        `;
+        
+        videorender += errorHandlingScript;
         videorender += '</div>';
         videorender += '</td>';
         
@@ -640,7 +716,7 @@ export async function fttvw(req, res) {
     console.log("Category Index: " + categoryIndex);
     console.log("Search: " + search);
 
-    let html = '<html><head>{{links}}<title>{{title}}</title><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></head>';
+    let html = '<html><head>{{links}}<title>{{title}}</title><meta http-equiv="Content-Security-Policy" content="default-src \'self\' \'unsafe-inline\' \'unsafe-eval\' data: blob: https: http: ws: wss:; media-src \'self\' https: http: blob: data:; connect-src \'self\' https: http: ws: wss:;"></head>';
     html += '<body>';
     html += '   <div id="header" class="header">';
     html += '       {{header}}';

@@ -51,6 +51,11 @@ router.get('/proxy/:urlencoded', (req, res) => {
     let allowed = false;
     let channel;
 
+    // Set CORS headers
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
     if (urldecoded.startsWith('https://')) {
         res.redirect('/api/proxy_s/' + urlencoded);
 
@@ -59,7 +64,7 @@ router.get('/proxy/:urlencoded', (req, res) => {
     }
 
     r.cs.forEach((c) => {
-        if (c.uri == 'https://freetuxtvwall.netlify.app/api/proxy/' + toBinary(urldecoded) || c.uri == '/api/proxy_s/' + toBinary(urldecoded)) {
+        if (c.uri == '/api/proxy/' + urlencoded || c.originalUri == urldecoded) {
             channel = c;
             console.log("found channel: " + channel.uri);
         }
@@ -83,6 +88,9 @@ router.get('/proxy/:urlencoded', (req, res) => {
     res.setHeader('Content-Type', channel.type);
     http.get(urldecoded, (response) => {
         response.pipe(res);
+    }).on('error', (err) => {
+        console.error('Proxy error:', err);
+        res.status(500).send('Proxy error');
     });
 });
 
@@ -92,6 +100,10 @@ router.get('/proxy_s/:urlencoded', (req, res) => {
     let allowed = false;
     let channel;
 
+    // Set CORS headers
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
     if (urldecoded.startsWith('http://')) {
         res.redirect('/api/proxy/' + urlencoded);
@@ -100,7 +112,7 @@ router.get('/proxy_s/:urlencoded', (req, res) => {
     }
 
     r.cs.forEach((c) => {
-        if (c.uri == '/api/proxy/' + toBinary(urldecoded) || c.uri == '/api/proxy_s/' + toBinary(urldecoded)) {
+        if (c.uri == '/api/proxy_s/' + urlencoded || c.originalUri == urldecoded) {
             channel = c;
             console.log("found channel: " + channel.uri);
         }
@@ -130,7 +142,7 @@ router.get('/proxy_s/:urlencoded', (req, res) => {
         response.on('error', (err) => {
             console.log(err);
             // Handle the response error here
-            res.send(res.statusCode);
+            res.status(500).send('Proxy error');
         });
         response.on('data', (chunk) => {
             let data = chunk.toString();
@@ -184,6 +196,9 @@ router.get('/proxy_s/:urlencoded', (req, res) => {
         response.on('end', () => {
             res.end();
         });
+    }).on('error', (err) => {
+        console.error('HTTPS Proxy error:', err);
+        res.status(500).send('Proxy error');
     });
 
 });

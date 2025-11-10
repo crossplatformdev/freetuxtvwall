@@ -382,6 +382,7 @@ export async function readChannels() {
                 if (channel.uri.startsWith('http://') || channel.uri.startsWith('https://')) {
                     //console.log(channel);
                     urls.push(channel.uri);
+                    /*
                     let originalUri = channel.uri;
                     if (channel.uri.startsWith('https://')) {
                         channel.uri = '/api/proxy_s/' + toBinary(channel.uri);    
@@ -389,7 +390,8 @@ export async function readChannels() {
                         channel.uri = '/api/proxy/' + toBinary(channel.uri);
                     }
                     channel.originalUri = originalUri; // Store original for debugging
-                    channels.push(channel);
+                    */
+                   channels.push(channel);
                 }
             }
         }
@@ -440,9 +442,7 @@ function stickyHeader(req, res) {
     for (let i = 0; i < languages.length; i++) {
         let lang = languages[i];
         let name = countries[i];
-        if (r.cs.find(channel => channel.language == lang) == undefined) {
-            continue;
-        }
+        //if (r.cs.find(channel => channel.language == lang) == undefined) continue; 
         if (i == languageIndex) {
             html += '<option value="' + lang + '" selected>' + name + '</option>';
         } else {

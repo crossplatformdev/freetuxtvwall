@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "netlify deploy --prod"
+    "build": "netlify deploy -p"
   },
   "dependencies": {
     "@eyevinn/web-player": "^0.10.1",
@@ -29,6 +29,6 @@
     "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
-    "netlify-cli": "^18.0.4"
+    "netlify-cli": "^18.1.0"
   }
 }

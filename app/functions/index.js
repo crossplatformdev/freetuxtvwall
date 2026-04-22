@@ -15,6 +15,24 @@ let languageIndex = 0;
 let categoryIndex = 0;
 let search = '';
 
+let nsfw_list = [    
+    'https://cdn.adultiptv.net/interracial.m3u8',
+];
+
+let nsfw_words = [
+    'xxx',
+    'porn',
+    'sex',
+    'hentai',
+    'erotic',
+    'adult',
+    'camgirl',
+    'cam',
+    'webcam',
+    'nsfw',
+    'erotica',
+];
+
 let links = [
     '<link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />',
     '<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>',
@@ -376,10 +394,15 @@ export async function readChannels() {
             //guess content type from extension
             let filename = channel.uri.split('.');
             let ext = filename[filename.length - 1];
-
+            
             //console.log(channel.uri);
-            if (!urls.includes(channel.uri)) {
-                if (channel.uri.startsWith('http://') || channel.uri.startsWith('https://')) {
+            if (
+                // Exclude NSFW channels
+                (!nsfw_words.some(word => channel.uri.toLowerCase().includes(word)) &&
+                !nsfw_list.includes(channel.uri) && !urls.includes(channel.uri))
+            ) {
+                
+                    if (channel.uri.startsWith('http://') || channel.uri.startsWith('https://')) {
                     //console.log(channel);
                     urls.push(channel.uri);
                     /*

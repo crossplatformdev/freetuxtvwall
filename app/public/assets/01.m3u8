@@ -87,7 +87,6 @@
 		<wslfe:stream name="Das Wort TV">https://stream.daswort.tv/master.m3u8</wslfe:stream>
 		<wslfe:stream name="DASDING-VisualRadio">https://swrdasdingvr-hls.akamaized.net/hls/live/2018681/dasdingvr/master.m3u8</wslfe:stream>
 		<wslfe:stream name="dbm-tv.fr">http://dbmtv.vedge.infomaniak.com/livecast/dbmtv/playlist.m3u8</wslfe:stream>
-		<wslfe:stream name="DDD">https://cdn.adultiptv.net/interracial.m3u8</wslfe:stream>
 		<wslfe:stream name="deejay.it/tv">https://streamcdnb4-4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S85984808/sMO0tz9Sr2Rk/playlist.m3u8</wslfe:stream>
 		<wslfe:stream name="demo">http://sample.vodobox.net/skate_phantom_flex_4k/skate_phantom_flex_4k.m3u8</wslfe:stream>
 		<wslfe:stream name="Deutsche Welle">https://dwamdstream111.akamaized.net/hls/live/2017972/dwstream111/index.m3u8</wslfe:stream>

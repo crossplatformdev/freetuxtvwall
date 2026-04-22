@@ -4,7 +4,7 @@
   # Default build command.
   functions = "/"
   publish = "/"
-  command = "npm run build"
+  command = "npm run"
   environment = { NODE_VERSION = "22.8.0" }
 
 # Redirects for role-based access control don’t use the 'to' property.
@@ -15,11 +15,9 @@
   external_node_modules = ["express"]
   node_bundler = "esbuild"
   included_files = [
-    "public/stylesheets/style.css",
-    "public/javascripts/webplayer.min.js",
-    "public/images/favicon.png",
-    "public/images/favicon.ico",
-    "public/assets/**",
+    "public/stylesheets/**",
+    "public/javascripts/**",
+    "public/images/**",
     "public/assets/ad_1.m3u",
     "public/assets/ad_2.m3u",
     "public/assets/ad_3.m3u",
@@ -1224,10 +1222,7 @@
     "public/assets/zw_2.m3u",
     "public/assets/zw_3.m3u",
     "public/assets/zw_4.m3u",
-    "public/assets/zw_5.m3u",
-    "public/images/favicon.png",
-    "public/images/favicon.jpg"
-    
+    "public/assets/zw_5.m3u",   
     ]
 
 [[redirects]]

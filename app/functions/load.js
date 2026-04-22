@@ -19,6 +19,8 @@ const axios = require('axios');
 const https = require('https');
 const http = require('http');
 const m3u8Parser = require('m3u8-parser');
+const path = require('path');
+
 //const { errorCodes } = require('./index');
 
 const errorCodes = [
@@ -434,7 +436,7 @@ export async function loadM3U() {
     let countryName = { name: '', code: '' };
     for (let i = 0; i < types.length; i++) {
       let type = types[i];
-      let uri = './public/assets/' + lang + '_' + type + '.m3u';
+      let uri = path.join(__dirname, 'public/assets/', lang + '_' + type + '.m3u');
 
       let m3uFile = await fs.readFileSync(uri, 'utf8');
       const parser = new m3u8Parser.Parser();

@@ -9,6 +9,7 @@ import { toBinary, fromBinary, fttvw, pushChannel, r } from "./functions/index";
 import { unescape } from "node:querystring";
 import { download } from "./functions/download";
 import { list } from "./functions/list";
+import path from "node:path";
 const api = express();
 
 router.get("/hello", (req, res) => { res.send("Hello World!") });
@@ -20,20 +21,18 @@ router.get("/wall", (req, res) => {
 
 router.get('/images/favicon.png', (req, res) => {
   //__dirname = path to the directory that the executing script resides in, functions/index.js
-  res.sendFile('./public/images/favicon.png', { root: '.'});
+  res.sendFile('/public/images/favicon.png', { root: __dirname  });
 });
 
 router.get('/stylesheets/style.css', (req, res) => {
   //__dirname = path to the directory that the executing script resides in, functions/index.js
-  res.sendFile('./public/stylesheets/style.css', { root: '.' });
+  res.sendFile('/public/stylesheets/style.css', { root: __dirname });
 });
 
 router.get('/javascripts/webplayer.min.js', (req, res) => {
     //__dirname = path to the directory that the executing script resides in, functions/index.js
-    res.sendFile('./public/javascripts/webplayer.min.js', { root: '.' });
+    res.sendFile('/public/javascripts/webplayer.min.js', { root: __dirname });
 });
-
-
 
 // /lang/:language/cat/:category? Puede tener una interrogación al final
 router.get('/wall/lang/:language/cat/:category', (req, res) => {
@@ -223,21 +222,16 @@ for (let i = 0; i < languages.length; i++) {
         router.get('/' + lang + '/' + type, (req, res) => {
             let lang = req.params.lang;
             let type = req.params.type;
-            res.sendFile('./public/assets/' + lang + '_' + type + '.m3u', { root: '.' });
+            res.sendFile('./public/assets/' + lang + '_' + type + '.m3u', { root: __dirname });
         });
 
     }
 }
 
-router.get('/:lang/:type', (req, res) => {
-    let lang = req.params.lang;
-    let type = req.params.type;
-    res.redirect('/public/assets/' + lang + '_' + type + '.m3u');
-});
-
 router.get('/list', (req, res) => {
     let r = list();
     res.send(r);
 });
+
 api.use("/api", router);
 export const handler = serverless(api);
